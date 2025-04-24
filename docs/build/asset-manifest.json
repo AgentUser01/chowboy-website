@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/chowboy-website/static/css/main.eae5d4fa.css",
+    "main.js": "/chowboy-website/static/js/main.7b6baa26.js",
+    "static/js/453.7fa5b40e.chunk.js": "/chowboy-website/static/js/453.7fa5b40e.chunk.js",
+    "static/media/ai-recipe-discovery.png": "/chowboy-website/static/media/ai-recipe-discovery.25198ba5f015a7efb391.png",
+    "static/media/cooking-tips.png": "/chowboy-website/static/media/cooking-tips.acf8ac0d01fa3ec3b495.png",
+    "static/media/import-from-anywhere.png": "/chowboy-website/static/media/import-from-anywhere.15ea06125c485e404666.png",
+    "static/media/ai-powered-features.png": "/chowboy-website/static/media/ai-powered-features.a82ad07e2a6453a80f30.png",
+    "static/media/chowboy-app-preview.png": "/chowboy-website/static/media/chowboy-app-preview.175b31df19897ec3f2a7.png",
+    "static/media/chowboy_grocery-list-management.png": "/chowboy-website/static/media/chowboy_grocery-list-management.3deef5b3d7fb1764946c.png",
+    "index.html": "/chowboy-website/index.html",
+    "main.eae5d4fa.css.map": "/chowboy-website/static/css/main.eae5d4fa.css.map",
+    "main.7b6baa26.js.map": "/chowboy-website/static/js/main.7b6baa26.js.map",
+    "453.7fa5b40e.chunk.js.map": "/chowboy-website/static/js/453.7fa5b40e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eae5d4fa.css",
+    "static/js/main.7b6baa26.js"
+  ]
+}

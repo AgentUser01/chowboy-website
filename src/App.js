@@ -12,11 +12,11 @@ import PageTransition from './components/PageTransition';
 import Home from './pages/Home';
 import Features from './pages/Features';
 import NotFound from './pages/NotFound';
+import Privacy from './pages/Privacy';
 
 // Create minimal placeholder components for new routes
 const Blog = () => <div className="container" style={{ marginTop: '120px', minHeight: '70vh' }}><h1>Blog Coming Soon</h1></div>;
 const Careers = () => <div className="container" style={{ marginTop: '120px', minHeight: '70vh' }}><h1>Careers Coming Soon</h1></div>;
-const Privacy = () => <div className="container" style={{ marginTop: '120px', minHeight: '70vh' }}><h1>Privacy Policy Coming Soon</h1></div>;
 const Terms = () => <div className="container" style={{ marginTop: '120px', minHeight: '70vh' }}><h1>Terms of Service Coming Soon</h1></div>;
 
 // AnimatePresence wrapper component to access location

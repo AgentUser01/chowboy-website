@@ -17,10 +17,18 @@ const Navbar = () => {
     
     window.addEventListener('scroll', handleScroll);
     
+    // Prevent scrolling when menu is open
+    if (menuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+    
     return () => {
       window.removeEventListener('scroll', handleScroll);
+      document.body.style.overflow = 'auto';
     };
-  }, []);
+  }, [menuOpen]);
   
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -33,24 +41,37 @@ const Navbar = () => {
           chowboy
         </Link>
         
-        <div className={`menu-icon ${menuOpen ? 'active' : ''}`} onClick={toggleMenu}>
-          <span></span>
-          <span></span>
-          <span></span>
+        <div className={`hamburger-menu ${menuOpen ? 'active' : ''}`} onClick={toggleMenu} aria-label="Menu">
+          <span className="hamburger-bar"></span>
+          <span className="hamburger-bar"></span>
+          <span className="hamburger-bar"></span>
         </div>
         
-        <ul className={`nav-menu ${menuOpen ? 'active' : ''}`}>
-          <li className="nav-item">
-            <Link to="/features" className="nav-link blue-text" onClick={() => setMenuOpen(false)}>
-              features
+        <div className={`menu-overlay ${menuOpen ? 'active' : ''}`} onClick={toggleMenu}></div>
+        
+        <div className={`nav-drawer ${menuOpen ? 'active' : ''}`}>
+          <div className="nav-drawer-header">
+            <Link to="/" className="drawer-logo" onClick={() => setMenuOpen(false)}>
+              chowboy
             </Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/careers" className="nav-link special" onClick={() => setMenuOpen(false)}>
-              we're hiring! 👩‍💻
-            </Link>
-          </li>
-        </ul>
+            <button className="close-menu" onClick={toggleMenu} aria-label="Close menu">
+              <span className="close-icon"></span>
+            </button>
+          </div>
+          
+          <ul className="nav-menu">
+            <li className="nav-item">
+              <Link to="/features" className="nav-link" onClick={() => setMenuOpen(false)}>
+                features
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/careers" className="nav-link hiring" onClick={() => setMenuOpen(false)}>
+                we're hiring! 👩‍💻
+              </Link>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
   );

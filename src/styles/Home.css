@@ -1,0 +1,334 @@
+.home-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.5rem 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-left {
+  flex: 1;
+  padding-right: 2rem;
+  z-index: 2;
+  transform-style: flat;
+  perspective: none;
+}
+
+.hero-left::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 70% 30%, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0) 70%);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 540px;
+}
+
+.hero-content h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+  background: linear-gradient(120deg, var(--color-text) 0%, var(--color-primary) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: var(--color-text-light);
+}
+
+.download-button-container {
+  margin-top: 1rem;
+}
+
+.app-store-button {
+  display: flex;
+  align-items: center;
+  background-color: #000;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: fit-content;
+}
+
+.app-store-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.apple-logo {
+  margin-right: 12px;
+}
+
+.button-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.button-text span {
+  font-size: 0.75rem;
+  margin-bottom: 2px;
+}
+
+.button-text strong {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.hero-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transform-style: flat;
+  perspective: none;
+}
+
+.colored-circle {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #e8f4ff 0%, #d1e6ff 100%);
+  z-index: -1;
+  transform: none;
+  will-change: transform;
+  animation: none;
+}
+
+/* Feature image styling for mockup */
+.feature-image {
+  flex: 1;
+  height: 400px;
+  background-color: var(--color-surface);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-image img.feature-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  box-shadow: var(--shadow-md);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.feature-image img.feature-img:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.feature-image img.iphone-screenshot {
+  max-height: 90%;
+  border-radius: 2.5rem;
+  border: 0.5rem solid #000;
+  position: relative;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Remove app-preview styles that are no longer needed */
+.app-preview {
+  display: none;
+}
+
+.app-preview img.iphone-screenshot,
+.iphone-frame-wrapper,
+.iphone-notch,
+.iphone-frame-wrapper::after {
+  display: none;
+}
+
+.app-preview-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.app-preview-text {
+  color: var(--color-primary-dark);
+  font-weight: 600;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 8px 16px;
+  border-radius: 10px;
+  font-size: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+  background-color: transparent;
+}
+
+.navbar.scrolled {
+  background-color: rgba(66, 135, 245, 0.95);
+  padding: 10px 0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-logo {
+  color: white;
+}
+
+.nav-link {
+  color: #000;
+}
+
+.nav-button {
+  background: white;
+  color: #4287f5;
+}
+
+@media (min-width: 768px) {
+  .home-container {
+    perspective: none;
+  }
+  
+  .hero-content {
+    transform: none;
+  }
+}
+
+@keyframes subtle-float {
+  0% {
+    transform: none;
+  }
+  100% {
+    transform: none;
+  }
+}
+
+@media (max-width: 960px) {
+  .home-container {
+    flex-direction: column;
+    justify-content: center;
+    min-height: 80vh;
+    padding-top: 0;
+    padding-bottom: 1rem;
+  }
+  
+  .hero-left {
+    padding-right: 0;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .hero-content {
+    max-width: 100%;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .download-button-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .colored-circle {
+    width: 300px;
+    height: 300px;
+  }
+  
+  .feature-image {
+    height: 330px;
+    width: 100%;
+    max-width: 280px;
+  }
+  
+  .feature-image img.iphone-screenshot {
+    max-height: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .colored-circle, .app-preview {
+    animation: none;
+  }
+  
+  .app-store-button:hover {
+    transform: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .hero-content p {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.import-highlight {
+  background: linear-gradient(120deg, rgba(245, 247, 250, 0.95), rgba(228, 232, 239, 0.95));
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  box-shadow: var(--shadow-md);
+  border-left: 4px solid var(--color-primary);
+  position: relative;
+}
+
+.import-highlight .tag {
+  position: absolute;
+  top: -10px;
+  left: 1rem;
+  background-color: var(--color-primary);
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  letter-spacing: 0.05em;
+}
+
+.import-highlight h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  margin-bottom: 0.75rem;
+  color: var(--color-primary-dark);
+}
+
+.import-highlight p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 0;
+  color: var(--color-text-light);
+} 

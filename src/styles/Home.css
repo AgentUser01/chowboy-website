@@ -101,8 +101,6 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  transform-style: flat;
-  perspective: none;
 }
 
 .colored-circle {
@@ -112,16 +110,13 @@
   border-radius: 50%;
   background: linear-gradient(135deg, #e8f4ff 0%, #d1e6ff 100%);
   z-index: -1;
-  transform: none;
-  will-change: transform;
-  animation: none;
 }
 
 /* Feature image styling for mockup */
 .feature-image {
   flex: 1;
   height: 400px;
-  background-color: var(--color-surface);
+  background-color: transparent;
   border-radius: var(--radius-lg);
   overflow: hidden;
   position: relative;
@@ -187,26 +182,26 @@
 }
 
 .navbar {
-  background-color: transparent;
+  background-color: white;
 }
 
 .navbar.scrolled {
-  background-color: rgba(66, 135, 245, 0.95);
+  background-color: white;
   padding: 10px 0;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-logo {
-  color: white;
+  color: var(--color-primary-dark);
 }
 
 .nav-link {
-  color: #000;
+  color: var(--color-text);
 }
 
 .nav-button {
   background: white;
-  color: #4287f5;
+  color: var(--color-primary);
 }
 
 @media (min-width: 768px) {
@@ -233,13 +228,13 @@
     flex-direction: column;
     justify-content: flex-start;
     min-height: auto;
-    padding-top: 60px;
-    padding-bottom: 2rem;
+    padding-top: 100px;
+    padding-bottom: 3rem;
   }
   
   .hero-left {
     padding-right: 0;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     text-align: center;
     padding: 0 1rem;
   }
@@ -249,18 +244,19 @@
   }
   
   .hero-content h1 {
-    font-size: 2.2rem;
-    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    margin-bottom: 1.2rem;
   }
   
   .hero-content p {
     font-size: 1.1rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.8rem;
   }
   
   .download-button-container {
     display: flex;
     justify-content: center;
+    margin-top: 1.5rem;
   }
   
   .colored-circle {
@@ -271,7 +267,8 @@
   .feature-image {
     height: auto;
     max-height: 500px;
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
   }
   
   .feature-image img.iphone-screenshot {
@@ -293,16 +290,16 @@
 
 @media (max-width: 768px) {
   .home-container {
-    padding: 70px 1rem 2rem 1rem;
+    padding: 100px 1.5rem 2.5rem 1.5rem;
   }
   
   .hero-content h1 {
-    font-size: 2rem;
+    font-size: 2.2rem;
     line-height: 1.2;
   }
   
   .hero-content p {
-    font-size: 1rem;
+    font-size: 1.05rem;
     line-height: 1.5;
   }
   
@@ -318,19 +315,19 @@
 
 @media (max-width: 480px) {
   .home-container {
-    padding: 60px 0.8rem 1.5rem 0.8rem;
+    padding: 90px 1.2rem 2rem 1.2rem;
   }
   
   .hero-content h1 {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
   
   .hero-content p {
-    font-size: 0.95rem;
+    font-size: 1rem;
   }
   
   .app-store-button {
-    padding: 0.6rem 1.2rem;
+    padding: 0.7rem 1.3rem;
   }
   
   .button-text strong {
@@ -338,14 +335,14 @@
   }
   
   .feature-image img.iphone-screenshot {
-    max-height: 350px;
-    border-radius: 1.5rem;
-    border: 0.3rem solid #000;
+    max-height: 370px;
+    border-radius: 1.7rem;
+    border: 0.35rem solid #000;
   }
   
   .colored-circle {
-    width: 200px;
-    height: 200px;
+    width: 220px;
+    height: 220px;
   }
 }
 

@@ -18,7 +18,7 @@ Chowboy is an intelligent cooking companion app that helps users discover, plan,
 
 ## Deployment
 
-This website is deployed on GitHub Pages and accessible at [chowboy.io](https://chowboy.io).
+This website is deployed on GitHub Pages and accessible at [chowboy.io](https://chowboy.io) with automatic CNAME preservation.
 
 ## Contact
 

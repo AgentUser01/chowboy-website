@@ -1,3 +1,5 @@
+# chowboy-website
+
 # Chowboy Website
 
 This is the public repository for the Chowboy website, showcasing the Chowboy cooking app and its features.
@@ -13,6 +15,10 @@ Chowboy is an intelligent cooking companion app that helps users discover, plan,
 - **Grocery List Management**: Create and manage shopping lists with ease
 - **AI-Powered Features**: Nutritional insights, wine pairings, and recipe variations
 - **Cooking Tips & Substitutes**: Expert tips and ingredient substitution suggestions
+
+## Deployment
+
+This website is deployed on GitHub Pages and accessible at [chowboy.io](https://chowboy.io).
 
 ## Contact
 

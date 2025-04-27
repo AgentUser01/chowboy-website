@@ -70,14 +70,18 @@
 .nav-link.hiring {
   display: flex;
   align-items: center;
-  background-color: #EBF3FF;
   color: #0066FF;
   font-weight: 700;
   padding: 12px 20px;
 }
 
 .nav-link.hiring:hover {
-  background-color: #D4E5FF;
+  background-color: rgba(0, 102, 255, 0.08);
+}
+
+.nav-link.features {
+  color: #0066FF;
+  font-weight: 700;
 }
 
 /* Hamburger Menu Styles */
@@ -215,6 +219,11 @@
   transform: rotate(-45deg);
 }
 
+.desktop-menu {
+  display: flex;
+  align-items: center;
+}
+
 @media (max-width: 768px) {
   .navbar {
     padding: 15px 0;
@@ -284,5 +293,9 @@
     font-size: 1.1rem;
     margin-top: 5px;
     width: 100%;
+  }
+  
+  .desktop-menu {
+    display: none;
   }
 } 

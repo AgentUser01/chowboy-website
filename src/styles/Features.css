@@ -3,6 +3,12 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 4rem 2rem;
+  will-change: transform;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+  contain: content;
+  overflow-x: hidden;
 }
 
 .features-header {
@@ -11,6 +17,7 @@
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
+  isolation: isolate; /* Creates a stacking context */
 }
 
 .features-header h1 {
@@ -22,6 +29,7 @@
   background-clip: text;
   color: transparent;
   letter-spacing: -0.04em;
+  transform: translateZ(0); /* Hardware acceleration */
 }
 
 .features-header p {
@@ -29,14 +37,18 @@
   color: var(--color-text-light);
   max-width: 600px;
   margin: 0 auto;
+  transform: translateZ(0); /* Hardware acceleration */
 }
 
 /* Features list */
 .features-list {
   display: flex;
   flex-direction: column;
-  gap: 6rem;
+  gap: 8rem; /* Increased gap for better visual separation */
   padding: 1rem 0;
+  contain: layout style;
+  transform: translateZ(0);
+  will-change: transform;
 }
 
 /* Highlight the import feature */
@@ -47,6 +59,9 @@
   padding: 2rem;
   box-shadow: var(--shadow-md);
   margin-bottom: 1rem;
+  transform: translateZ(0);
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .feature-item.highlight-feature .feature-content h2 {
@@ -59,6 +74,12 @@
   align-items: center;
   justify-content: space-between;
   gap: 4rem;
+  min-height: 350px;
+  position: relative;
+  transform: translateZ(0);
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  contain: content;
+  isolation: isolate;
 }
 
 .feature-item.reversed {
@@ -68,6 +89,10 @@
 .feature-content {
   flex: 1;
   max-width: 500px;
+  transform: translateZ(0);
+  /* Improved transforms for smoother animations */
+  transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .feature-content h2 {
@@ -76,6 +101,7 @@
   margin-bottom: 1.5rem;
   letter-spacing: -0.03em;
   color: var(--color-primary-dark);
+  transform: translateZ(0);
 }
 
 .feature-content p {
@@ -83,12 +109,14 @@
   line-height: 1.7;
   margin-bottom: 2rem;
   color: var(--color-text-light);
+  transform: translateZ(0);
 }
 
 .feature-content ul.feature-list {
   list-style-type: none;
   padding: 0;
   margin-bottom: 0;
+  transform: translateZ(0);
 }
 
 .feature-content ul.feature-list li {
@@ -98,6 +126,8 @@
   display: flex;
   align-items: center;
   color: var(--color-text-light);
+  transform: translateZ(0);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .feature-content ul.feature-list li::before {
@@ -118,49 +148,41 @@
 .feature-image {
   flex: 1;
   height: 450px;
-  background-color: var(--color-surface);
-  border-radius: var(--radius-lg);
+  background-color: transparent;
   overflow: hidden;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+  transform: translateZ(0);
+  contain: layout style;
 }
 
 .feature-image img.feature-img {
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
-  box-shadow: var(--shadow-md);
-  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: translateZ(0);
+  will-change: transform;
 }
 
 .feature-image img.feature-img:hover {
   transform: translateY(-5px);
-  box-shadow: var(--shadow-lg);
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .feature-image img.iphone-screenshot {
-  max-height: 90%;
-  border-radius: 2.5rem;
-  border: 0.5rem solid #000;
+  max-width: 100%;
+  max-height: 100%;
   position: relative;
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  object-fit: contain;
+  transform: translateZ(0);
 }
 
-/* iPhone notch simulation */
+/* Remove iPhone notch simulation */
 .feature-image img.iphone-screenshot::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 40%;
-  height: 1.5rem;
-  background-color: #000;
-  border-bottom-left-radius: 1rem;
-  border-bottom-right-radius: 1rem;
-  z-index: 2;
+  display: none;
 }
 
 .feature-image.placeholder {
@@ -182,6 +204,9 @@
   background: linear-gradient(120deg, #f5f7fa 0%, #e4e8ef 100%);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-md);
+  transform: translateZ(0);
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .features-cta h2 {
@@ -189,6 +214,7 @@
   font-weight: 600;
   margin-bottom: 1.5rem;
   color: var(--color-text);
+  transform: translateZ(0);
 }
 
 .features-cta p {
@@ -196,6 +222,7 @@
   max-width: 600px;
   margin: 0 auto 2.5rem;
   color: var(--color-text-light);
+  transform: translateZ(0);
 }
 
 .download-buttons {
@@ -203,8 +230,26 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+  transform: translateZ(0);
 }
 
+.official-app-store-badge {
+  display: inline-block;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: translateZ(0);
+}
+
+.official-app-store-badge img {
+  height: 40px;
+  width: auto;
+}
+
+.official-app-store-badge:hover {
+  transform: translateY(-3px);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Old app store button styles kept for reference */
 .app-store-button {
   display: flex;
   align-items: center;
@@ -284,11 +329,13 @@
   .feature-image {
     width: 100%;
     height: 350px;
+    background-color: transparent;
   }
   
   .feature-image img.iphone-screenshot {
+    max-width: 100%;
     max-height: 100%;
-    max-width: 80%;
+    object-fit: contain;
   }
   
   .features-cta {
@@ -341,4 +388,17 @@
   .app-store-button:hover {
     transform: none;
   }
+}
+
+/* Optimize animations with hardware acceleration */
+.animated-section,
+.animated-text,
+.animated-card,
+.feature-image,
+.feature-item {
+  will-change: transform, opacity;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  contain: layout style paint;
+  isolation: isolate;
 } 

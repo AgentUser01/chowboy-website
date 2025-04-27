@@ -12,7 +12,9 @@ const Footer = () => {
         
         <div className="footer-links">
           <a href="mailto:hello@chowboy.io">hello@chowboy.io</a>
+          <Link to="/support">support</Link>
           <Link to="/privacy">privacy</Link>
+          <Link to="/cookies">cookie policy</Link>
           <Link to="/terms">terms</Link>
           <Link to="/careers">careers</Link>
         </div>

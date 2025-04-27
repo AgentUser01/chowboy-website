@@ -14,12 +14,16 @@ const AnimatedText = ({
   delay = 0,
   duration,
   once = true,
-  threshold = 0.2,
+  threshold = 0.1,
   children,
   ...props
 }) => {
   const controls = useAnimation();
-  const [ref, inView] = useInView({ threshold, triggerOnce: once });
+  const [ref, inView] = useInView({ 
+    threshold, 
+    triggerOnce: once,
+    rootMargin: '25% 0px'
+  });
 
   // Customize the variants if duration is provided
   const customVariants = duration 
@@ -38,7 +42,9 @@ const AnimatedText = ({
   // Start animation when the element enters the viewport
   useEffect(() => {
     if (inView) {
-      controls.start('visible');
+      setTimeout(() => {
+        controls.start('visible');
+      }, Math.random() * 50);
     } else if (!once) {
       controls.start('hidden');
     }
@@ -57,6 +63,10 @@ const AnimatedText = ({
       transition={{ 
         delay, 
         ...customVariants.visible?.transition 
+      }}
+      style={{
+        willChange: 'opacity, transform',
+        transform: 'translateZ(0)'
       }}
       {...props}
     >

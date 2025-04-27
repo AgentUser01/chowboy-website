@@ -13,11 +13,13 @@ import Home from './pages/Home';
 import Features from './pages/Features';
 import NotFound from './pages/NotFound';
 import Privacy from './pages/Privacy';
+import Terms from './pages/Terms';
+import CookiePolicy from './pages/CookiePolicy';
+import Support from './pages/Support';
 
 // Create minimal placeholder components for new routes
 const Blog = () => <div className="container" style={{ marginTop: '120px', minHeight: '70vh' }}><h1>Blog Coming Soon</h1></div>;
 const Careers = () => <div className="container" style={{ marginTop: '120px', minHeight: '70vh' }}><h1>Careers Coming Soon</h1></div>;
-const Terms = () => <div className="container" style={{ marginTop: '120px', minHeight: '70vh' }}><h1>Terms of Service Coming Soon</h1></div>;
 
 // AnimatePresence wrapper component to access location
 const AnimatedRoutes = () => {
@@ -54,6 +56,16 @@ const AnimatedRoutes = () => {
         <Route path="/terms" element={
           <PageTransition>
             <Terms />
+          </PageTransition>
+        } />
+        <Route path="/cookies" element={
+          <PageTransition>
+            <CookiePolicy />
+          </PageTransition>
+        } />
+        <Route path="/support" element={
+          <PageTransition>
+            <Support />
           </PageTransition>
         } />
         <Route path="*" element={

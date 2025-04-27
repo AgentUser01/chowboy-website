@@ -9,11 +9,24 @@ import aiRecipeDiscovery from '../assets/images/ai-recipe-discovery.png';
 import groceryListManagement from '../assets/images/chowboy_grocery-list-management.png';
 import aiPoweredFeatures from '../assets/images/ai-powered-features.png';
 import cookingTips from '../assets/images/cooking-tips.png';
-import { fadeInUp, fadeInLeft, fadeInRight } from '../utils/animations';
+// Use the SVG component instead
+import AppStoreBadge from '../components/AppStoreBadge';
+import { fadeInUp, contentGroup } from '../utils/animations';
+
+// Image style with rounded corners
+const imageStyle = {
+  borderRadius: '32px',
+  WebkitBorderRadius: '32px',
+  MozBorderRadius: '32px',
+  overflow: 'hidden',
+  maxWidth: '100%',
+  maxHeight: '100%',
+  objectFit: 'contain',
+};
 
 const Features = () => {
   // Helper function to render lists so we don't duplicate checkmarks
-  const renderFeatureList = (items, delay = 0.5, staggerDelay = 0.1) => (
+  const renderFeatureList = (items) => (
     <ul className="feature-list">
       {items.map((item, index) => (
         <li key={index}>{item}</li>
@@ -23,22 +36,26 @@ const Features = () => {
   
   return (
     <div className="features-container">
-      <AnimatedSection className="features-header">
+      <AnimatedSection className="features-header" variants={contentGroup}>
         <AnimatedText as="h1" delay={0.1}>
           Chowboy Features
         </AnimatedText>
-        <AnimatedText as="p" delay={0.3}>
+        <AnimatedText as="p" delay={0.2}>
           Everything you need to elevate your cooking experience
         </AnimatedText>
       </AnimatedSection>
       
       <section className="features-list">
-        <AnimatedCard className="feature-item highlight-feature" delay={0.1}>
+        <AnimatedCard 
+          className="feature-item highlight-feature" 
+          delay={0.1}
+          scrollEffect={true}
+        >
           <div className="feature-content">
-            <AnimatedText as="h2" variants={fadeInUp} delay={0.2}>
+            <AnimatedText as="h2" variants={fadeInUp} delay={0.1}>
               Import Recipes From Anywhere
             </AnimatedText>
-            <AnimatedText as="p" variants={fadeInUp} delay={0.3}>
+            <AnimatedText as="p" variants={fadeInUp} delay={0.2}>
               Transform any recipe URL into a beautiful, structured recipe card with a single tap. Import from websites, social media, blogs—literally anywhere—and have it instantly organized in your personal cookbook.
             </AnimatedText>
             {renderFeatureList([
@@ -49,19 +66,30 @@ const Features = () => {
           </div>
           <AnimatedSection 
             className="feature-image" 
-            variants={fadeInRight}
-            delay={0.3}
+            variants={fadeInUp}
+            delay={0.2}
+            parallax={true}
+            parallaxFactor={0.1}
           >
-            <img src={importFromAnywhere} alt="Import recipes from anywhere" className="feature-img iphone-screenshot" />
+            <img 
+              src={importFromAnywhere} 
+              alt="Import recipes from anywhere" 
+              className="feature-img iphone-screenshot" 
+              style={imageStyle}
+            />
           </AnimatedSection>
         </AnimatedCard>
         
-        <AnimatedCard className="feature-item" delay={0.2}>
+        <AnimatedCard 
+          className="feature-item" 
+          delay={0.05}
+          scrollEffect={true}
+        >
           <div className="feature-content">
-            <AnimatedText as="h2" variants={fadeInUp} delay={0.3}>
+            <AnimatedText as="h2" variants={fadeInUp} delay={0.1}>
               AI Recipe Discovery
             </AnimatedText>
-            <AnimatedText as="p" variants={fadeInUp} delay={0.4}>
+            <AnimatedText as="p" variants={fadeInUp} delay={0.2}>
               Our intelligent algorithm learns your taste preferences and dietary needs to recommend recipes you'll love. No more endless scrolling to find the perfect meal.
             </AnimatedText>
             {renderFeatureList([
@@ -72,19 +100,30 @@ const Features = () => {
           </div>
           <AnimatedSection 
             className="feature-image" 
-            variants={fadeInRight}
-            delay={0.4}
+            variants={fadeInUp}
+            delay={0.2}
+            parallax={true}
+            parallaxFactor={0.1}
           >
-            <img src={aiRecipeDiscovery} alt="AI recipe discovery" className="feature-img iphone-screenshot" />
+            <img 
+              src={aiRecipeDiscovery} 
+              alt="AI recipe discovery" 
+              className="feature-img iphone-screenshot" 
+              style={imageStyle}
+            />
           </AnimatedSection>
         </AnimatedCard>
         
-        <AnimatedCard className="feature-item reversed" delay={0.3}>
+        <AnimatedCard 
+          className="feature-item reversed" 
+          delay={0.05}
+          scrollEffect={true}
+        >
           <div className="feature-content">
-            <AnimatedText as="h2" variants={fadeInUp} delay={0.3}>
+            <AnimatedText as="h2" variants={fadeInUp} delay={0.1}>
               Grocery List Management
             </AnimatedText>
-            <AnimatedText as="p" variants={fadeInUp} delay={0.4}>
+            <AnimatedText as="p" variants={fadeInUp} delay={0.2}>
               Create and manage shopping lists with ease. Add items directly from recipes or manually to stay organized on your shopping trips.
             </AnimatedText>
             {renderFeatureList([
@@ -95,19 +134,30 @@ const Features = () => {
           </div>
           <AnimatedSection 
             className="feature-image" 
-            variants={fadeInLeft}
-            delay={0.4}
+            variants={fadeInUp}
+            delay={0.2}
+            parallax={true}
+            parallaxFactor={0.1}
           >
-            <img src={groceryListManagement} alt="Grocery list management" className="feature-img iphone-screenshot" />
+            <img 
+              src={groceryListManagement} 
+              alt="Grocery list management" 
+              className="feature-img iphone-screenshot" 
+              style={imageStyle}
+            />
           </AnimatedSection>
         </AnimatedCard>
         
-        <AnimatedCard className="feature-item" delay={0.4}>
+        <AnimatedCard 
+          className="feature-item" 
+          delay={0.05}
+          scrollEffect={true}
+        >
           <div className="feature-content">
-            <AnimatedText as="h2" variants={fadeInUp} delay={0.3}>
+            <AnimatedText as="h2" variants={fadeInUp} delay={0.1}>
               AI-Powered Features
             </AnimatedText>
-            <AnimatedText as="p" variants={fadeInUp} delay={0.4}>
+            <AnimatedText as="p" variants={fadeInUp} delay={0.2}>
               Enhance your cooking experience with our suite of AI-powered tools, providing nutritional insights, wine pairings, and recipe variations tailored to your preferences.
             </AnimatedText>
             {renderFeatureList([
@@ -119,19 +169,30 @@ const Features = () => {
           </div>
           <AnimatedSection 
             className="feature-image" 
-            variants={fadeInRight}
-            delay={0.4}
+            variants={fadeInUp}
+            delay={0.2}
+            parallax={true}
+            parallaxFactor={0.1}
           >
-            <img src={aiPoweredFeatures} alt="AI-powered features" className="feature-img iphone-screenshot" />
+            <img 
+              src={aiPoweredFeatures} 
+              alt="AI-powered features" 
+              className="feature-img iphone-screenshot" 
+              style={imageStyle}
+            />
           </AnimatedSection>
         </AnimatedCard>
 
-        <AnimatedCard className="feature-item reversed" delay={0.5}>
+        <AnimatedCard 
+          className="feature-item reversed" 
+          delay={0.05}
+          scrollEffect={true}
+        >
           <div className="feature-content">
-            <AnimatedText as="h2" variants={fadeInUp} delay={0.3}>
+            <AnimatedText as="h2" variants={fadeInUp} delay={0.1}>
               Cooking Tips & Substitutes
             </AnimatedText>
-            <AnimatedText as="p" variants={fadeInUp} delay={0.4}>
+            <AnimatedText as="p" variants={fadeInUp} delay={0.2}>
               Never worry about missing ingredients or techniques again. Get expert cooking tips and ingredient substitution suggestions directly in your recipes.
             </AnimatedText>
             {renderFeatureList([
@@ -142,32 +203,36 @@ const Features = () => {
           </div>
           <AnimatedSection 
             className="feature-image" 
-            variants={fadeInLeft}
-            delay={0.4}
+            variants={fadeInUp}
+            delay={0.2}
+            parallax={true}
+            parallaxFactor={0.1}
           >
-            <img src={cookingTips} alt="Cooking tips and substitutes" className="feature-img iphone-screenshot" />
+            <img 
+              src={cookingTips} 
+              alt="Cooking tips and substitutes" 
+              className="feature-img iphone-screenshot" 
+              style={imageStyle}
+            />
           </AnimatedSection>
         </AnimatedCard>
       </section>
 
-      <AnimatedSection className="features-cta" delay={0.8}>
-        <AnimatedText as="h2" variants={fadeInUp} delay={0.3}>
+      <AnimatedSection 
+        className="features-cta" 
+        delay={0.1}
+        parallax={true}
+        parallaxFactor={0.05}
+      >
+        <AnimatedText as="h2" variants={fadeInUp} delay={0.1}>
           Ready to transform your cooking experience?
         </AnimatedText>
-        <AnimatedText as="p" variants={fadeInUp} delay={0.4}>
+        <AnimatedText as="p" variants={fadeInUp} delay={0.2}>
           Download Chowboy today and start discovering recipes tailored to your taste.
         </AnimatedText>
-        <AnimatedSection className="download-buttons" variants={fadeInUp} delay={0.5}>
-          <a href="https://apps.apple.com" className="app-store-button">
-            <div className="apple-logo">
-              <svg viewBox="0 0 24 24" width="38" height="38" fill="white">
-                <path d="M16.3,10.3c0-2.1,1.7-3.2,1.8-3.2c-1-1.4-2.5-1.6-3-1.6C13.7,5.3,12.7,6,12.1,6c-0.6,0-1.5-0.6-2.5-0.6c-1.3,0-2.4,0.7-3.1,1.9 c-1.3,2.3-0.3,5.6,0.9,7.5c0.6,0.9,1.4,1.9,2.3,1.8c0.9,0,1.3-0.6,2.4-0.6c1.1,0,1.4,0.6,2.4,0.6c1,0,1.6-0.9,2.2-1.8 c0.7-1,1-2,1-2.1C17.7,12.7,16.3,12,16.3,10.3z M14.4,3C15,2.3,15.3,1.4,15.2,0.5c-0.8,0-1.7,0.5-2.2,1.2C12.5,2.3,12,3.3,12.2,4.1 C13.1,4.2,13.8,3.7,14.4,3z"/>
-              </svg>
-            </div>
-            <div className="button-text">
-              <span>Download on the</span>
-              <strong>App Store</strong>
-            </div>
+        <AnimatedSection className="download-buttons" variants={fadeInUp} delay={0.3}>
+          <a href="https://apps.apple.com" className="official-app-store-badge">
+            <AppStoreBadge />
           </a>
         </AnimatedSection>
       </AnimatedSection>
@@ -175,4 +240,4 @@ const Features = () => {
   );
 };
 
-export default Features; 
+export default Features;

@@ -41,6 +41,20 @@ const Navbar = () => {
           chowboy
         </Link>
         
+        {/* Desktop Navigation Menu */}
+        <ul className="nav-menu desktop-menu">
+          <li className="nav-item">
+            <Link to="/features" className="nav-link features">
+              features ✨
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/careers" className="nav-link hiring">
+              we're hiring! 👩‍💻
+            </Link>
+          </li>
+        </ul>
+        
         <div className={`hamburger-menu ${menuOpen ? 'active' : ''}`} onClick={toggleMenu} aria-label="Menu">
           <span className="hamburger-bar"></span>
           <span className="hamburger-bar"></span>
@@ -61,8 +75,8 @@ const Navbar = () => {
           
           <ul className="nav-menu">
             <li className="nav-item">
-              <Link to="/features" className="nav-link" onClick={() => setMenuOpen(false)}>
-                features
+              <Link to="/features" className="nav-link features" onClick={() => setMenuOpen(false)}>
+                features ✨
               </Link>
             </li>
             <li className="nav-item">

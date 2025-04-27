@@ -17,7 +17,7 @@ const AnimatedImage = ({
   duration,
   once = true,
   threshold = 0.2,
-  borderRadius = '12px',
+  borderRadius = '32px',
   shadow = true,
   hoverEffect = true,
   ...props

@@ -76,47 +76,30 @@ const Privacy = () => {
             <h3>Location Data</h3>
             <p>Only if you explicitly allow and only when using location-specific features. This processing is based on your consent, which you can withdraw at any time.</p>
           </div>
+          <div className="data-category">
+            <h3>Purchase Information</h3>
+            <p>We do not collect or store your payment method or billing information. All transactions are handled by Apple's In-App Purchase system. We only receive confirmation of your subscription status and do not have access to your payment details.</p>
+          </div>
         </section>
 
         <section className="privacy-section">
           <h2>Analytics</h2>
-          <p>
-            Chowboy collects anonymous usage statistics to improve the app experience. This includes information about which 
-            features are most popular and how the app is used.
-          </p>
-          <p>
-            We process this data based on our legitimate interest in improving our services. The analytics we use are 
-            privacy-focused and don't track personal information.
-          </p>
-          <p>
-            If you provide your email address to Chowboy, we maintain separation between your account information and anonymous 
-            usage data. We use this information only to provide services to you and improve the app. We never sell or share your 
-            data with third parties for marketing purposes.
-          </p>
+          <p>Chowboy uses Firebase Analytics to collect anonymized usage statistics for improving the app experience. We collect events such as feature usage, session duration, and crash reports. We do not collect any personally identifiable information through analytics.</p>
+          <p>Analytics data is retained in Firebase for up to 90 days, after which it is aggregated or deleted.</p>
         </section>
 
         <section className="privacy-section">
           <h2>Third-Party Services</h2>
-          <p>
-            We share your data with certain third parties to provide our services:
-          </p>
+          <p>We share your data with certain third parties to provide our services:</p>
           <ul className="bullet-list">
-            <li>
-              <strong>Cloud storage providers:</strong> To securely store and back up your data. These providers receive your account 
-              information and recipe data.
-            </li>
-            <li>
-              <strong>Analytics providers:</strong> To help us improve and optimize the app. These providers receive device data and 
-              anonymous usage data.
-            </li>
+            <li><strong>Cloud storage providers (Firebase Storage, Cloud Firestore):</strong> To securely store and back up your account and recipe data.</li>
+            <li><strong>Analytics providers (Firebase Analytics):</strong> To help us improve and optimize the app. These providers receive device data and anonymous usage data.</li>
           </ul>
-          <p>
-            We ensure all third-party providers comply with data protection regulations and have appropriate safeguards in place 
-            when data is transferred outside your region.
-          </p>
-          <p>
-            Chowboy does not use third-party ad networks, and we do not collect data for advertising purposes.
-          </p>
+        </section>
+
+        <section className="privacy-section">
+          <h2>App Tracking Transparency</h2>
+          <p>Our iOS app uses Apple's App Tracking Transparency framework to request permission before tracking you across apps and websites owned by other companies. We will only track you if you grant permission and you can change this at any time in your device's Settings under Privacy &gt; Tracking.</p>
         </section>
 
         <section className="privacy-section">

@@ -6,65 +6,87 @@ export const fadeIn = {
   hidden: { opacity: 0 },
   visible: { 
     opacity: 1,
-    transition: { duration: 0.6, ease: "easeOut" }
+    transition: { 
+      duration: 0.8, 
+      ease: [0.16, 1, 0.3, 1] // Gentle ease-out curve for smoother motion
+    }
   }
 };
 
 export const fadeInUp = {
-  hidden: { opacity: 0, y: 30 },
+  hidden: { opacity: 0, y: 20, transform: 'translateZ(0)' },
   visible: { 
     opacity: 1, 
     y: 0,
-    transition: { duration: 0.6, ease: "easeOut" }
+    transform: 'translateZ(0)',
+    transition: { 
+      duration: 0.9, 
+      ease: [0.16, 1, 0.3, 1] // Apple-style spring curve
+    }
   }
 };
 
 export const fadeInDown = {
-  hidden: { opacity: 0, y: -30 },
+  hidden: { opacity: 0, y: -20, transform: 'translateZ(0)' },
   visible: { 
     opacity: 1, 
     y: 0,
-    transition: { duration: 0.6, ease: "easeOut" }
+    transform: 'translateZ(0)',
+    transition: { 
+      duration: 0.9, 
+      ease: [0.16, 1, 0.3, 1]
+    }
   }
 };
 
 export const fadeInLeft = {
-  hidden: { opacity: 0, x: -30 },
+  hidden: { opacity: 0, x: -20, transform: 'translateZ(0)' },
   visible: { 
     opacity: 1, 
     x: 0,
-    transition: { duration: 0.6, ease: "easeOut" }
+    transform: 'translateZ(0)',
+    transition: { 
+      duration: 0.9, 
+      ease: [0.16, 1, 0.3, 1]
+    }
   }
 };
 
 export const fadeInRight = {
-  hidden: { opacity: 0, x: 30 },
+  hidden: { opacity: 0, x: 20, transform: 'translateZ(0)' },
   visible: { 
     opacity: 1, 
     x: 0,
-    transition: { duration: 0.6, ease: "easeOut" }
+    transform: 'translateZ(0)',
+    transition: { 
+      duration: 0.9, 
+      ease: [0.16, 1, 0.3, 1]
+    }
   }
 };
 
 // Staggered children animations
 export const staggerContainer = {
-  hidden: { opacity: 0 },
+  hidden: { opacity: 1 },
   visible: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.1,
-      delayChildren: 0.2,
+      staggerChildren: 0.08, // Smoother staggering
+      delayChildren: 0.1,
     }
   }
 };
 
 // Scale animations
 export const scaleUp = {
-  hidden: { opacity: 0, scale: 0.8 },
+  hidden: { opacity: 0, scale: 0.95 }, // Less dramatic scale change
   visible: { 
     opacity: 1, 
     scale: 1,
-    transition: { duration: 0.5, ease: "easeOut" }
+    transition: { 
+      duration: 0.75, 
+      ease: [0.16, 1, 0.3, 1]
+    }
   }
 };
 
@@ -72,14 +94,14 @@ export const scaleUp = {
 export const textReveal = {
   hidden: { 
     opacity: 0,
-    y: 20,
+    y: 15, // Smaller distance for more subtle animation
   },
   visible: { 
     opacity: 1,
     y: 0,
     transition: { 
-      duration: 0.5,
-      ease: [0.25, 0.1, 0.25, 1.0], // Custom cubic-bezier for a more natural feel
+      duration: 0.8,
+      ease: [0.16, 1, 0.3, 1], // Apple-style curve
     }
   }
 };
@@ -100,14 +122,14 @@ export const breathe = {
 
 // Hover animations
 export const hoverScale = {
-  scale: 1.03,
-  transition: { duration: 0.3 }
+  scale: 1.02, // More subtle scale
+  transition: { duration: 0.4 }
 };
 
 export const hoverElevate = {
-  y: -5,
-  boxShadow: "0 10px 20px rgba(0,0,0,0.1)",
-  transition: { duration: 0.3 }
+  y: -4, // More subtle lift
+  boxShadow: "0 10px 20px rgba(0,0,0,0.08)",
+  transition: { duration: 0.4 }
 };
 
 // Page transitions
@@ -115,11 +137,11 @@ export const pageTransition = {
   hidden: { opacity: 0 },
   visible: { 
     opacity: 1,
-    transition: { duration: 0.5, ease: "easeOut" }
+    transition: { duration: 0.7, ease: [0.16, 1, 0.3, 1] }
   },
   exit: { 
     opacity: 0,
-    transition: { duration: 0.3, ease: "easeIn" }
+    transition: { duration: 0.4, ease: [0.16, 1, 0.3, 1] }
   }
 };
 
@@ -154,8 +176,8 @@ export const getReducedMotionVariants = (preferReducedMotion) => {
 export const cardAppear = {
   hidden: { 
     opacity: 0, 
-    y: 30,
-    scale: 0.95
+    y: 25,
+    scale: 0.97
   },
   visible: { 
     opacity: 1, 
@@ -163,9 +185,9 @@ export const cardAppear = {
     scale: 1,
     transition: { 
       type: "spring",
-      stiffness: 300,
-      damping: 24,
-      duration: 0.8
+      stiffness: 220, // Reduced stiffness for smoother animation
+      damping: 26,    // Increased damping to prevent bouncing
+      duration: 0.9
     }
   }
 };
@@ -174,16 +196,40 @@ export const cardAppear = {
 export const imageLoad = {
   hidden: { 
     opacity: 0,
-    scale: 1.1,
-    filter: "blur(10px)" 
+    scale: 1.05, // Reduced scale for more subtle effect
+    filter: "blur(8px)" 
   },
   visible: { 
     opacity: 1,
     scale: 1,
     filter: "blur(0px)",
     transition: { 
-      duration: 0.8,
-      ease: [0.6, 0.05, 0.01, 0.99]
+      duration: 1,
+      ease: [0.16, 1, 0.3, 1]
+    }
+  }
+};
+
+// Parallax scroll effect for images - new
+export const parallaxScroll = {
+  hidden: { y: 0 },
+  visible: { 
+    y: 0,
+    transition: { 
+      duration: 0.1, // Fast response to scroll
+    }
+  }
+};
+
+// Smooth content reveal group - new
+export const contentGroup = {
+  hidden: { opacity: 1 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.08,
+      delayChildren: 0.1,
+      when: "beforeChildren" // Ensures parent is visible before children animate
     }
   }
 }; 

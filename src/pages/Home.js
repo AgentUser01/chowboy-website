@@ -8,7 +8,7 @@ import { fadeInLeft, fadeInRight, fadeInUp } from '../utils/animations';
 // Import images for feature rotation
 import appPreviewImage from '../assets/images/chowboy-app-preview.png';
 import profilePageImage from '../assets/images/profile-page.png';
-import aiRecipeDiscoveryImage from '../assets/images/ai-recipe-discovery.png';
+import aiRecipeDiscoveryImage from '../assets/images/ai-recipe-discovery 3.png';
 import groceryListManagementImage from '../assets/images/chowboy_grocery-list-management.png';
 
 // Use the SVG component instead of importing it directly

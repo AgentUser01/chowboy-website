@@ -5,10 +5,10 @@ import AnimatedText from '../components/animated/AnimatedText';
 import AnimatedCard from '../components/animated/AnimatedCard';
 // Import images
 import importFromAnywhere from '../assets/images/import-from-anywhere.png';
-import aiRecipeDiscovery from '../assets/images/ai-recipe-discovery.png';
+import aiRecipeDiscovery from '../assets/images/ai-recipe-discovery 3.png';
 import groceryListManagement from '../assets/images/chowboy_grocery-list-management.png';
-import aiPoweredFeatures from '../assets/images/ai-powered-features.png';
-import cookingTips from '../assets/images/cooking-tips.png';
+import aiPoweredFeatures from '../assets/images/ai-powered-features 3.png';
+import cookingTips from '../assets/images/cooking-tips 3.png';
 // Use the SVG component instead
 import AppStoreBadge from '../components/AppStoreBadge';
 import { fadeInUp, contentGroup } from '../utils/animations';

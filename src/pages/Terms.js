@@ -7,7 +7,7 @@ const Terms = () => {
       <div className="container">
         <header className="privacy-header">
           <h1>Terms of Service</h1>
-          <p className="last-updated">Last updated April 1, 2025</p>
+          <p className="last-updated">Last updated October 22, 2024</p>
         </header>
 
         <section className="privacy-summary">
@@ -148,7 +148,7 @@ const Terms = () => {
         <section className="privacy-section">
           <h2>Contact Us</h2>
           <p>
-            If you have questions about these Terms, contact us at <a href="mailto:help@chowboy.io">help@chowboy.io</a> or mail to Chowboy, Montreal, Canada.
+            If you have questions about these Terms, contact us at <a href="mailto:support@chowboy.io">support@chowboy.io</a> or mail to Chowboy, Montreal, Canada.
           </p>
         </section>
 
@@ -166,6 +166,51 @@ const Terms = () => {
             <li><strong>Notices:</strong> We may provide notices by email, in-app notification, or posting on our website. You consent to receive electronic communications and agree that all agreements, notices, disclosures, and other communications we provide satisfy any legal requirement.
             </li>
           </ul>
+        </section>
+
+        <section className="terms-section">
+          <h2>AI-Generated Content Disclaimer</h2>
+          <p>Chowboy uses artificial intelligence to enhance recipes and provide cooking suggestions:</p>
+          <ul>
+            <li><strong>No Professional Advice:</strong> AI-generated content is for informational purposes only and should not be considered professional culinary, nutritional, or medical advice.</li>
+            <li><strong>User Responsibility:</strong> You are solely responsible for verifying the accuracy, safety, and suitability of all AI-generated suggestions before use.</li>
+            <li><strong>Food Safety:</strong> Always follow proper food safety guidelines. AI suggestions may not account for food allergies, dietary restrictions, or safety considerations specific to your situation.</li>
+            <li><strong>Ingredient Substitutions:</strong> AI-generated ingredient substitutions may affect taste, texture, nutrition, or safety. Use your judgment and cooking knowledge.</li>
+            <li><strong>Third-Party AI:</strong> We use third-party AI services (OpenAI, DeepSeek) to generate content. While we strive for quality, we cannot guarantee the accuracy of AI-generated content.</li>
+            <li><strong>Liability:</strong> Chowboy disclaims all liability for any harm, injury, or damage resulting from the use of AI-generated content.</li>
+          </ul>
+        </section>
+
+        <section className="terms-section">
+          <h2>Data Processing & Privacy</h2>
+          <p>By using Chowboy, you agree to the following data processing terms:</p>
+          <ul>
+            <li><strong>Recipe Data:</strong> Recipe content you create or import may be processed by our AI services to provide enhancements and suggestions.</li>
+            <li><strong>Analytics:</strong> We collect anonymous usage analytics to improve the app experience. This data cannot identify you personally.</li>
+            <li><strong>iCloud Sync:</strong> When enabled, your data is synchronized using Apple's iCloud service, subject to Apple's privacy policy.</li>
+            <li><strong>Server Communication:</strong> The app communicates with our servers for authentication, subscription verification, and feature access.</li>
+            <li><strong>Third-Party Services:</strong> We use Firebase (Google) for app infrastructure and analytics, and AI services for recipe enhancement.</li>
+            <li><strong>Data Retention:</strong> We retain your account data as long as your account is active. You may request deletion at any time by contacting support.</li>
+            <li><strong>Cross-Border Transfers:</strong> Your data may be processed in countries outside your residence for service provision.</li>
+          </ul>
+        </section>
+
+        <section className="terms-section">
+          <h2>Digital Content & Subscriptions</h2>
+          <p>Chowboy offers digital content and subscription services:</p>
+          <ul>
+            <li><strong>Subscription Access:</strong> Premium features are available through paid subscriptions processed by Apple's App Store.</li>
+            <li><strong>Usage Credits:</strong> Subscriptions include AI feature credits. Credits are non-transferable and expire with your subscription.</li>
+            <li><strong>Auto-Renewal:</strong> Subscriptions automatically renew unless cancelled at least 24 hours before the current period ends.</li>
+            <li><strong>Family Sharing:</strong> Subscriptions can be shared with family members through Apple's Family Sharing feature. The family organizer is responsible for all charges and managing access.</li>
+            <li><strong>Refunds:</strong> Subscription refunds are handled by Apple according to their refund policy. Contact Apple Support for refund requests.</li>
+            <li><strong>Feature Changes:</strong> We may modify, add, or remove features from subscription tiers with reasonable notice.</li>
+            <li><strong>Service Availability:</strong> We strive for 99.9% uptime but cannot guarantee uninterrupted service.</li>
+            <li><strong>Cancellation:</strong> You may cancel your subscription anytime through your Apple ID settings. Access continues until the end of your billing period.</li>
+          </ul>
+        </section>
+
+        <section className="terms-section">
         </section>
       </div>
     </div>

@@ -15,9 +15,8 @@
     var l = window.location;
     var segmentCount = 1; // Number of segments to remove
     
-    var redirectUrl = l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '');
-    redirectUrl += l.pathname.split('/').slice(0, 1 + segmentCount).join('/') + '/?p=/';
-    redirectUrl += l.pathname.slice(1).split('/').slice(segmentCount).join('/');
+    var redirectUrl = l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') + '/?p=';
+    redirectUrl += l.pathname.slice(1);
     redirectUrl += l.search ? ('&q=' + l.search.slice(1).replace(/&/g, '~and~')) : '';
     redirectUrl += l.hash;
     
@@ -28,7 +27,7 @@
   <h2>Redirecting...</h2>
   <p>If you are not redirected automatically, please click <a id="redirect-link" href="/">here</a>.</p>
   <script>
-    document.getElementById('redirect-link').href = window.location.protocol + '//' + window.location.host + '/chowboy-website/';
+    document.getElementById('redirect-link').href = window.location.protocol + '//' + window.location.host + '/';
   </script>
 </body>
 </html> 

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import '../styles/FeatureRotator.css';
 
@@ -44,12 +44,12 @@ const FeatureRotator = ({ features, interval = 5000, showButtons = true, autoPla
   const [isPaused, setIsPaused] = useState(false);
   
   // Function to go to next slide
-  const nextSlide = () => {
+  const nextSlide = useCallback(() => {
     setSlide(([current, _]) => [
       (current + 1) % features.length,
       1
     ]);
-  };
+  }, [features.length]);
   
   // Function to go to previous slide
   const prevSlide = () => {
@@ -68,7 +68,7 @@ const FeatureRotator = ({ features, interval = 5000, showButtons = true, autoPla
     }, interval);
     
     return () => clearTimeout(timer);
-  }, [currentIndex, isPaused, interval, autoPlay]);
+  }, [currentIndex, isPaused, interval, autoPlay, nextSlide]);
   
   // Get current feature to display
   const currentFeature = features[currentIndex];

@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { motion, useAnimation, useScroll, useTransform } from 'framer-motion';
 import useInView from '../../hooks/useInView';
-import { fadeInUp, hoverElevate, contentGroup } from '../../utils/animations';
+import { fadeInUp, hoverElevate } from '../../utils/animations';
 import '../../styles/AnimatedCard.css';
 
 /**

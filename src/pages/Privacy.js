@@ -98,6 +98,70 @@ const Privacy = () => {
         </section>
 
         <section className="privacy-section">
+          <h2>Artificial Intelligence & Machine Learning</h2>
+          <p>Chowboy uses artificial intelligence services to enhance your recipe experience:</p>
+          <ul className="bullet-list">
+            <li><strong>Recipe Enhancement:</strong> We send recipe data to OpenAI and DeepSeek APIs to generate equipment recommendations, cooking tips, and recipe improvements. This data is processed temporarily and not stored by the AI providers.</li>
+            <li><strong>AI Costs & Usage:</strong> AI features consume credits from your subscription balance. Usage is tracked for billing purposes only.</li>
+            <li><strong>Data Processing:</strong> Recipe text and ingredients may be sent to AI services. We do not send personal information like your name or contact details to AI providers.</li>
+            <li><strong>AI Model Selection:</strong> The app automatically selects between OpenAI and DeepSeek based on availability and performance. You can view which AI provider is currently active in Settings.</li>
+            <li><strong>Data Retention:</strong> AI providers process data temporarily during API calls but do not store your recipe information permanently.</li>
+          </ul>
+        </section>
+
+        <section className="privacy-section">
+          <h2>iCloud & Data Synchronization</h2>
+          <p>Chowboy uses Apple's iCloud and CloudKit services to synchronize your data across your devices:</p>
+          <ul className="bullet-list">
+            <li><strong>What is Synchronized:</strong> Your saved recipes, cookbooks, preferences, and profile information are stored in your personal iCloud account (container: iCloud.io.chowboy.ios).</li>
+            <li><strong>Your Control:</strong> You can disable iCloud synchronization in your device's iCloud settings. This will stop data from syncing between devices but may affect app functionality.</li>
+            <li><strong>Apple's Privacy:</strong> iCloud data is subject to Apple's privacy policy and terms of service. We cannot access your iCloud data directly.</li>
+            <li><strong>Local Storage:</strong> When iCloud is disabled, data is stored locally on your device only.</li>
+            <li><strong>Data Backup:</strong> iCloud automatically backs up your Chowboy data as part of your iCloud backup.</li>
+          </ul>
+        </section>
+
+        <section className="privacy-section">
+          <h2>Device Permissions & Access</h2>
+          <p>Chowboy requests the following device permissions:</p>
+          <ul className="bullet-list">
+            <li><strong>Camera:</strong> To take photos for profile pictures and scan recipes from images. Only requested when you choose to use these features.</li>
+            <li><strong>Photo Library:</strong> To select existing photos for profile pictures and import recipes from saved images.</li>
+            <li><strong>Notifications:</strong> To send cooking timer alerts, recipe reminders, and app updates. You can customize notification preferences in Settings.</li>
+            <li><strong>Reminders & Calendar:</strong> To export grocery lists to your Reminders app and create cooking timer reminders. Only used when you explicitly choose to export data.</li>
+            <li><strong>Notes:</strong> To export grocery lists to your Notes app when you select this option.</li>
+            <li><strong>Background Processing:</strong> To complete recipe downloads and sync data when the app is not actively in use.</li>
+          </ul>
+          <p>All permissions are optional and can be revoked in your device's Settings app.</p>
+        </section>
+
+        <section className="privacy-section">
+          <h2>Offline Storage & Downloads</h2>
+          <p>Chowboy allows you to download recipes for offline use:</p>
+          <ul className="bullet-list">
+            <li><strong>Downloaded Content:</strong> Recipe text, images, and associated data are stored locally on your device in the app's sandbox.</li>
+            <li><strong>Storage Location:</strong> Offline recipes are stored in your device's Documents directory and are included in device backups.</li>
+            <li><strong>Data Management:</strong> You can manage downloaded recipes in the app's Offline section. Deleting the app will remove all offline content.</li>
+            <li><strong>Cache Management:</strong> The app automatically manages cached images and data to optimize storage space.</li>
+            <li><strong>No External Access:</strong> Offline data cannot be accessed by other apps or services.</li>
+          </ul>
+        </section>
+
+        <section className="privacy-section">
+          <h2>Payment & Subscription Information</h2>
+          <p>Chowboy uses Apple's StoreKit for all payment processing:</p>
+          <ul className="bullet-list">
+            <li><strong>Apple Handles Payments:</strong> We never collect or store your payment method, billing address, or financial information. All payments are processed by Apple.</li>
+            <li><strong>What We Receive:</strong> We only receive confirmation of your subscription status, transaction IDs, and entitlement information from Apple.</li>
+            <li><strong>Family Sharing:</strong> If you share your subscription through Apple's Family Sharing, we receive information about the family sharing status but not personal details of family members.</li>
+            <li><strong>Usage Tracking:</strong> We track your AI feature usage and subscription balance for billing and feature access purposes.</li>
+            <li><strong>Offline Purchase Queue:</strong> If a purchase cannot be verified immediately, it may be queued locally until network connectivity is restored.</li>
+            <li><strong>Subscription Verification:</strong> Purchase receipts are verified with our servers to ensure proper access to premium features.</li>
+            <li><strong>Server Validation:</strong> Subscription status is validated server-side to prevent unauthorized access to premium content.</li>
+          </ul>
+        </section>
+
+        <section className="privacy-section">
           <h2>App Tracking Transparency</h2>
           <p>Our iOS app uses Apple's App Tracking Transparency framework to request permission before tracking you across apps and websites owned by other companies. We will only track you if you grant permission and you can change this at any time in your device's Settings under Privacy &gt; Tracking.</p>
         </section>
@@ -165,7 +229,7 @@ const Privacy = () => {
             <li><strong>Withdraw Consent:</strong> Withdraw previously given consent for specific processing</li>
           </ul>
           <p>
-            To exercise these rights, contact us at <a href="mailto:support@chowboyapp.com">support@chowboyapp.com</a>. 
+            To exercise these rights, contact us at <a href="mailto:support@chowboy.io">support@chowboy.io</a>. 
             We may request verification of your identity before fulfilling your request.
           </p>
         </section>
@@ -209,7 +273,7 @@ const Privacy = () => {
             If you have questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us at:
           </p>
           <p className="contact-email">
-            <a href="mailto:support@chowboyapp.com">support@chowboyapp.com</a>
+            <a href="mailto:support@chowboy.io">support@chowboy.io</a>
           </p>
           <p>
             You have the right to lodge a complaint with your local data protection authority if you believe we have not 

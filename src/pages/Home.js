@@ -5,7 +5,7 @@ import AnimatedText from '../components/animated/AnimatedText';
 import { fadeInLeft, fadeInRight, fadeInUp } from '../utils/animations';
 
 // Import main app preview image
-import appPreviewImage from '../assets/images/chowboy-app-preview.png';
+import appPreviewImage from '../assets/images/ai-recipe-discovery 3.png';
 
 // Use the SVG component instead of importing it directly
 import AppStoreBadge from '../components/AppStoreBadge';

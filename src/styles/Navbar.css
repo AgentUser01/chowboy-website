@@ -238,6 +238,13 @@
   .navbar-logo {
     font-size: 1.6rem;
     z-index: 1001;
+    transition: opacity 0.3s ease;
+  }
+  
+  /* Hide main navbar logo when mobile menu is open */
+  .navbar.menu-open .navbar-logo {
+    opacity: 0;
+    pointer-events: none;
   }
   
   .hamburger-menu {

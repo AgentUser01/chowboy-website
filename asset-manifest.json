@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.ac0c1734.css",
-    "main.js": "/static/js/main.8a6d5078.js",
+    "main.css": "/static/css/main.a88967a3.css",
+    "main.js": "/static/js/main.f468e195.js",
     "static/js/453.7fa5b40e.chunk.js": "/static/js/453.7fa5b40e.chunk.js",
     "static/media/chowboy_grocery-list-management.png": "/static/media/chowboy_grocery-list-management.e63f215c2385d931fab2.png",
     "static/media/chowboy-app-preview.png": "/static/media/chowboy-app-preview.bb1814ae6584bf075606.png",
@@ -10,12 +10,12 @@
     "static/media/cooking-tips 3.png": "/static/media/cooking-tips 3.e289d4af0bbdc4edcf69.png",
     "static/media/ai-powered-features 3.png": "/static/media/ai-powered-features 3.73be7c075fc5c6bbcbb1.png",
     "index.html": "/index.html",
-    "main.ac0c1734.css.map": "/static/css/main.ac0c1734.css.map",
-    "main.8a6d5078.js.map": "/static/js/main.8a6d5078.js.map",
+    "main.a88967a3.css.map": "/static/css/main.a88967a3.css.map",
+    "main.f468e195.js.map": "/static/js/main.f468e195.js.map",
     "453.7fa5b40e.chunk.js.map": "/static/js/453.7fa5b40e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ac0c1734.css",
-    "static/js/main.8a6d5078.js"
+    "static/css/main.a88967a3.css",
+    "static/js/main.f468e195.js"
   ]
 }

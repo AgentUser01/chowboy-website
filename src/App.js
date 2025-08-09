@@ -16,6 +16,7 @@ import Privacy from './pages/Privacy';
 import Terms from './pages/Terms';
 import CookiePolicy from './pages/CookiePolicy';
 import Support from './pages/Support';
+// import Download from './pages/Download';
 
 // Create minimal placeholder components for new routes
 const Blog = () => <div className="container" style={{ marginTop: '120px', minHeight: '70vh' }}><h1>Blog Coming Soon</h1></div>;
@@ -38,6 +39,12 @@ const AnimatedRoutes = () => {
             <Features />
           </PageTransition>
         } />
+        { /* Optional: enable when ready */ }
+        { /* <Route path="/download" element={
+          <PageTransition>
+            <Download />
+          </PageTransition>
+        } /> */ }
         <Route path="/blog" element={
           <PageTransition>
             <Blog />

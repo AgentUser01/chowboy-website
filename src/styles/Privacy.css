@@ -1,8 +1,11 @@
 /* Privacy Policy Page Styles */
 .privacy-page {
-  margin-top: 70px;
   padding-bottom: 60px;
   color: #333;
+}
+
+.privacy-page .container {
+  max-width: 72ch;
 }
 
 .privacy-header {

@@ -3,10 +3,10 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  min-height: 90vh;
+  min-height: calc(90vh - var(--nav-height));
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0.5rem 2rem;
+  padding: calc(var(--space-md)) 2rem 2rem 2rem;
   position: relative;
   overflow: hidden;
 }

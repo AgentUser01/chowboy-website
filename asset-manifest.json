@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.3cc6c044.css",
-    "main.js": "/static/js/main.29147115.js",
-    "static/js/453.8712b07a.chunk.js": "/static/js/453.8712b07a.chunk.js",
+    "main.css": "/static/css/main.c06101ce.css",
+    "main.js": "/static/js/main.5e5b2578.js",
+    "static/js/453.7fa5b40e.chunk.js": "/static/js/453.7fa5b40e.chunk.js",
     "static/media/chowboy_grocery-list-management.png": "/static/media/chowboy_grocery-list-management.e63f215c2385d931fab2.png",
     "static/media/ai-recipe-discovery 3.png": "/static/media/ai-recipe-discovery 3.1fa99a1b839564676453.png",
     "static/media/import-from-anywhere.png": "/static/media/import-from-anywhere.c4b31623d6ff95bace3a.png",
     "static/media/cooking-tips 3.png": "/static/media/cooking-tips 3.e289d4af0bbdc4edcf69.png",
     "static/media/ai-powered-features 3.png": "/static/media/ai-powered-features 3.73be7c075fc5c6bbcbb1.png",
     "index.html": "/index.html",
-    "main.3cc6c044.css.map": "/static/css/main.3cc6c044.css.map",
-    "main.29147115.js.map": "/static/js/main.29147115.js.map",
-    "453.8712b07a.chunk.js.map": "/static/js/453.8712b07a.chunk.js.map"
+    "main.c06101ce.css.map": "/static/css/main.c06101ce.css.map",
+    "main.5e5b2578.js.map": "/static/js/main.5e5b2578.js.map",
+    "453.7fa5b40e.chunk.js.map": "/static/js/453.7fa5b40e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3cc6c044.css",
-    "static/js/main.29147115.js"
+    "static/css/main.c06101ce.css",
+    "static/js/main.5e5b2578.js"
   ]
 }

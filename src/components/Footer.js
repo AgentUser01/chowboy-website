@@ -6,17 +6,17 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-container">
-        <div className="made-with">
-          Made with ❤️ and ☕️ in Montreal
+        <div className="made-with" aria-label="Made with love and coffee in Montreal">
+          made with ❤️ in montreal
         </div>
         
         <div className="footer-links">
-          <a href="mailto:support@chowboy.io">support@chowboy.io</a>
-          <Link to="/support">support</Link>
-          <Link to="/privacy">privacy</Link>
-          <Link to="/cookies">cookie policy</Link>
-          <Link to="/terms">terms</Link>
-          <Link to="/careers">careers</Link>
+          <a href="mailto:support@chowboy.io" aria-label="Email support">support@chowboy.io</a>
+          <Link to="/support" aria-label="Support">support</Link>
+          <Link to="/privacy" aria-label="Privacy">privacy</Link>
+          <Link to="/cookies" aria-label="Cookie policy">cookies</Link>
+          <Link to="/terms" aria-label="Terms">terms</Link>
+          <Link to="/careers" aria-label="Careers">careers</Link>
         </div>
       </div>
     </footer>

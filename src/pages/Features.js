@@ -38,10 +38,10 @@ const Features = () => {
     <div className="features-container">
       <AnimatedSection className="features-header" variants={contentGroup}>
         <AnimatedText as="h1" delay={0.1}>
-          Chowboy Features
+          Features
         </AnimatedText>
         <AnimatedText as="p" delay={0.2}>
-          Everything you need to elevate your cooking experience
+          Cook better, faster — with just what you need.
         </AnimatedText>
       </AnimatedSection>
       
@@ -53,15 +53,15 @@ const Features = () => {
         >
           <div className="feature-content">
             <AnimatedText as="h2" variants={fadeInUp} delay={0.1}>
-              Import Recipes From Anywhere
+              Import from any link
             </AnimatedText>
             <AnimatedText as="p" variants={fadeInUp} delay={0.2}>
-              Transform any recipe URL into a beautiful, structured recipe card with a single tap. Import from websites, social media, blogs—literally anywhere—and have it instantly organized in your personal cookbook.
+              Paste a link. Get a clean recipe card.
             </AnimatedText>
             {renderFeatureList([
-              'Import from any URL, Instagram, TikTok, food blogs, and more',
-              'Automatic transformation into beautiful, standardized recipe cards',
-              'Save and organize your collection for quick access anytime'
+              'Works with websites, Instagram, TikTok',
+              'Auto-formatted into a clean card',
+              'Save and organize in one place'
             ])}
           </div>
           <AnimatedSection 
@@ -73,9 +73,11 @@ const Features = () => {
           >
             <img 
               src={importFromAnywhere} 
-              alt="Import recipes from anywhere" 
+              alt="Import recipes from any link" 
               className="feature-img iphone-screenshot" 
               style={imageStyle}
+              loading="lazy"
+              decoding="async"
             />
           </AnimatedSection>
         </AnimatedCard>
@@ -87,14 +89,14 @@ const Features = () => {
         >
           <div className="feature-content">
             <AnimatedText as="h2" variants={fadeInUp} delay={0.1}>
-              AI Recipe Discovery
+              Recipe picks you’ll love
             </AnimatedText>
             <AnimatedText as="p" variants={fadeInUp} delay={0.2}>
-              Our intelligent algorithm learns your taste preferences and dietary needs to recommend recipes you'll love. No more endless scrolling to find the perfect meal.
+              Personalized to taste and diet.
             </AnimatedText>
             {renderFeatureList([
-              'Personalized recipe suggestions',
-              'Smart filtering by ingredients or cuisine',
+              'Smart filters by ingredients and cuisine',
+              'Learns your likes over time',
               'Save favorites for quick access'
             ])}
           </div>
@@ -107,9 +109,11 @@ const Features = () => {
           >
             <img 
               src={aiRecipeDiscovery} 
-              alt="AI recipe discovery" 
+              alt="AI-powered recipe discovery" 
               className="feature-img iphone-screenshot" 
               style={imageStyle}
+              loading="lazy"
+              decoding="async"
             />
           </AnimatedSection>
         </AnimatedCard>
@@ -121,15 +125,15 @@ const Features = () => {
         >
           <div className="feature-content">
             <AnimatedText as="h2" variants={fadeInUp} delay={0.1}>
-              Grocery List Management
+              Smarter grocery lists
             </AnimatedText>
             <AnimatedText as="p" variants={fadeInUp} delay={0.2}>
-              Create and manage shopping lists with ease. Add items directly from recipes or manually to stay organized on your shopping trips.
+              Build lists from recipes or scratch.
             </AnimatedText>
             {renderFeatureList([
-              'Smart categorization of items',
-              'Recipe-based and custom lists',
-              'Check off items as you shop'
+              'Auto-categorized items',
+              'From recipes or custom items',
+              'Check off as you shop'
             ])}
           </div>
           <AnimatedSection 
@@ -141,9 +145,11 @@ const Features = () => {
           >
             <img 
               src={groceryListManagement} 
-              alt="Grocery list management" 
+              alt="Smart grocery list management" 
               className="feature-img iphone-screenshot" 
               style={imageStyle}
+              loading="lazy"
+              decoding="async"
             />
           </AnimatedSection>
         </AnimatedCard>
@@ -155,16 +161,16 @@ const Features = () => {
         >
           <div className="feature-content">
             <AnimatedText as="h2" variants={fadeInUp} delay={0.1}>
-              AI-Powered Features
+              Nutrition, pairings, and more
             </AnimatedText>
             <AnimatedText as="p" variants={fadeInUp} delay={0.2}>
-              Enhance your cooking experience with our suite of AI-powered tools, providing nutritional insights, wine pairings, and recipe variations tailored to your preferences.
+              On‑demand cooking intel.
             </AnimatedText>
             {renderFeatureList([
-              'Nutritional analysis with macro and micronutrient breakdowns',
-              'Wine pairing suggestions based on flavor profiles',
-              'Recipe variations for dietary adaptations (vegan, gluten-free, etc.)',
-              'Gourmet upgrades and seasonal variations of your favorite recipes'
+              'Nutrition breakdowns that make sense',
+              'Wine pairings by flavor profile',
+              'Easy dietary swaps (vegan, gluten‑free)',
+              'Seasonal twists and gourmet upgrades'
             ])}
           </div>
           <AnimatedSection 
@@ -176,9 +182,11 @@ const Features = () => {
           >
             <img 
               src={aiPoweredFeatures} 
-              alt="AI-powered features" 
+              alt="AI cooking features" 
               className="feature-img iphone-screenshot" 
               style={imageStyle}
+              loading="lazy"
+              decoding="async"
             />
           </AnimatedSection>
         </AnimatedCard>
@@ -190,15 +198,15 @@ const Features = () => {
         >
           <div className="feature-content">
             <AnimatedText as="h2" variants={fadeInUp} delay={0.1}>
-              Cooking Tips & Substitutes
+              Tips and swaps
             </AnimatedText>
             <AnimatedText as="p" variants={fadeInUp} delay={0.2}>
-              Never worry about missing ingredients or techniques again. Get expert cooking tips and ingredient substitution suggestions directly in your recipes.
+              Fixes and smart substitutes, right when you need them.
             </AnimatedText>
             {renderFeatureList([
-              'Technique explanations and troubleshooting',
-              'Smart ingredient substitutes with proper measurements',
-              'Time-saving cooking hacks and tools'
+              'Clear technique help',
+              'Substitutes with correct amounts',
+              'Time‑saving tips and tools'
             ])}
           </div>
           <AnimatedSection 
@@ -210,9 +218,11 @@ const Features = () => {
           >
             <img 
               src={cookingTips} 
-              alt="Cooking tips and substitutes" 
+              alt="Cooking tips and ingredient substitutes" 
               className="feature-img iphone-screenshot" 
               style={imageStyle}
+              loading="lazy"
+              decoding="async"
             />
           </AnimatedSection>
         </AnimatedCard>
@@ -225,10 +235,10 @@ const Features = () => {
         parallaxFactor={0.05}
       >
         <AnimatedText as="h2" variants={fadeInUp} delay={0.1}>
-          Ready to transform your cooking experience?
+          Ready to cook smarter?
         </AnimatedText>
         <AnimatedText as="p" variants={fadeInUp} delay={0.2}>
-          Download Chowboy today and start discovering recipes tailored to your taste.
+          Get Chowboy and start cooking your way.
         </AnimatedText>
         <AnimatedSection className="download-buttons" variants={fadeInUp} delay={0.3}>
           <a href="https://apps.apple.com" className="official-app-store-badge">

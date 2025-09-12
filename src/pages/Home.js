@@ -22,13 +22,13 @@ const Home = () => {
             as="h1"
             delay={0.2}
           >
-            The Smartest Cooking Companion
+            Smarter cooking, zero fuss
           </AnimatedText>
           <AnimatedText 
             as="p"
             delay={0.4}
           >
-            Chowboy is an app utilizing artificial intelligence to help you discover, plan, and prepare meals tailored to your preferences.
+            Find, plan, and cook recipes you’ll love — personalized by AI.
           </AnimatedText>
           <AnimatedText 
             as="div"
@@ -37,7 +37,7 @@ const Home = () => {
           >
             <span className="tag">Effortless</span>
             <h3>Import recipes from anywhere</h3>
-            <p>Turn any recipe URL into a beautiful recipe card. Save from websites, Instagram, TikTok—you name it!</p>
+            <p>Paste a link. Get a clean recipe card — from websites, Instagram, or TikTok.</p>
           </AnimatedText>
           <AnimatedSection 
             className="download-button-container"

@@ -37,25 +37,26 @@ const Navbar = () => {
   return (
     <nav className={`navbar ${scrolled ? 'scrolled' : ''} ${menuOpen ? 'menu-open' : ''}`}>
       <div className="navbar-container">
-        <Link to="/" className="navbar-logo">
+        <Link to="/" className="navbar-logo" aria-label="Chowboy home">
+          <img src="/chowboy-logo.png" alt="" aria-hidden="true" className="navbar-icon" />
           chowboy
         </Link>
         
         {/* Desktop Navigation Menu */}
         <ul className="nav-menu desktop-menu">
           <li className="nav-item">
-            <Link to="/features" className="nav-link features">
-              features ✨
+            <Link to="/features" className="nav-link features" aria-label="View features">
+              features
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="/careers" className="nav-link hiring">
-              we're hiring! 👩‍💻
+            <Link to="/careers" className="nav-link hiring" aria-label="View careers">
+              careers
             </Link>
           </li>
         </ul>
         
-        <div className={`hamburger-menu ${menuOpen ? 'active' : ''}`} onClick={toggleMenu} aria-label="Menu">
+        <div className={`hamburger-menu ${menuOpen ? 'active' : ''}`} onClick={toggleMenu} aria-label="Open menu" role="button" aria-expanded={menuOpen} aria-controls="mobile-nav">
           <span className="hamburger-bar"></span>
           <span className="hamburger-bar"></span>
           <span className="hamburger-bar"></span>
@@ -63,9 +64,10 @@ const Navbar = () => {
         
         <div className={`menu-overlay ${menuOpen ? 'active' : ''}`} onClick={toggleMenu}></div>
         
-        <div className={`nav-drawer ${menuOpen ? 'active' : ''}`}>
+        <div className={`nav-drawer ${menuOpen ? 'active' : ''}`} id="mobile-nav" role="dialog" aria-modal="true">
           <div className="nav-drawer-header">
-            <Link to="/" className="drawer-logo" onClick={() => setMenuOpen(false)}>
+            <Link to="/" className="drawer-logo" onClick={() => setMenuOpen(false)} aria-label="Chowboy home">
+              <img src="/chowboy-logo.png" alt="" aria-hidden="true" className="navbar-icon" />
               chowboy
             </Link>
             <button className="close-menu" onClick={toggleMenu} aria-label="Close menu">
@@ -75,13 +77,13 @@ const Navbar = () => {
           
           <ul className="nav-menu">
             <li className="nav-item">
-              <Link to="/features" className="nav-link features" onClick={() => setMenuOpen(false)}>
-                features ✨
+              <Link to="/features" className="nav-link features" onClick={() => setMenuOpen(false)} aria-label="View features">
+                features
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/careers" className="nav-link hiring" onClick={() => setMenuOpen(false)}>
-                we're hiring! 👩‍💻
+              <Link to="/careers" className="nav-link hiring" onClick={() => setMenuOpen(false)} aria-label="View careers">
+                careers
               </Link>
             </li>
           </ul>

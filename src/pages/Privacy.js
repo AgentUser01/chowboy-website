@@ -15,15 +15,15 @@ const Privacy = () => {
           <div className="summary-points">
             <div className="summary-point">
               <div className="check-icon">✓</div>
-              <p>We prioritize your privacy. We don't include any tracking from Facebook or Google in the app.</p>
+              <p>We prioritize your privacy. No third‑party ad SDKs or cross‑app tracking are embedded in the app.</p>
             </div>
             <div className="summary-point">
               <div className="check-icon">✓</div>
-              <p>We don't require personally identifiable information (PII) to use Chowboy. If you choose to create an account, your information is securely stored and never sold.</p>
+              <p>Core features work without personal data. If you create an account, we store minimal information and never sell your data.</p>
             </div>
             <div className="summary-point">
               <div className="check-icon">✓</div>
-              <p>We use anonymous analytics solely to improve the app experience.</p>
+              <p>Analytics are used to improve functionality, not for advertising or tracking you across other apps and websites.</p>
             </div>
           </div>
         </section>
@@ -32,7 +32,7 @@ const Privacy = () => {
           <h2>Introduction</h2>
           <p>
             Chowboy ('we', 'our', or 'us') is committed to respecting your privacy and processing personal data in accordance with 
-            applicable privacy laws, including the EU GDPR. This Privacy Policy applies to all services we provide through our iOS application.
+            applicable privacy laws, including the EU/UK GDPR and applicable U.S. state privacy laws. This Privacy Policy applies to our iOS application and our website.
           </p>
           <p>
             We want to make it clear how we use your data because that's what we would want from services we use. By using our app, 
@@ -84,8 +84,8 @@ const Privacy = () => {
 
         <section className="privacy-section">
           <h2>Analytics</h2>
-          <p>Chowboy uses Firebase Analytics to collect anonymized usage statistics for improving the app experience. We collect events such as feature usage, session duration, and crash reports. We do not collect any personally identifiable information through analytics.</p>
-          <p>Analytics data is retained in Firebase for up to 90 days, after which it is aggregated or deleted.</p>
+          <p>Chowboy uses Firebase Analytics to collect usage statistics to improve the app experience (for example, feature usage, session duration, and crash reports). We do not use analytics for advertising or cross‑app tracking, and analytics collection respects your device privacy settings.</p>
+          <p>Analytics data is retained in accordance with Firebase’s default retention settings and is aggregated or deleted thereafter.</p>
         </section>
 
         <section className="privacy-section">
@@ -101,11 +101,11 @@ const Privacy = () => {
           <h2>Artificial Intelligence & Machine Learning</h2>
           <p>Chowboy uses artificial intelligence services to enhance your recipe experience:</p>
           <ul className="bullet-list">
-            <li><strong>Recipe Enhancement:</strong> We send recipe data to OpenAI and DeepSeek APIs to generate equipment recommendations, cooking tips, and recipe improvements. This data is processed temporarily and not stored by the AI providers.</li>
-            <li><strong>AI Costs & Usage:</strong> AI features consume credits from your subscription balance. Usage is tracked for billing purposes only.</li>
-            <li><strong>Data Processing:</strong> Recipe text and ingredients may be sent to AI services. We do not send personal information like your name or contact details to AI providers.</li>
-            <li><strong>AI Model Selection:</strong> The app automatically selects between OpenAI and DeepSeek based on availability and performance. You can view which AI provider is currently active in Settings.</li>
-            <li><strong>Data Retention:</strong> AI providers process data temporarily during API calls but do not store your recipe information permanently.</li>
+            <li><strong>Server‑Side Processing via OpenRouter:</strong> We send recipe text and related context from our servers to AI model providers through OpenRouter. We do not embed third‑party AI SDKs in the mobile app.</li>
+            <li><strong>AI Costs & Usage:</strong> AI features may consume credits from your subscription balance. Usage is tracked for service operations only.</li>
+            <li><strong>Personal Data:</strong> We do not send your name, email, or contact information to AI providers.</li>
+            <li><strong>Model Selection:</strong> Our servers select AI models based on availability, performance, and cost controls. Providers may change over time.</li>
+            <li><strong>Retention:</strong> AI providers process inputs and outputs transiently for inference; we do not request model training or long‑term storage of your recipe content.</li>
           </ul>
         </section>
 
@@ -163,7 +163,7 @@ const Privacy = () => {
 
         <section className="privacy-section">
           <h2>App Tracking Transparency</h2>
-          <p>Our iOS app uses Apple's App Tracking Transparency framework to request permission before tracking you across apps and websites owned by other companies. We will only track you if you grant permission and you can change this at any time in your device's Settings under Privacy &gt; Tracking.</p>
+          <p>Our iOS app may request App Tracking Transparency (ATT) permission depending on your device settings. We do not use this permission for third‑party ad tracking; analytics collection respects your choice.</p>
         </section>
 
         <section className="privacy-section">

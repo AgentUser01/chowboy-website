@@ -21,7 +21,7 @@ const Download = () => {
             <li>iPhone, iPad, and iPod touch</li>
             <li>Optimized for iPhone 13 and later</li>
           </ul>
-          <a href="#" className="download-button">
+          <a href="https://apps.apple.com/ca/app/chowboy/id6741332753" className="download-button" target="_blank" rel="noopener noreferrer" aria-label="Download on the App Store">
             <span>Download on the</span>
             <strong>App Store</strong>
           </a>

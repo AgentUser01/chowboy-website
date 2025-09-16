@@ -44,7 +44,7 @@ const Home = () => {
             variants={fadeInUp}
             delay={0.6}
           >
-            <a href="https://apps.apple.com" className="official-app-store-badge">
+            <a href="https://apps.apple.com/ca/app/chowboy/id6741332753" className="official-app-store-badge" target="_blank" rel="noopener noreferrer" aria-label="Download on the App Store">
               <AppStoreBadge />
             </a>
           </AnimatedSection>

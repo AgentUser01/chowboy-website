@@ -36,6 +36,15 @@ const Terms = () => {
         </section>
 
         <section className="privacy-section">
+          <h2>Apple Terms of Use (EULA)</h2>
+          <p>
+            For users who download the App from Apple’s App Store, your license to use the App is also governed by Apple’s Standard End User License Agreement. In the event of any conflict, the Apple Standard EULA will apply to the extent required by Apple.
+            <br />
+            Terms of Use (EULA): <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noreferrer noopener">https://www.apple.com/legal/internet-services/itunes/dev/stdeula/</a>
+          </p>
+        </section>
+
+        <section className="privacy-section">
           <h2>Licenses and Subscriptions</h2>
           <p>
             We grant you a limited, non-exclusive, non-transferable, revocable right to download and use the App on your compatible device, solely for personal, non-commercial use. The App is available in a free tier. A premium subscription unlocks additional features like AI-powered recipe analysis, shopping-list sync, and unlimited favorites. Pricing appears in-app at purchase.
@@ -176,7 +185,7 @@ const Terms = () => {
             <li><strong>User Responsibility:</strong> You are solely responsible for verifying the accuracy, safety, and suitability of all AI-generated suggestions before use.</li>
             <li><strong>Food Safety:</strong> Always follow proper food safety guidelines. AI suggestions may not account for food allergies, dietary restrictions, or safety considerations specific to your situation.</li>
             <li><strong>Ingredient Substitutions:</strong> AI-generated ingredient substitutions may affect taste, texture, nutrition, or safety. Use your judgment and cooking knowledge.</li>
-            <li><strong>Third-Party AI:</strong> We use third-party AI services (OpenAI, DeepSeek) to generate content. While we strive for quality, we cannot guarantee the accuracy of AI-generated content.</li>
+            <li><strong>Third-Party AI via OpenRouter:</strong> We access third-party AI model providers through a server-side integration using OpenRouter. While we strive for quality, we cannot guarantee the accuracy or completeness of AI-generated content.</li>
             <li><strong>Liability:</strong> Chowboy disclaims all liability for any harm, injury, or damage resulting from the use of AI-generated content.</li>
           </ul>
         </section>
@@ -185,11 +194,11 @@ const Terms = () => {
           <h2>Data Processing & Privacy</h2>
           <p>By using Chowboy, you agree to the following data processing terms:</p>
           <ul>
-            <li><strong>Recipe Data:</strong> Recipe content you create or import may be processed by our AI services to provide enhancements and suggestions.</li>
-            <li><strong>Analytics:</strong> We collect anonymous usage analytics to improve the app experience. This data cannot identify you personally.</li>
+            <li><strong>Recipe Data:</strong> Recipe content you create or import may be processed by AI models to provide enhancements and suggestions. AI processing is performed server-side; we do not embed third-party AI SDKs in the app.</li>
+            <li><strong>Analytics:</strong> We collect usage analytics to improve the app experience. Analytics are aggregated and not used for advertising or cross-app tracking.</li>
             <li><strong>iCloud Sync:</strong> When enabled, your data is synchronized using Apple's iCloud service, subject to Apple's privacy policy.</li>
             <li><strong>Server Communication:</strong> The app communicates with our servers for authentication, subscription verification, and feature access.</li>
-            <li><strong>Third-Party Services:</strong> We use Firebase (Google) for app infrastructure and analytics, and AI services for recipe enhancement.</li>
+            <li><strong>Third-Party Services:</strong> We use Firebase for infrastructure/analytics and access AI model providers through OpenRouter on the server.</li>
             <li><strong>Data Retention:</strong> We retain your account data as long as your account is active. You may request deletion at any time by contacting support.</li>
             <li><strong>Cross-Border Transfers:</strong> Your data may be processed in countries outside your residence for service provision.</li>
           </ul>

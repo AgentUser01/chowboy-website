@@ -17,6 +17,7 @@ const Footer = () => {
           <Link to="/cookies" aria-label="Cookie policy">cookies</Link>
           <Link to="/terms" aria-label="Terms">terms</Link>
           <Link to="/careers" aria-label="Careers">careers</Link>
+          <a href="https://apps.apple.com/ca/app/chowboy/id6741332753" target="_blank" rel="noopener noreferrer" aria-label="Download on the App Store">app store</a>
         </div>
       </div>
     </footer>

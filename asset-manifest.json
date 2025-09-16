@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.ebef839a.css",
-    "main.js": "/static/js/main.cace0ff5.js",
+    "main.js": "/static/js/main.fb1bcff1.js",
     "static/js/453.7fa5b40e.chunk.js": "/static/js/453.7fa5b40e.chunk.js",
     "static/media/chowboy_grocery-list-management.png": "/static/media/chowboy_grocery-list-management.e63f215c2385d931fab2.png",
     "static/media/ai-recipe-discovery 3.png": "/static/media/ai-recipe-discovery 3.1fa99a1b839564676453.png",
@@ -10,11 +10,11 @@
     "static/media/ai-powered-features 3.png": "/static/media/ai-powered-features 3.73be7c075fc5c6bbcbb1.png",
     "index.html": "/index.html",
     "main.ebef839a.css.map": "/static/css/main.ebef839a.css.map",
-    "main.cace0ff5.js.map": "/static/js/main.cace0ff5.js.map",
+    "main.fb1bcff1.js.map": "/static/js/main.fb1bcff1.js.map",
     "453.7fa5b40e.chunk.js.map": "/static/js/453.7fa5b40e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ebef839a.css",
-    "static/js/main.cace0ff5.js"
+    "static/js/main.fb1bcff1.js"
   ]
 }

@@ -15,8 +15,8 @@ body {
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #333;
-  background-color: #fff;
+  color: var(--color-text);
+  background-color: var(--color-background);
   line-height: 1.5;
 }
 
@@ -133,7 +133,7 @@ p {
 }
 
 .App-link {
-  color: #61dafb;
+  color: var(--color-accent-blue);
 }
 
 @keyframes App-logo-spin {

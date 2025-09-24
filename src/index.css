@@ -1,14 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 :root {
-  /* Modern color palette with high contrast */
-  --color-primary: #0066ff;
-  --color-primary-dark: #0052cc;
-  --color-primary-light: #4d94ff;
-  --color-background: #ffffff;
-  --color-surface: #f7f9fc;
-  --color-text: #1a3458; /* Darker blue that's readable on white */
-  --color-text-light: #3a5a8c; /* Medium blue for secondary text */
+  /* Chowboy brand palette */
+  --color-primary: #8AA88B; /* Sage Green */
+  --color-primary-dark: #6F8C70; /* Darker Sage for hover/contrast */
+  --color-primary-light: #A9C4AA; /* Lighter Sage */
+  --color-accent-blue: #8AB4F8; /* Icy Blue */
+  --color-accent-blue-dark: #5F8EEB; /* Darker Icy Blue */
+  --color-accent-gold: #F2C94C; /* Mustard Gold */
+  --color-background: #F4E9D8; /* Sand Beige */
+  --color-surface: #ffffff; /* Pure White */
+  --color-text: #2E3138; /* Slate Gray */
+  --color-text-light: #5C6670; /* Lighter Slate for secondary text */
+  --color-text-lighter: #C7CFD6; /* Subtle UI accents */
   
   /* Typography */
   --font-heading: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;

@@ -12,12 +12,12 @@
 .download-header h1 {
   font-size: 3rem;
   margin-bottom: 20px;
-  color: #333;
+  color: var(--color-text);
 }
 
 .download-header p {
   font-size: 1.5rem;
-  color: #555;
+  color: var(--color-text-light);
   max-width: 600px;
   margin: 0 auto;
 }
@@ -71,12 +71,12 @@
 .download-card h2 {
   font-size: 1.8rem;
   margin-bottom: 10px;
-  color: #333;
+  color: var(--color-text);
 }
 
 .download-card p {
   font-size: 1.1rem;
-  color: #555;
+  color: var(--color-text-light);
   margin-bottom: 20px;
   text-align: center;
 }
@@ -90,7 +90,7 @@
 
 .requirements li {
   padding: 10px 0;
-  color: #666;
+  color: var(--color-text-light);
   border-bottom: 1px solid #eee;
   text-align: center;
 }
@@ -103,7 +103,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #333;
+  background-color: var(--color-text);
   color: white;
   padding: 10px 25px;
   border-radius: 12px;
@@ -116,7 +116,7 @@
 }
 
 .ios .download-button:hover {
-  background-color: #333;
+  background-color: var(--color-text);
 }
 
 .android .download-button {
@@ -144,7 +144,7 @@
 .download-features h2 {
   font-size: 2.2rem;
   margin-bottom: 40px;
-  color: #333;
+  color: var(--color-text);
 }
 
 .features-grid {
@@ -168,11 +168,11 @@
 .feature h3 {
   font-size: 1.5rem;
   margin-bottom: 15px;
-  color: #ff7d00;
+  color: var(--color-accent-gold);
 }
 
 .feature p {
-  color: #555;
+  color: var(--color-text-light);
   line-height: 1.6;
 }
 

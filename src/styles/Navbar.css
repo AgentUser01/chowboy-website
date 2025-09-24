@@ -73,7 +73,7 @@
 
 .nav-link:hover {
   transform: translateY(-1px);
-  background-color: rgba(0, 102, 255, 0.08);
+  background-color: rgba(138, 168, 139, 0.12);
   color: var(--color-primary);
 }
 
@@ -86,7 +86,7 @@
 }
 
 .nav-link.hiring:hover {
-  background-color: rgba(0, 102, 255, 0.08);
+  background-color: rgba(138, 168, 139, 0.12);
 }
 
 .nav-link.features {

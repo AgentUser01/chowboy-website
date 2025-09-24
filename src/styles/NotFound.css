@@ -13,7 +13,7 @@
 
 .not-found-content h1 {
   font-size: 8rem;
-  background: linear-gradient(135deg, #4287f5, #1a56db);
+  background: linear-gradient(135deg, var(--color-accent-blue), var(--color-accent-blue-dark));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 0;
@@ -23,19 +23,19 @@
 
 .not-found-content h2 {
   font-size: 2.5rem;
-  color: #333;
+  color: var(--color-text);
   margin-bottom: 20px;
 }
 
 .not-found-content p {
   font-size: 1.2rem;
-  color: #444;
+  color: var(--color-text-light);
   margin-bottom: 30px;
 }
 
 .home-button {
   display: inline-block;
-  background: linear-gradient(135deg, #4287f5, #1a56db);
+  background: linear-gradient(135deg, var(--color-accent-blue), var(--color-accent-blue-dark));
   color: white;
   padding: 12px 30px;
   border-radius: 50px;
@@ -46,7 +46,7 @@
 
 .home-button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(66, 135, 245, 0.3);
+  box-shadow: 0 5px 15px rgba(138, 180, 248, 0.3);
 }
 
 @media (max-width: 768px) {

@@ -9,6 +9,9 @@ const nextConfig: NextConfig = {
     unoptimized: true, // Required for static export
   },
 
+  // CRITICAL: Fix GitHub Pages underscore directory issue
+  assetPrefix: '',
+  
   // Trailing slashes for SEO consistency
   trailingSlash: true,
 
@@ -25,6 +28,9 @@ const nextConfig: NextConfig = {
   experimental: {
     mdxRs: true,
   },
+  
+  // Ensure proper base path for gh-pages
+  basePath: '',
 };
 
 export default nextConfig;

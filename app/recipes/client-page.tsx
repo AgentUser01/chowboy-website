@@ -27,17 +27,23 @@ export default function ClientRecipesPage({ staticRecipes }: { staticRecipes: Re
     async function fetchAIRecipes() {
       try {
         const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://api.chowboy.io';
-        const response = await fetch(`${API_URL}/api/v1/public/recipes/chowboy-generated?limit=50`);
+        const url = `${API_URL}/api/v1/public/recipes/chowboy-generated?limit=50`;
+        console.log('🔍 Fetching AI recipes from:', url);
+        
+        const response = await fetch(url);
+        console.log('📡 API Response status:', response.status);
         
         if (response.ok) {
           const data = await response.json();
+          console.log('✅ Fetched AI recipes:', data.total, 'recipes');
+          
           const converted = data.recipes.map((r: any) => ({
             slug: r.id,
             title: r.title,
             description: r.description,
             image: r.imageURL,
-            totalTime: r.totalTime,
-            servings: r.servings,
+            totalTime: r.totalTime || 0,
+            servings: r.servings || 0,
             difficulty: mapDifficulty(r.difficulty, r.level),
             cuisine: r.cuisine,
             category: r.category,
@@ -45,10 +51,13 @@ export default function ClientRecipesPage({ staticRecipes }: { staticRecipes: Re
             rating: r.rating,
             ratingCount: r.ratingCount,
           }));
+          console.log('🎯 Converted recipes:', converted.length);
           setApiRecipes(converted);
+        } else {
+          console.warn('❌ API returned error:', response.status, response.statusText);
         }
       } catch (error) {
-        console.error('Error fetching AI recipes:', error);
+        console.error('❌ Error fetching AI recipes:', error);
       } finally {
         setLoading(false);
       }

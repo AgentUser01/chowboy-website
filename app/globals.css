@@ -38,6 +38,19 @@
   --color-sand-300: #EDDBC0;
   --color-sand-400: #E6CDA8;
   --color-sand: #F4E9D8;
+  
+  /* Slate Gray - Darker for better readability */
+  --color-slate-50: #F7F7F8;
+  --color-slate-100: #E9EAEB;
+  --color-slate-200: #D3D4D7;
+  --color-slate-300: #9CA3AF;
+  --color-slate-400: #6B7280;
+  --color-slate-500: #4B5563;
+  --color-slate-600: #374151;
+  --color-slate-700: #2E3138;
+  --color-slate-800: #1F2937;
+  --color-slate-900: #111827;
+  --color-slate: #2E3138;
 }
 
 :root {

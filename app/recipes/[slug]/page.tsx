@@ -61,29 +61,29 @@ export default async function RecipePage({ params }: RecipePageProps) {
       <article className="container mx-auto px-6 py-20 max-w-5xl">
         {/* Header */}
         <header className="mb-12">
-          <h1 className="text-5xl font-bold text-slate-500 mb-4">{recipe.title}</h1>
-          <p className="text-xl text-slate-400 mb-6">{recipe.description}</p>
+          <h1 className="text-5xl font-bold text-slate-700 mb-4">{recipe.title}</h1>
+          <p className="text-xl text-slate-600 mb-6">{recipe.description}</p>
           
           <div className="flex flex-wrap gap-4 mb-6">
             <div className="bg-sand-100 px-4 py-2 rounded-lg border border-sage-200">
               <span className="text-sm text-slate-300">Prep Time</span>
-              <p className="font-semibold text-slate-500">{recipe.prepTime} min</p>
+              <p className="font-semibold text-slate-700">{recipe.prepTime} min</p>
             </div>
             <div className="bg-sand-100 px-4 py-2 rounded-lg border border-icy-200">
               <span className="text-sm text-slate-300">Cook Time</span>
-              <p className="font-semibold text-slate-500">{recipe.cookTime} min</p>
+              <p className="font-semibold text-slate-700">{recipe.cookTime} min</p>
             </div>
             <div className="bg-sand-100 px-4 py-2 rounded-lg border border-mustard-200">
               <span className="text-sm text-slate-300">Total Time</span>
-              <p className="font-semibold text-slate-500">{recipe.totalTime} min</p>
+              <p className="font-semibold text-slate-700">{recipe.totalTime} min</p>
             </div>
             <div className="bg-sand-100 px-4 py-2 rounded-lg border border-sage-200">
               <span className="text-sm text-slate-300">Servings</span>
-              <p className="font-semibold text-slate-500">{recipe.servings}</p>
+              <p className="font-semibold text-slate-700">{recipe.servings}</p>
             </div>
             <div className="bg-sand-100 px-4 py-2 rounded-lg border border-icy-200">
               <span className="text-sm text-slate-300">Difficulty</span>
-              <p className="font-semibold text-slate-500">{recipe.difficulty}</p>
+              <p className="font-semibold text-slate-700">{recipe.difficulty}</p>
             </div>
           </div>
 
@@ -112,12 +112,12 @@ export default async function RecipePage({ params }: RecipePageProps) {
         <div className="grid md:grid-cols-3 gap-12">
           {/* Ingredients */}
           <div className="md:col-span-1">
-            <h2 className="text-2xl font-bold text-slate-500 mb-6">Ingredients</h2>
+            <h2 className="text-2xl font-bold text-slate-700 mb-6">Ingredients</h2>
             <ul className="space-y-3">
               {recipe.ingredients.map((ingredient, index) => (
                 <li key={index} className="flex items-start gap-3">
                   <span className="text-sage mt-1">•</span>
-                  <span className="text-slate-400">
+                  <span className="text-slate-600">
                     <span className="font-semibold">{ingredient.amount}</span> {ingredient.item}
                   </span>
                 </li>
@@ -126,30 +126,30 @@ export default async function RecipePage({ params }: RecipePageProps) {
 
             {recipe.nutrition && (
               <div className="mt-8 p-6 bg-sand-50 rounded-xl border-2 border-sage-200">
-                <h3 className="text-lg font-bold text-slate-500 mb-4">Nutrition (per serving)</h3>
+                <h3 className="text-lg font-bold text-slate-700 mb-4">Nutrition (per serving)</h3>
                 <div className="space-y-2 text-sm">
                   {recipe.nutrition.calories && (
                     <div className="flex justify-between">
                       <span className="text-slate-300">Calories</span>
-                      <span className="font-semibold text-slate-500">{recipe.nutrition.calories}</span>
+                      <span className="font-semibold text-slate-700">{recipe.nutrition.calories}</span>
                     </div>
                   )}
                   {recipe.nutrition.protein && (
                     <div className="flex justify-between">
                       <span className="text-slate-300">Protein</span>
-                      <span className="font-semibold text-slate-500">{recipe.nutrition.protein}</span>
+                      <span className="font-semibold text-slate-700">{recipe.nutrition.protein}</span>
                     </div>
                   )}
                   {recipe.nutrition.carbohydrates && (
                     <div className="flex justify-between">
                       <span className="text-slate-300">Carbs</span>
-                      <span className="font-semibold text-slate-500">{recipe.nutrition.carbohydrates}</span>
+                      <span className="font-semibold text-slate-700">{recipe.nutrition.carbohydrates}</span>
                     </div>
                   )}
                   {recipe.nutrition.fat && (
                     <div className="flex justify-between">
                       <span className="text-slate-300">Fat</span>
-                      <span className="font-semibold text-slate-500">{recipe.nutrition.fat}</span>
+                      <span className="font-semibold text-slate-700">{recipe.nutrition.fat}</span>
                     </div>
                   )}
                 </div>
@@ -159,14 +159,14 @@ export default async function RecipePage({ params }: RecipePageProps) {
 
           {/* Instructions */}
           <div className="md:col-span-2">
-            <h2 className="text-2xl font-bold text-slate-500 mb-6">Instructions</h2>
+            <h2 className="text-2xl font-bold text-slate-700 mb-6">Instructions</h2>
             <ol className="space-y-6">
               {recipe.instructions.map((instruction) => (
                 <li key={instruction.step} className="flex gap-4">
                   <span className="flex-shrink-0 w-8 h-8 bg-sage text-white rounded-full flex items-center justify-center font-semibold">
                     {instruction.step}
                   </span>
-                  <p className="text-slate-400 pt-1">{instruction.instruction}</p>
+                  <p className="text-slate-600 pt-1">{instruction.instruction}</p>
                 </li>
               ))}
             </ol>
@@ -175,8 +175,8 @@ export default async function RecipePage({ params }: RecipePageProps) {
 
         {/* CTA */}
         <div className="mt-16 p-8 bg-sand-100 rounded-2xl text-center border-2 border-sage-200">
-          <h3 className="text-2xl font-bold text-slate-500 mb-4">Want more recipes like this?</h3>
-          <p className="text-slate-400 mb-6">
+          <h3 className="text-2xl font-bold text-slate-700 mb-4">Want more recipes like this?</h3>
+          <p className="text-slate-600 mb-6">
             Download Chowboy to discover personalized recipe recommendations and AI-powered cooking tips.
           </p>
           <a

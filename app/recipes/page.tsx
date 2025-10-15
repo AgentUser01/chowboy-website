@@ -17,14 +17,14 @@ export default async function RecipesPage() {
     <div className="pt-20">
       <section className="container mx-auto px-6 py-20">
         <div className="max-w-6xl mx-auto">
-          <h1 className="text-5xl font-bold text-slate-500 mb-6">Recipes</h1>
-          <p className="text-xl text-slate-400 mb-12">
+          <h1 className="text-5xl font-bold text-slate-700 mb-6">Recipes</h1>
+          <p className="text-xl text-slate-600 mb-12">
             Explore our curated collection of delicious recipes with detailed instructions and nutrition information.
           </p>
 
           {recipes.length === 0 ? (
             <div className="bg-sand-50 p-12 rounded-2xl text-center border-2 border-sand-200">
-              <p className="text-slate-400 text-lg">
+              <p className="text-slate-600 text-lg">
                 Recipes coming soon! We&apos;re preparing amazing recipes for you to try.
               </p>
             </div>
@@ -46,10 +46,10 @@ export default async function RecipesPage() {
                     </div>
                   )}
                   <div className="p-6">
-                    <h2 className="text-2xl font-bold text-slate-500 mb-2 group-hover:text-sage transition-colors">
+                    <h2 className="text-2xl font-bold text-slate-700 mb-2 group-hover:text-sage transition-colors">
                       {recipe.title}
                     </h2>
-                    <p className="text-slate-400 mb-4 line-clamp-2">{recipe.description}</p>
+                    <p className="text-slate-600 mb-4 line-clamp-2">{recipe.description}</p>
                     
                     <div className="flex items-center gap-4 text-sm text-slate-300 mb-4">
                       <span>⏱️ {recipe.totalTime} min</span>
@@ -66,7 +66,7 @@ export default async function RecipesPage() {
                         {recipe.difficulty}
                       </span>
                       {recipe.cuisine && (
-                        <span className="px-3 py-1 rounded-full text-xs font-medium bg-sand-200 text-slate-500">
+                        <span className="px-3 py-1 rounded-full text-xs font-medium bg-sand-200 text-slate-700">
                           {recipe.cuisine}
                         </span>
                       )}

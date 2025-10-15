@@ -17,14 +17,14 @@ export default async function RecipesPage() {
     <div className="pt-20">
       <section className="container mx-auto px-6 py-20">
         <div className="max-w-6xl mx-auto">
-          <h1 className="text-5xl font-bold text-gray-900 mb-6">Recipes</h1>
-          <p className="text-xl text-gray-600 mb-12">
+          <h1 className="text-5xl font-bold text-slate-500 mb-6">Recipes</h1>
+          <p className="text-xl text-slate-400 mb-12">
             Explore our curated collection of delicious recipes with detailed instructions and nutrition information.
           </p>
 
           {recipes.length === 0 ? (
-            <div className="bg-gray-50 p-12 rounded-2xl text-center">
-              <p className="text-gray-600 text-lg">
+            <div className="bg-sand-50 p-12 rounded-2xl text-center border-2 border-sand-200">
+              <p className="text-slate-400 text-lg">
                 Recipes coming soon! We&apos;re preparing amazing recipes for you to try.
               </p>
             </div>
@@ -34,10 +34,10 @@ export default async function RecipesPage() {
                 <Link
                   key={recipe.slug}
                   href={`/recipes/${recipe.slug}`}
-                  className="group bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-xl transition-shadow"
+                  className="group bg-white border-2 border-sand-200 rounded-2xl overflow-hidden hover:border-sage-300 hover:shadow-xl transition-all"
                 >
                   {recipe.image && (
-                    <div className="aspect-video bg-gray-100 overflow-hidden">
+                    <div className="aspect-video bg-sand-50 overflow-hidden">
                       <img
                         src={recipe.image}
                         alt={recipe.title}
@@ -46,12 +46,12 @@ export default async function RecipesPage() {
                     </div>
                   )}
                   <div className="p-6">
-                    <h2 className="text-2xl font-bold text-gray-900 mb-2 group-hover:text-indigo-600 transition-colors">
+                    <h2 className="text-2xl font-bold text-slate-500 mb-2 group-hover:text-sage transition-colors">
                       {recipe.title}
                     </h2>
-                    <p className="text-gray-600 mb-4 line-clamp-2">{recipe.description}</p>
+                    <p className="text-slate-400 mb-4 line-clamp-2">{recipe.description}</p>
                     
-                    <div className="flex items-center gap-4 text-sm text-gray-500 mb-4">
+                    <div className="flex items-center gap-4 text-sm text-slate-300 mb-4">
                       <span>⏱️ {recipe.totalTime} min</span>
                       <span>•</span>
                       <span>🍽️ {recipe.servings} servings</span>
@@ -59,14 +59,14 @@ export default async function RecipesPage() {
 
                     <div className="flex items-center gap-2">
                       <span className={`px-3 py-1 rounded-full text-xs font-medium ${
-                        recipe.difficulty === 'Easy' ? 'bg-green-100 text-green-700' :
-                        recipe.difficulty === 'Medium' ? 'bg-yellow-100 text-yellow-700' :
-                        'bg-red-100 text-red-700'
+                        recipe.difficulty === 'Easy' ? 'bg-sage-100 text-sage-700' :
+                        recipe.difficulty === 'Medium' ? 'bg-icy-100 text-icy-700' :
+                        'bg-mustard-100 text-mustard-700'
                       }`}>
                         {recipe.difficulty}
                       </span>
                       {recipe.cuisine && (
-                        <span className="px-3 py-1 rounded-full text-xs font-medium bg-purple-100 text-purple-700">
+                        <span className="px-3 py-1 rounded-full text-xs font-medium bg-sand-200 text-slate-500">
                           {recipe.cuisine}
                         </span>
                       )}

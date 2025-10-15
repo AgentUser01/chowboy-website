@@ -62,10 +62,10 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
       <article className="container mx-auto px-6 py-20 max-w-4xl">
         <header className="mb-12">
-          <h1 className="text-5xl font-bold text-gray-900 mb-4">{post.title}</h1>
-          <p className="text-xl text-gray-600 mb-6">{post.description}</p>
-          <div className="flex items-center gap-4 text-sm text-gray-500">
-            <span className="font-medium text-gray-700">{post.author}</span>
+          <h1 className="text-5xl font-bold text-slate-500 mb-4">{post.title}</h1>
+          <p className="text-xl text-slate-400 mb-6">{post.description}</p>
+          <div className="flex items-center gap-4 text-sm text-slate-300">
+            <span className="font-medium text-slate-400">{post.author}</span>
             <span>•</span>
             <time dateTime={post.date}>
               {new Date(post.date).toLocaleDateString('en-US', {
@@ -82,7 +82,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
               {post.tags.map((tag) => (
                 <span
                   key={tag}
-                  className="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm font-medium"
+                  className="bg-sage-100 text-sage-700 px-3 py-1 rounded-full text-sm font-medium"
                 >
                   {tag}
                 </span>
@@ -91,7 +91,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           )}
         </header>
 
-        <div className="prose prose-lg max-w-none">
+        <div className="prose prose-lg max-w-none text-slate-400">
           {/* MDX content will be rendered here when we set up the MDX processor */}
           <div dangerouslySetInnerHTML={{ __html: post.content.replace(/\n/g, '<br />') }} />
         </div>

@@ -70,8 +70,8 @@ export default function FeaturesPage() {
       {/* Header */}
       <section className="container mx-auto px-6 py-20">
         <div className="text-center max-w-3xl mx-auto">
-          <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">Features</h1>
-          <p className="text-xl text-gray-600">
+          <h1 className="text-5xl md:text-6xl font-bold text-slate-500 mb-6">Features</h1>
+          <p className="text-xl text-slate-400">
             Cook better, faster — with just what you need.
           </p>
         </div>
@@ -89,14 +89,14 @@ export default function FeaturesPage() {
             >
               <div className="flex-1 space-y-6">
                 <div>
-                  <h2 className="text-4xl font-bold text-gray-900 mb-4">{feature.title}</h2>
-                  <p className="text-xl text-gray-600">{feature.description}</p>
+                  <h2 className="text-4xl font-bold text-slate-500 mb-4">{feature.title}</h2>
+                  <p className="text-xl text-slate-400">{feature.description}</p>
                 </div>
                 <ul className="space-y-3">
                   {feature.points.map((point, pointIndex) => (
                     <li key={pointIndex} className="flex items-start gap-3">
-                      <span className="text-indigo-600 text-xl mt-1">✓</span>
-                      <span className="text-gray-700">{point}</span>
+                      <span className="text-sage text-xl mt-1">✓</span>
+                      <span className="text-slate-400">{point}</span>
                     </li>
                   ))}
                 </ul>
@@ -119,7 +119,7 @@ export default function FeaturesPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-indigo-600 text-white py-20">
+      <section className="bg-sage text-white py-20">
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-4xl font-bold mb-4">Ready to cook smarter?</h2>
           <p className="text-xl mb-8 opacity-90">
@@ -131,7 +131,7 @@ export default function FeaturesPage() {
             rel="noopener noreferrer"
             className="inline-block"
           >
-            <div className="bg-white rounded-xl p-2 inline-block hover:scale-105 transition-transform">
+            <div className="bg-white rounded-xl p-2 inline-block hover:scale-105 transition-transform shadow-lg">
               <AppStoreBadge />
             </div>
           </a>

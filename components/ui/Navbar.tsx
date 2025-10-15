@@ -37,10 +37,10 @@ export default function Navbar() {
   };
   
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-white/90 backdrop-blur-md shadow-md' : 'bg-transparent'} ${menuOpen ? 'menu-open' : ''}`}>
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-white/95 backdrop-blur-md shadow-md border-b border-sand-200' : 'bg-transparent'} ${menuOpen ? 'menu-open' : ''}`}>
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <Link href="/" className="flex items-center space-x-2 text-2xl font-bold text-gray-900 hover:text-indigo-600 transition-colors" aria-label="Chowboy home">
+          <Link href="/" className="flex items-center space-x-2 text-2xl font-bold text-slate-500 hover:text-sage transition-colors" aria-label="Chowboy home">
             <Image src="/chowboy-logo.png" alt="" width={32} height={32} className="w-8 h-8" aria-hidden="true" />
             <span>chowboy</span>
           </Link>
@@ -48,17 +48,17 @@ export default function Navbar() {
           {/* Desktop Navigation Menu */}
           <ul className="hidden md:flex items-center space-x-8">
             <li>
-              <Link href="/features" className="text-gray-700 hover:text-indigo-600 transition-colors font-medium" aria-label="View features">
+              <Link href="/features" className="text-slate-400 hover:text-sage transition-colors font-medium" aria-label="View features">
                 features
               </Link>
             </li>
             <li>
-              <Link href="/blog" className="text-gray-700 hover:text-indigo-600 transition-colors font-medium" aria-label="Read blog">
+              <Link href="/blog" className="text-slate-400 hover:text-sage transition-colors font-medium" aria-label="Read blog">
                 blog
               </Link>
             </li>
             <li>
-              <Link href="/recipes" className="text-gray-700 hover:text-indigo-600 transition-colors font-medium" aria-label="View recipes">
+              <Link href="/recipes" className="text-slate-400 hover:text-sage transition-colors font-medium" aria-label="View recipes">
                 recipes
               </Link>
             </li>
@@ -72,9 +72,9 @@ export default function Navbar() {
             aria-expanded={menuOpen}
             aria-controls="mobile-nav"
           >
-            <span className={`block w-6 h-0.5 bg-gray-900 transition-all ${menuOpen ? 'rotate-45 translate-y-2' : ''}`}></span>
-            <span className={`block w-6 h-0.5 bg-gray-900 transition-all ${menuOpen ? 'opacity-0' : ''}`}></span>
-            <span className={`block w-6 h-0.5 bg-gray-900 transition-all ${menuOpen ? '-rotate-45 -translate-y-2' : ''}`}></span>
+            <span className={`block w-6 h-0.5 bg-slate-500 transition-all ${menuOpen ? 'rotate-45 translate-y-2' : ''}`}></span>
+            <span className={`block w-6 h-0.5 bg-slate-500 transition-all ${menuOpen ? 'opacity-0' : ''}`}></span>
+            <span className={`block w-6 h-0.5 bg-slate-500 transition-all ${menuOpen ? '-rotate-45 -translate-y-2' : ''}`}></span>
           </button>
           
           {/* Mobile Menu Overlay */}
@@ -84,34 +84,34 @@ export default function Navbar() {
           
           {/* Mobile Menu Drawer */}
           <div 
-            className={`fixed top-0 right-0 bottom-0 w-72 bg-white shadow-2xl z-50 transform transition-transform duration-300 ${menuOpen ? 'translate-x-0' : 'translate-x-full'}`}
+            className={`fixed top-0 right-0 bottom-0 w-72 bg-white shadow-2xl z-50 transform transition-transform duration-300 border-l-2 border-sage-200 ${menuOpen ? 'translate-x-0' : 'translate-x-full'}`}
             id="mobile-nav"
             role="dialog"
             aria-modal="true"
           >
-            <div className="flex items-center justify-between p-6 border-b">
-              <Link href="/" className="flex items-center space-x-2 text-xl font-bold text-gray-900" onClick={() => setMenuOpen(false)} aria-label="Chowboy home">
+            <div className="flex items-center justify-between p-6 border-b border-sand-200">
+              <Link href="/" className="flex items-center space-x-2 text-xl font-bold text-slate-500" onClick={() => setMenuOpen(false)} aria-label="Chowboy home">
                 <Image src="/chowboy-logo.png" alt="" width={28} height={28} className="w-7 h-7" aria-hidden="true" />
                 <span>chowboy</span>
               </Link>
               <button className="p-2" onClick={toggleMenu} aria-label="Close menu">
-                <span className="block text-2xl text-gray-600">&times;</span>
+                <span className="block text-2xl text-slate-400">&times;</span>
               </button>
             </div>
             
-            <ul className="flex flex-col p-6 space-y-4">
+            <ul className="flex flex-col p-6 space-y-4 bg-sand-50">
               <li>
-                <Link href="/features" className="block py-2 text-lg text-gray-700 hover:text-indigo-600 transition-colors" onClick={() => setMenuOpen(false)} aria-label="View features">
+                <Link href="/features" className="block py-2 text-lg text-slate-400 hover:text-sage transition-colors" onClick={() => setMenuOpen(false)} aria-label="View features">
                   features
                 </Link>
               </li>
               <li>
-                <Link href="/blog" className="block py-2 text-lg text-gray-700 hover:text-indigo-600 transition-colors" onClick={() => setMenuOpen(false)} aria-label="Read blog">
+                <Link href="/blog" className="block py-2 text-lg text-slate-400 hover:text-sage transition-colors" onClick={() => setMenuOpen(false)} aria-label="Read blog">
                   blog
                 </Link>
               </li>
               <li>
-                <Link href="/recipes" className="block py-2 text-lg text-gray-700 hover:text-indigo-600 transition-colors" onClick={() => setMenuOpen(false)} aria-label="View recipes">
+                <Link href="/recipes" className="block py-2 text-lg text-slate-400 hover:text-sage transition-colors" onClick={() => setMenuOpen(false)} aria-label="View recipes">
                   recipes
                 </Link>
               </li>

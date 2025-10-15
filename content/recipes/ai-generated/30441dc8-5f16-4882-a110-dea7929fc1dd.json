@@ -1,0 +1,62 @@
+{
+  "title": "Witches' Brew Halloween Punch",
+  "description": "A spooky and sweet non-alcoholic punch, perfect for Halloween parties. Easy to customize with fun Halloween decorations or a splash of vodka for adults.",
+  "image": "https://dzhtlpehzn9wm.cloudfront.net/recipes/b8f545d4-9ad1-4d91-b60c-a4b8179092a6.png",
+  "prepTime": 10,
+  "cookTime": 0,
+  "totalTime": 10,
+  "servings": 8,
+  "difficulty": "Medium",
+  "cuisine": "General",
+  "category": "AI Generated",
+  "tags": [],
+  "ingredients": [
+    {
+      "amount": "64.0 ounce",
+      "item": "Grape juice, chilled"
+    },
+    {
+      "amount": "2.0 liter",
+      "item": "Lemon-lime soda, chilled"
+    },
+    {
+      "amount": "46.0 ounce",
+      "item": "Pineapple juice, chilled"
+    },
+    {
+      "amount": "1.0 cup",
+      "item": "Gummy worms or plastic spiders (for garnish)"
+    },
+    {
+      "amount": "2.0 cup",
+      "item": "Vodka (optional, for adult version)"
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "instruction": "In a large punch bowl, combine the chilled grape juice, lemon-lime soda, and pineapple juice."
+    },
+    {
+      "step": 2,
+      "instruction": "Stir gently to combine all ingredients."
+    },
+    {
+      "step": 3,
+      "instruction": "Float gummy worms or plastic spiders on top for a spooky effect. For an extra chilling touch, you can also add a molded ice hand (made from a clean food-safe glove filled with water and frozen) to the punch bowl."
+    },
+    {
+      "step": 4,
+      "instruction": "For an adult version, stir in up to 2 cups of vodka just before serving. Adjust to taste."
+    },
+    {
+      "step": 5,
+      "instruction": "Serve immediately over ice if desired."
+    }
+  ],
+  "nutrition": {
+    "calories": 150
+  },
+  "author": "Chowboy AI",
+  "datePublished": "2025-09-30"
+}

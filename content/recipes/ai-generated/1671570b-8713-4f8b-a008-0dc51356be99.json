@@ -1,0 +1,53 @@
+{
+  "title": "Leftover Pizza Revival",
+  "description": "This recipe focuses on using a leftover slice of pizza as the base to create a quick, satisfying meal by reheating it and optionally adding fresh toppings if available.",
+  "image": "https://dzhtlpehzn9wm.cloudfront.net/recipe-imports/d0e07513-9a4f-482a-a365-e7c88db47618.jpg",
+  "prepTime": 2,
+  "cookTime": 10,
+  "totalTime": 12,
+  "servings": 1,
+  "difficulty": "Easy",
+  "category": "",
+  "tags": [],
+  "ingredients": [
+    {
+      "amount": "1.0 slice",
+      "item": "Leftover pizza"
+    },
+    {
+      "amount": "0.5 tsp",
+      "item": "Dried Italian herbs (optional)"
+    },
+    {
+      "amount": "0.5 cup",
+      "item": "Shredded mozzarella (optional)"
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "instruction": "Preheat your oven or toaster oven to 350°F (175°C)."
+    },
+    {
+      "step": 2,
+      "instruction": "Place the leftover pizza slice directly on the oven rack or on a baking sheet."
+    },
+    {
+      "step": 3,
+      "instruction": "If desired, sprinkle with extra shredded mozzarella and dried Italian herbs."
+    },
+    {
+      "step": 4,
+      "instruction": "Bake for 8-10 minutes, or until the cheese is melted and bubbly and the crust is crispy."
+    },
+    {
+      "step": 5,
+      "instruction": "Carefully remove from the oven and let cool for a minute before serving."
+    }
+  ],
+  "nutrition": {
+    "calories": 350
+  },
+  "author": "Chowboy AI",
+  "datePublished": "2025-09-28"
+}

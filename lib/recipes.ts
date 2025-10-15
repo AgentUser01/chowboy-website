@@ -39,37 +39,58 @@ export interface Recipe {
   nutrition?: RecipeNutrition;
   author: string;
   datePublished: string;
+  isAIGenerated?: boolean;
 }
 
 export async function getRecipes(): Promise<Recipe[]> {
   const recipesDir = path.join(contentDirectory, 'recipes');
+  const aiRecipesDir = path.join(contentDirectory, 'recipes', 'ai-generated');
   
-  // Create directory if it doesn't exist
-  if (!fs.existsSync(recipesDir)) {
-    return [];
+  const allRecipes: Recipe[] = [];
+
+  // Read static recipes
+  if (fs.existsSync(recipesDir)) {
+    const files = fs.readdirSync(recipesDir).filter(file => file.endsWith('.json') && !file.includes('/'));
+    
+    files.forEach((filename) => {
+      const slug = filename.replace(/\.json$/, '');
+      const filePath = path.join(recipesDir, filename);
+      const fileContents = fs.readFileSync(filePath, 'utf8');
+      const recipe = JSON.parse(fileContents) as Recipe;
+      allRecipes.push({ ...recipe, slug });
+    });
   }
 
-  const files = fs.readdirSync(recipesDir).filter(file => file.endsWith('.json'));
-
-  const recipes = files.map((filename) => {
-    const slug = filename.replace(/\.json$/, '');
-    const filePath = path.join(recipesDir, filename);
-    const fileContents = fs.readFileSync(filePath, 'utf8');
-    const recipe = JSON.parse(fileContents) as Recipe;
-
-    return {
-      ...recipe,
-      slug,
-    };
-  });
+  // Read AI-generated recipes
+  if (fs.existsSync(aiRecipesDir)) {
+    const aiFiles = fs.readdirSync(aiRecipesDir).filter(file => file.endsWith('.json'));
+    
+    aiFiles.forEach((filename) => {
+      const slug = filename.replace(/\.json$/, '');
+      const filePath = path.join(aiRecipesDir, filename);
+      const fileContents = fs.readFileSync(filePath, 'utf8');
+      const recipe = JSON.parse(fileContents) as Recipe;
+      allRecipes.push({ ...recipe, slug, isAIGenerated: true });
+    });
+  }
 
   // Sort recipes by date (newest first)
-  return recipes.sort((a, b) => new Date(b.datePublished).getTime() - new Date(a.datePublished).getTime());
+  return allRecipes.sort((a, b) => new Date(b.datePublished).getTime() - new Date(a.datePublished).getTime());
 }
 
 export async function getRecipe(slug: string): Promise<Recipe | null> {
   const recipesDir = path.join(contentDirectory, 'recipes');
-  const filePath = path.join(recipesDir, `${slug}.json`);
+  const aiRecipesDir = path.join(contentDirectory, 'recipes', 'ai-generated');
+  
+  // Try regular recipes first
+  let filePath = path.join(recipesDir, `${slug}.json`);
+  let isAI = false;
+  
+  // If not found, try AI recipes
+  if (!fs.existsSync(filePath)) {
+    filePath = path.join(aiRecipesDir, `${slug}.json`);
+    isAI = true;
+  }
 
   if (!fs.existsSync(filePath)) {
     return null;
@@ -81,6 +102,7 @@ export async function getRecipe(slug: string): Promise<Recipe | null> {
   return {
     ...recipe,
     slug,
+    isAIGenerated: isAI,
   };
 }
 

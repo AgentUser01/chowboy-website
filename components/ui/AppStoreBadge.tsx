@@ -1,9 +1,24 @@
+'use client';
+
 import React from 'react';
 
-export default function AppStoreBadge() {
+export default function AppStoreBadge({ onClick }: { onClick?: () => void }) {
+  const handleClick = () => {
+    // Track App Store click
+    if (typeof window !== 'undefined' && (window as any).gtag) {
+      (window as any).gtag('event', 'app_store_click', {
+        event_category: 'engagement',
+        event_label: 'iOS App Download',
+        value: 1
+      });
+    }
+    if (onClick) onClick();
+  };
+
   return (
-    <svg id="livetype" xmlns="http://www.w3.org/2000/svg" width="119.66407" height="40" viewBox="0 0 119.66407 40">
-      <title>Download on the App Store</title>
+    <div onClick={handleClick} style={{ cursor: 'pointer' }}>
+      <svg id="livetype" xmlns="http://www.w3.org/2000/svg" width="119.66407" height="40" viewBox="0 0 119.66407 40">
+        <title>Download on the App Store</title>
       <g>
         <g>
           <g>
@@ -48,6 +63,7 @@ export default function AppStoreBadge() {
         </g>
       </g>
     </svg>
+    </div>
   );
 }
 

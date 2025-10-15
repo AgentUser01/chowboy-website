@@ -1,0 +1,74 @@
+{
+  "title": "Fresh Pasta Dough",
+  "description": "A classic recipe for homemade fresh pasta dough, perfect for making various pasta shapes like fettuccine, tagliatelle, or ravioli. Simple ingredients yield a tender and delicious result.",
+  "image": "https://dzhtlpehzn9wm.cloudfront.net/recipes/8b9c63b3-b370-4145-94e1-30ec3d1fba72.png",
+  "prepTime": 30,
+  "cookTime": 5,
+  "totalTime": 35,
+  "servings": 4,
+  "difficulty": "Medium",
+  "cuisine": "General",
+  "category": "AI Generated",
+  "tags": [],
+  "ingredients": [
+    {
+      "amount": "200.0 g",
+      "item": "All-purpose flour"
+    },
+    {
+      "amount": "2.0",
+      "item": "Large eggs"
+    },
+    {
+      "amount": "0.5 tsp",
+      "item": "Salt"
+    },
+    {
+      "amount": "1.0 tbsp",
+      "item": "Olive oil (optional)"
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "instruction": "On a clean work surface, pile the flour and make a well in the center. Add the eggs, salt, and olive oil (if using) into the well."
+    },
+    {
+      "step": 2,
+      "instruction": "Using a fork, gently whisk the eggs, gradually incorporating flour from the inner edge of the well."
+    },
+    {
+      "step": 3,
+      "instruction": "Once a shaggy dough forms, use your hands to incorporate the remaining flour until it comes together. Knead the dough for 8-10 minutes until it's smooth and elastic. It should spring back when poked."
+    },
+    {
+      "step": 4,
+      "instruction": "Wrap the dough tightly in plastic wrap and let it rest at room temperature for at least 30 minutes, or up to 2 hours. This allows the gluten to relax, making it easier to roll."
+    },
+    {
+      "step": 5,
+      "instruction": "Divide the dough into 2-4 pieces. Flour your work surface and a rolling pin (or use a pasta machine)."
+    },
+    {
+      "step": 6,
+      "instruction": "Roll out each piece of dough to your desired thickness. For fettuccine or tagliatelle, aim for about 1-2mm thickness. If using a pasta machine, pass it through progressively thinner settings."
+    },
+    {
+      "step": 7,
+      "instruction": "Cut the pasta into your desired shape (e.g., fettuccine, tagliatelle, or squares for ravioli)."
+    },
+    {
+      "step": 8,
+      "instruction": "Bring a large pot of salted water to a rolling boil. Add the fresh pasta and cook for 2-4 minutes, or until al dente. Fresh pasta cooks very quickly."
+    },
+    {
+      "step": 9,
+      "instruction": "Drain the pasta and toss immediately with your favorite sauce."
+    }
+  ],
+  "nutrition": {
+    "calories": 350
+  },
+  "author": "Chowboy AI",
+  "datePublished": "2025-10-02"
+}

@@ -1,0 +1,109 @@
+{
+  "title": "Voluminous Pancakes",
+  "description": "These pancakes are designed to be tall and fluffy, with visible cottage cheese curds that caramelize during cooking.",
+  "image": "https://dzhtlpehzn9wm.cloudfront.net/recipe-imports/dce21253-8f38-4946-ba84-29ddeaf07216.jpg",
+  "prepTime": 15,
+  "cookTime": 30,
+  "totalTime": 45,
+  "servings": 8,
+  "difficulty": "Medium",
+  "category": "AI Generated",
+  "tags": [],
+  "ingredients": [
+    {
+      "amount": "1.3 cup",
+      "item": "buttermilk, at room temperature"
+    },
+    {
+      "amount": "1.3 cup",
+      "item": "14% sour cream, at room temperature"
+    },
+    {
+      "amount": "1.2 cup",
+      "item": "full-fat cottage cheese, at room temperature"
+    },
+    {
+      "amount": "4.0",
+      "item": "eggs, yolks + whites separated, at room temperature"
+    },
+    {
+      "amount": "1.0 tsp",
+      "item": "pure vanilla extract"
+    },
+    {
+      "amount": "1.0 tbsp",
+      "item": "butter, melted and cooled slightly"
+    },
+    {
+      "amount": "3.0 cup",
+      "item": "flour, sifted"
+    },
+    {
+      "amount": "1.5 tbsp",
+      "item": "granulated sugar"
+    },
+    {
+      "amount": "2.0 tsp",
+      "item": "baking powder"
+    },
+    {
+      "amount": "2.0 tsp",
+      "item": "salt"
+    },
+    {
+      "amount": "0.0",
+      "item": "clarified butter or neutral oil, for cooking"
+    },
+    {
+      "amount": "0.0",
+      "item": "Maldon salt, for serving"
+    },
+    {
+      "amount": "0.0",
+      "item": "pure maple syrup, for serving"
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "instruction": "In a large bowl, use a hard spatula to thoroughly mix together the buttermilk, sour cream, cottage cheese, egg yolks, and vanilla. Drizzle in the melted butter and mix until combined."
+    },
+    {
+      "step": 2,
+      "instruction": "In a separate large bowl, combine the flour, sugar, baking powder, and salt. Make a well in the center. Gently stir in the wet mixture, being careful not to overmix. Small curds of cottage cheese should still be visible."
+    },
+    {
+      "step": 3,
+      "instruction": "In a stand mixer, whip the egg whites to soft peaks, about 4 to 5 minutes."
+    },
+    {
+      "step": 4,
+      "instruction": "With a spatula, gently fold the egg whites into the batter until just combined."
+    },
+    {
+      "step": 5,
+      "instruction": "Let the batter rest for 10 minutes in the fridge (chilled batter will achieve pancakes with greater height and structure)."
+    },
+    {
+      "step": 6,
+      "instruction": "Heat a large nonstick skillet or seasoned cast-iron skillet over medium heat and grease it with clarified butter or oil (butter will burn). Scoop the batter onto the skillet in a mound to form one pancake, or as many as you can fit in your skillet without crowding (we use about 1/3 cup of batter per pancake, but make whatever size you want, reducing cook time if making smaller ones). Resist the urge to spread the batter around – the goal is tall, voluminous pancakes."
+    },
+    {
+      "step": 7,
+      "instruction": "Fry the first side of the pancake over medium heat for 5 to 6 minutes. This batter won't bubble to tell you it's ready to be flipped. Rather, when the edges become matte, use a thin spatula to gently lift the pancake to check the bottom. When it's golden, flip over. Cook for another 5 minutes. If the sides appear uncooked, stand the pancake on its side and roll it to seal the edges (or finish it in a 300°F oven for 5 minutes)."
+    },
+    {
+      "step": 8,
+      "instruction": "Repeat with remaining batter. The internal texture should be very moist, but not raw, with the cottage cheese curds still wholly visible. There will be some dark brown and black spots where the cottage cheese has caramelized."
+    },
+    {
+      "step": 9,
+      "instruction": "Serve with a generous pinch of Maldon and lots of maple syrup. The pancakes are best served right away but can be kept warm in the oven on its lowest setting."
+    }
+  ],
+  "nutrition": {
+    "calories": 400
+  },
+  "author": "Chowboy AI",
+  "datePublished": "2025-10-04"
+}

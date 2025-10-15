@@ -1,0 +1,66 @@
+{
+  "title": "Hearty Breakfast Scramble",
+  "description": "A quick and satisfying breakfast scramble packed with eggs, crispy bacon, savory mushrooms, and vibrant bell peppers. Perfect for a weekend brunch or a substantial weekday meal.",
+  "image": "https://dzhtlpehzn9wm.cloudfront.net/recipes/b732de90-ae7e-4b28-8568-777c93196861.jpg",
+  "prepTime": 10,
+  "cookTime": 15,
+  "totalTime": 25,
+  "servings": 2,
+  "difficulty": "Medium",
+  "cuisine": "General",
+  "category": "AI Generated",
+  "tags": [],
+  "ingredients": [
+    {
+      "amount": "4.0",
+      "item": "large eggs"
+    },
+    {
+      "amount": "1.0",
+      "item": "bell pepper (any color), diced"
+    },
+    {
+      "amount": "1.0",
+      "item": "cup mushrooms, sliced"
+    },
+    {
+      "amount": "2.0 tablespoons",
+      "item": "milk or cream (optional)"
+    },
+    {
+      "amount": "0.5 teaspoon",
+      "item": "salt"
+    },
+    {
+      "amount": "0.2 teaspoon",
+      "item": "black pepper"
+    },
+    {
+      "amount": "1.0 tablespoon",
+      "item": "olive oil or butter"
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "instruction": "Sauté vegetables: Add diced bell pepper and sliced mushrooms to the skillet with olive oil or butter. Cook over medium heat for 5-7 minutes, until vegetables are tender-crisp. Remove vegetables from the skillet and set aside."
+    },
+    {
+      "step": 2,
+      "instruction": "Scramble the eggs: In a medium bowl, whisk the eggs with milk or cream (if using), salt, and pepper until well combined. Pour the egg mixture into the same skillet over medium-low heat."
+    },
+    {
+      "step": 3,
+      "instruction": "Finish the scramble: As the eggs begin to set, gently push them from the edges towards the center with a spatula. When the eggs are mostly set but still slightly moist, return the cooked vegetables to the skillet. Gently fold everything together until heated through."
+    },
+    {
+      "step": 4,
+      "instruction": "Serve immediately."
+    }
+  ],
+  "nutrition": {
+    "calories": 450
+  },
+  "author": "Chowboy AI",
+  "datePublished": "2025-09-30"
+}

@@ -1,0 +1,105 @@
+{
+  "title": "Spicy Cheesy Herb Pizza",
+  "description": "A delicious and spicy homemade pizza topped with a variety of cheeses, herbs, and a kick to satisfy your spicy cravings. This recipe focuses on creating a flavorful crust and a rich, cheesy topping.",
+  "image": "https://dzhtlpehzn9wm.cloudfront.net/recipe-imports/3a6a3e9b-58dd-4438-a52d-85a924574c0a.jpg",
+  "prepTime": 30,
+  "cookTime": 15,
+  "totalTime": 45,
+  "servings": 8,
+  "difficulty": "Medium",
+  "category": "AI Generated",
+  "tags": [],
+  "ingredients": [
+    {
+      "amount": "500.0 g",
+      "item": "Pizza dough"
+    },
+    {
+      "amount": "0.5 cup",
+      "item": "Pizza sauce"
+    },
+    {
+      "amount": "1.0 cup",
+      "item": "Shredded mozzarella cheese"
+    },
+    {
+      "amount": "0.5 cup",
+      "item": "Crumbled feta cheese"
+    },
+    {
+      "amount": "0.2 cup",
+      "item": "Grated Parmesan cheese"
+    },
+    {
+      "amount": "2.0 tbsp",
+      "item": "Dried Italian herbs"
+    },
+    {
+      "amount": "1.0 tsp",
+      "item": "Red pepper flakes"
+    },
+    {
+      "amount": "1.0 splash",
+      "item": "Olive oil"
+    },
+    {
+      "amount": "0.5 tsp",
+      "item": "Garlic powder"
+    },
+    {
+      "amount": "0.2 tsp",
+      "item": "Black pepper"
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "instruction": "Preheat your oven to 450°F (230°C) with a pizza stone or baking sheet inside."
+    },
+    {
+      "step": 2,
+      "instruction": "On a lightly floured surface, stretch or roll out the pizza dough to your desired thickness and shape."
+    },
+    {
+      "step": 3,
+      "instruction": "Carefully transfer the dough to a piece of parchment paper or a pizza peel dusted with cornmeal."
+    },
+    {
+      "step": 4,
+      "instruction": "Spread the pizza sauce evenly over the dough, leaving a small border for the crust."
+    },
+    {
+      "step": 5,
+      "instruction": "In a bowl, combine mozzarella, feta, and Parmesan cheeses. Sprinkle about three-quarters of the cheese mixture over the sauce."
+    },
+    {
+      "step": 6,
+      "instruction": "Sprinkle the Italian herbs, red pepper flakes, garlic powder, and black pepper evenly over the cheese."
+    },
+    {
+      "step": 7,
+      "instruction": "Add the remaining cheese mixture on top."
+    },
+    {
+      "step": 8,
+      "instruction": "Carefully slide the pizza onto the preheated pizza stone or baking sheet."
+    },
+    {
+      "step": 9,
+      "instruction": "Bake for 12-15 minutes, or until the crust is golden brown and the cheese is bubbly and slightly browned."
+    },
+    {
+      "step": 10,
+      "instruction": "Once done, remove the pizza from the oven and let it cool for a few minutes before slicing."
+    },
+    {
+      "step": 11,
+      "instruction": "Drizzle with a splash of olive oil, if desired, before serving hot."
+    }
+  ],
+  "nutrition": {
+    "calories": 350
+  },
+  "author": "Chowboy AI",
+  "datePublished": "2025-10-02"
+}

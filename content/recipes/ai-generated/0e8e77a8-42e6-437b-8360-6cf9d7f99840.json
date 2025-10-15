@@ -1,0 +1,62 @@
+{
+  "title": "Comforting Couch Potato Medley",
+  "description": "This isn't a recipe to eat, but a guide to achieve peak relaxation. Perfect for a cozy evening, this 'recipe' celebrates the art of doing nothing. Ingredients are conceptual and represent elements of comfort.",
+  "image": "https://dzhtlpehzn9wm.cloudfront.net/recipe-imports/42d3e2ef-00d7-453c-b937-1b1c6f448e2a.jpg",
+  "prepTime": 0,
+  "cookTime": 0,
+  "totalTime": 0,
+  "servings": 1,
+  "difficulty": "Easy",
+  "category": "",
+  "tags": [],
+  "ingredients": [
+    {
+      "amount": "1.0 unit",
+      "item": "Cozy Couch"
+    },
+    {
+      "amount": "2.0 unit",
+      "item": "Soft Pillows"
+    },
+    {
+      "amount": "1.0 unit",
+      "item": "Warm Blanket"
+    },
+    {
+      "amount": "1.0 whole",
+      "item": "Relaxed Human"
+    },
+    {
+      "amount": "1.0 unit",
+      "item": "Low Lighting"
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "instruction": "Step 1: Locate your most comfortable spot on the couch."
+    },
+    {
+      "step": 2,
+      "instruction": "Step 2: Arrange pillows to support your head and back."
+    },
+    {
+      "step": 3,
+      "instruction": "Step 3: Drape the warm blanket over yourself for maximum coziness."
+    },
+    {
+      "step": 4,
+      "instruction": "Step 4: Assume a relaxed, contemplative posture, perhaps lying down or reclining deeply."
+    },
+    {
+      "step": 5,
+      "instruction": "Step 5: Adjust lighting to a soft, ambient glow to encourage tranquility."
+    },
+    {
+      "step": 6,
+      "instruction": "Step 6: Enjoy the quiet stillness and absence of culinary demands."
+    }
+  ],
+  "author": "Chowboy AI",
+  "datePublished": "2025-09-26"
+}

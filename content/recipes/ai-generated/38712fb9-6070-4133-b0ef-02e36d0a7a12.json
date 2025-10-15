@@ -1,0 +1,85 @@
+{
+  "title": "Marmasetti",
+  "description": "A classic Marmasetti recipe featuring ground beef, noodles, and a rich tomato sauce, baked to perfection.",
+  "image": "https://dzhtlpehzn9wm.cloudfront.net/recipe-imports/c6e20d87-cc21-4e2f-b7e6-763d94b74587.jpg",
+  "prepTime": 15,
+  "cookTime": 60,
+  "totalTime": 75,
+  "servings": 6,
+  "difficulty": "Medium",
+  "category": "AI Generated",
+  "tags": [],
+  "ingredients": [
+    {
+      "amount": "4.0",
+      "item": "onions, chopped"
+    },
+    {
+      "amount": "1.0 tbsp",
+      "item": "fat"
+    },
+    {
+      "amount": "2.0 lb",
+      "item": "ground beef"
+    },
+    {
+      "amount": "1.0 can",
+      "item": "condensed tomato soup"
+    },
+    {
+      "amount": "1.0 medium tin",
+      "item": "tomato juice"
+    },
+    {
+      "amount": "3.0 tbsp",
+      "item": "sugar"
+    },
+    {
+      "amount": "1.0 tsp",
+      "item": "paprika"
+    },
+    {
+      "amount": "1.0 to taste",
+      "item": "salt"
+    },
+    {
+      "amount": "1.0 to taste",
+      "item": "pepper"
+    },
+    {
+      "amount": "12.0 oz",
+      "item": "cooked medium noodles"
+    },
+    {
+      "amount": "8.0 oz",
+      "item": "grated cheese"
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "instruction": "Combine chopped onions, fat, and ground beef together. Do not brown."
+    },
+    {
+      "step": 2,
+      "instruction": "Add condensed tomato soup, medium tin tomato juice, sugar, paprika, salt, and pepper to the beef mixture. Mix well."
+    },
+    {
+      "step": 3,
+      "instruction": "In a large baking dish, combine the beef mixture with the cooked medium noodles."
+    },
+    {
+      "step": 4,
+      "instruction": "Add the grated cheese to the mixture and mix all together."
+    },
+    {
+      "step": 5,
+      "instruction": "Bake at 350°F for 1 hour or 3/4 of an hour, uncovered."
+    }
+  ],
+  "nutrition": {
+    "calories": 650
+  },
+  "author": "Chowboy AI",
+  "datePublished": "2025-10-02"
+}

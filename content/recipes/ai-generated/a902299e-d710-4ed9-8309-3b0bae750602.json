@@ -1,0 +1,106 @@
+{
+  "title": "Huevos Rancheros",
+  "description": "A versatile and flavorful Mexican breakfast dish featuring fried eggs served on warm tortillas, smothered in a zesty ranchero sauce, and often accompanied by cheese and fresh vegetables.",
+  "image": "https://dzhtlpehzn9wm.cloudfront.net/recipes/25d4b650-7217-4fcd-8418-39a7499efbca.png",
+  "prepTime": 15,
+  "cookTime": 25,
+  "totalTime": 40,
+  "servings": 4,
+  "difficulty": "Medium",
+  "cuisine": "General",
+  "category": "AI Generated",
+  "tags": [],
+  "ingredients": [
+    {
+      "amount": "8.0 ounce",
+      "item": "canned diced tomatoes"
+    },
+    {
+      "amount": "0.5 cup",
+      "item": "chicken broth"
+    },
+    {
+      "amount": "0.5 small",
+      "item": "onion, chopped"
+    },
+    {
+      "amount": "1.0 clove",
+      "item": "garlic, minced"
+    },
+    {
+      "amount": "1.0 whole",
+      "item": "jalapeno, seeded and minced (optional)"
+    },
+    {
+      "amount": "1.0 tablespoon",
+      "item": "olive oil"
+    },
+    {
+      "amount": "0.5 teaspoon",
+      "item": "cumin"
+    },
+    {
+      "amount": "0.2 teaspoon",
+      "item": "chili powder"
+    },
+    {
+      "amount": "4.0 large",
+      "item": "eggs"
+    },
+    {
+      "amount": "8.0 small",
+      "item": "corn tortillas"
+    },
+    {
+      "amount": "0.5 cup",
+      "item": "shredded Monterey Jack or cheddar cheese"
+    },
+    {
+      "amount": "0.2 cup",
+      "item": "chopped fresh cilantro"
+    },
+    {
+      "amount": "0.5 large",
+      "item": "bell pepper (any color), thinly sliced"
+    },
+    {
+      "amount": "0.5 teaspoon",
+      "item": "salt"
+    },
+    {
+      "amount": "0.2 teaspoon",
+      "item": "black pepper"
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "instruction": "Prepare the Ranchero Sauce: Heat 1 tablespoon of olive oil in a medium saucepan over medium heat. Add chopped onion and bell pepper, cooking until softened, about 5-7 minutes. Add minced garlic and jalapeno (if using), and cook for another minute until fragrant."
+    },
+    {
+      "step": 2,
+      "instruction": "Stir in the diced tomatoes (undrained), chicken broth, cumin, and chili powder. Bring to a simmer, then reduce heat to low and let it gently cook for 15-20 minutes, allowing flavors to meld and the sauce to thicken slightly. Season with salt and pepper to taste."
+    },
+    {
+      "step": 3,
+      "instruction": "While the sauce simmers, warm the tortillas. You can do this by heating them in a dry skillet for 30 seconds per side, wrapping them in a damp paper towel and microwaving for 30 seconds, or quickly frying them in a little oil until pliable."
+    },
+    {
+      "step": 4,
+      "instruction": "Fry the Eggs: In a separate skillet, cook the eggs to your preference (sunny-side up, over easy, etc.). You can cook them one or two at a time, depending on your skillet size."
+    },
+    {
+      "step": 5,
+      "instruction": "Assemble: Place two warm tortillas on each plate. Spoon a generous amount of ranchero sauce over the tortillas. Top each with a fried egg. Sprinkle with shredded cheese and fresh cilantro."
+    },
+    {
+      "step": 6,
+      "instruction": "Serve immediately, optionally with sides like refried beans or avocado slices."
+    }
+  ],
+  "nutrition": {
+    "calories": 450
+  },
+  "author": "Chowboy AI",
+  "datePublished": "2025-09-30"
+}

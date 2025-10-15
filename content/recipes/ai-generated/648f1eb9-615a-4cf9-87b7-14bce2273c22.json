@@ -1,0 +1,89 @@
+{
+  "title": "Creamy Marinated Artichoke Dip",
+  "description": "A warm and flavorful dip perfect for sharing, combining tender marinated artichokes with rich cheeses and savory spices.",
+  "prepTime": 15,
+  "cookTime": 25,
+  "totalTime": 40,
+  "servings": 8,
+  "difficulty": "Medium",
+  "cuisine": "General",
+  "category": "AI Generated",
+  "tags": [],
+  "ingredients": [
+    {
+      "amount": "14.0 ounce",
+      "item": "Marinated artichoke hearts, drained and chopped"
+    },
+    {
+      "amount": "8.0 ounce",
+      "item": "Cream cheese, softened"
+    },
+    {
+      "amount": "0.5 cup",
+      "item": "Mayonnaise"
+    },
+    {
+      "amount": "0.5 cup",
+      "item": "Sour cream"
+    },
+    {
+      "amount": "1.0 cup",
+      "item": "Grated Parmesan cheese, divided"
+    },
+    {
+      "amount": "0.5 cup",
+      "item": "Shredded mozzarella cheese"
+    },
+    {
+      "amount": "2.0 cloves",
+      "item": "Garlic, minced"
+    },
+    {
+      "amount": "0.2 teaspoon",
+      "item": "Black pepper"
+    },
+    {
+      "amount": "2.0 tablespoons",
+      "item": "Fresh parsley, chopped (for garnish, optional)"
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "instruction": "Preheat your oven to 375°F (190°C)."
+    },
+    {
+      "step": 2,
+      "instruction": "In a large mixing bowl, combine the softened cream cheese, mayonnaise, sour cream, 3/4 cup of the Parmesan cheese, mozzarella cheese, minced garlic, and black pepper. Mix until well combined and smooth."
+    },
+    {
+      "step": 3,
+      "instruction": "Fold in the drained and chopped marinated artichoke hearts."
+    },
+    {
+      "step": 4,
+      "instruction": "Transfer the mixture to a small oven-safe baking dish (around 8x8 inches or similar)."
+    },
+    {
+      "step": 5,
+      "instruction": "Sprinkle the remaining 1/4 cup of Parmesan cheese over the top of the dip."
+    },
+    {
+      "step": 6,
+      "instruction": "Bake for 20-25 minutes, or until the dip is hot, bubbly, and lightly golden brown on top."
+    },
+    {
+      "step": 7,
+      "instruction": "Remove from oven and let stand for a few minutes before serving."
+    },
+    {
+      "step": 8,
+      "instruction": "Garnish with fresh chopped parsley, if desired, and serve warm with your favorite dippers."
+    }
+  ],
+  "nutrition": {
+    "calories": 280
+  },
+  "author": "Chowboy AI",
+  "datePublished": "2025-09-18"
+}

@@ -1,0 +1,93 @@
+{
+  "title": "Creamy Artichoke Dip (Small Batch)",
+  "description": "A warm and cheesy dip, perfect for a small gathering or a cozy snack, featuring the tangy flavor of marinated artichoke hearts.",
+  "prepTime": 10,
+  "cookTime": 20,
+  "totalTime": 30,
+  "servings": 4,
+  "difficulty": "Medium",
+  "cuisine": "General",
+  "category": "AI Generated",
+  "tags": [],
+  "ingredients": [
+    {
+      "amount": "5.0 oz",
+      "item": "marinated artichoke hearts, drained and chopped"
+    },
+    {
+      "amount": "4.0 oz",
+      "item": "cream cheese, softened"
+    },
+    {
+      "amount": "0.2 cup",
+      "item": "mayonnaise"
+    },
+    {
+      "amount": "0.2 cup",
+      "item": "sour cream"
+    },
+    {
+      "amount": "0.5 cup",
+      "item": "shredded Parmesan cheese, divided"
+    },
+    {
+      "amount": "0.2 cup",
+      "item": "shredded mozzarella cheese"
+    },
+    {
+      "amount": "1.0 clove",
+      "item": "garlic, minced"
+    },
+    {
+      "amount": "0.2 tsp",
+      "item": "onion powder"
+    },
+    {
+      "amount": "0.1 tsp",
+      "item": "red pepper flakes (optional)"
+    },
+    {
+      "amount": "0.2 tsp",
+      "item": "black pepper"
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "instruction": "Preheat your oven to 375°F (190°C)."
+    },
+    {
+      "step": 2,
+      "instruction": "In a medium-sized mixing bowl, combine the softened cream cheese, mayonnaise, sour cream, half of the Parmesan cheese (1/4 cup), mozzarella cheese, minced garlic, onion powder, red pepper flakes (if using), and black pepper."
+    },
+    {
+      "step": 3,
+      "instruction": "Stir until well combined and smooth."
+    },
+    {
+      "step": 4,
+      "instruction": "Fold in the drained and chopped marinated artichoke hearts."
+    },
+    {
+      "step": 5,
+      "instruction": "Transfer the mixture to a small oven-safe dish (approximately 5-6 inches round or equivalent)."
+    },
+    {
+      "step": 6,
+      "instruction": "Sprinkle the remaining 1/4 cup of Parmesan cheese over the top."
+    },
+    {
+      "step": 7,
+      "instruction": "Bake for 15-20 minutes, or until bubbly and lightly golden brown on top."
+    },
+    {
+      "step": 8,
+      "instruction": "Serve warm with crackers, pita bread, or vegetable sticks."
+    }
+  ],
+  "nutrition": {
+    "calories": 250
+  },
+  "author": "Chowboy AI",
+  "datePublished": "2025-09-18"
+}

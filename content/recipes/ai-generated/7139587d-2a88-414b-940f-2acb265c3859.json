@@ -1,0 +1,89 @@
+{
+  "title": "Spinach and Red Pepper Frittata",
+  "description": "A simple, one-pan frittata loaded with sautéed red peppers, fresh spinach, and melted cheese. Perfect for breakfast, brunch, or a quick dinner.",
+  "prepTime": 10,
+  "cookTime": 20,
+  "totalTime": 30,
+  "servings": 4,
+  "difficulty": "Medium",
+  "cuisine": "General",
+  "category": "AI Generated",
+  "tags": [],
+  "ingredients": [
+    {
+      "amount": "8.0 large",
+      "item": "eggs"
+    },
+    {
+      "amount": "1.0 cup",
+      "item": "shredded cheese (cheddar, mozzarella, or Monterey Jack)"
+    },
+    {
+      "amount": "2.0 tablespoons",
+      "item": "milk or water"
+    },
+    {
+      "amount": "1.0 medium",
+      "item": "red bell pepper, diced"
+    },
+    {
+      "amount": "2.0 cups",
+      "item": "fresh spinach, roughly chopped"
+    },
+    {
+      "amount": "2.0 tablespoons",
+      "item": "olive oil or butter"
+    },
+    {
+      "amount": "0.5 teaspoon",
+      "item": "salt"
+    },
+    {
+      "amount": "0.2 teaspoon",
+      "item": "black pepper"
+    },
+    {
+      "amount": "0.2 teaspoon",
+      "item": "garlic powder (optional)"
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "instruction": "Preheat your oven's broiler (or preheat oven to 400°F/200°C if no broiler)."
+    },
+    {
+      "step": 2,
+      "instruction": "In a medium bowl, whisk together the eggs, milk, salt, black pepper, and garlic powder until frothy. Stir in half of the cheese. Set aside."
+    },
+    {
+      "step": 3,
+      "instruction": "Heat the olive oil in a 10-inch oven-safe skillet over medium heat. Add the diced red pepper and cook for 3-4 minutes until it begins to soften."
+    },
+    {
+      "step": 4,
+      "instruction": "Add the chopped spinach to the skillet and cook for another 1-2 minutes, until wilted. Spread the vegetables evenly in the skillet."
+    },
+    {
+      "step": 5,
+      "instruction": "Pour the egg mixture evenly over the vegetables in the skillet. Let it cook without stirring for 4-5 minutes, until the edges begin to set."
+    },
+    {
+      "step": 6,
+      "instruction": "Sprinkle the remaining cheese evenly over the top of the frittata."
+    },
+    {
+      "step": 7,
+      "instruction": "Transfer the skillet to the oven and broil for 3-5 minutes, or bake for 8-10 minutes, until the top is golden brown and the center is fully set."
+    },
+    {
+      "step": 8,
+      "instruction": "Carefully remove the skillet from the oven (handle will be hot!). Let the frittata cool in the pan for 2-3 minutes before slicing and serving."
+    }
+  ],
+  "nutrition": {
+    "calories": 320
+  },
+  "author": "Chowboy AI",
+  "datePublished": "2025-09-03"
+}

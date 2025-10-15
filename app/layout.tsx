@@ -4,8 +4,12 @@ import "./globals.css";
 import Navbar from "@/components/ui/Navbar";
 import Footer from "@/components/ui/Footer";
 import { OrganizationSchema, WebSiteSchema, SoftwareApplicationSchema } from "@/components/seo/StructuredData";
+import GoogleAnalytics from "@/components/analytics/GoogleAnalytics";
 
 const inter = Inter({ subsets: ["latin"] });
+
+// Google Analytics Measurement ID - replace with your actual ID
+const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || 'G-XXXXXXXXXX';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://chowboy.io'),
@@ -72,6 +76,7 @@ export default function RootLayout({
         <OrganizationSchema />
         <WebSiteSchema />
         <SoftwareApplicationSchema />
+        <GoogleAnalytics measurementId={GA_MEASUREMENT_ID} />
       </head>
       <body className={`${inter.className} antialiased`}>
         <Navbar />

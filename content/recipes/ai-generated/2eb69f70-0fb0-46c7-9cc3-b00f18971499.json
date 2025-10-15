@@ -1,0 +1,106 @@
+{
+  "title": "Mushroom and Olive Pizza",
+  "description": "A delicious homemade pizza featuring earthy mushrooms, salty olives, and a generous layer of melted cheese, all on a crispy golden crust. Perfect for a casual dinner or a get-together with friends.",
+  "image": "https://dzhtlpehzn9wm.cloudfront.net/recipes/f29b93d5-4cb9-4fee-ae73-e7c3769f4778.png",
+  "prepTime": 20,
+  "cookTime": 15,
+  "totalTime": 35,
+  "servings": 4,
+  "difficulty": "Medium",
+  "cuisine": "General",
+  "category": "AI Generated",
+  "tags": [],
+  "ingredients": [
+    {
+      "amount": "1.0 ball",
+      "item": "Pizza dough"
+    },
+    {
+      "amount": "0.5 cup",
+      "item": "Pizza sauce"
+    },
+    {
+      "amount": "1.0 cup",
+      "item": "Mozzarella cheese, shredded"
+    },
+    {
+      "amount": "0.5 cup",
+      "item": "Cremini mushrooms, sliced"
+    },
+    {
+      "amount": "0.2 cup",
+      "item": "Black olives, sliced"
+    },
+    {
+      "amount": "1.0 tablespoon",
+      "item": "Olive oil"
+    },
+    {
+      "amount": "0.2 teaspoon",
+      "item": "Dried oregano"
+    },
+    {
+      "amount": "0.1 teaspoon",
+      "item": "Garlic powder"
+    },
+    {
+      "amount": "1.0 pinch",
+      "item": "Salt"
+    },
+    {
+      "amount": "1.0 pinch",
+      "item": "Black pepper"
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "instruction": "Preheat your oven to 450°F (230°C). If using a pizza stone, place it in the oven while preheating."
+    },
+    {
+      "step": 2,
+      "instruction": "On a lightly floured surface, stretch or roll out the pizza dough to your desired thickness and shape (usually 12-14 inches round)."
+    },
+    {
+      "step": 3,
+      "instruction": "Carefully transfer the dough to a pizza peel lightly dusted with cornmeal or a baking sheet lined with parchment paper."
+    },
+    {
+      "step": 4,
+      "instruction": "Spread the pizza sauce evenly over the dough, leaving a small border for the crust."
+    },
+    {
+      "step": 5,
+      "instruction": "Sprinkle half of the mozzarella cheese over the sauce."
+    },
+    {
+      "step": 6,
+      "instruction": "Arrange the sliced mushrooms and olives over the cheese."
+    },
+    {
+      "step": 7,
+      "instruction": "Top with the remaining mozzarella cheese, then sprinkle with dried oregano and garlic powder."
+    },
+    {
+      "step": 8,
+      "instruction": "Drizzle lightly with olive oil and season with a pinch of salt and pepper."
+    },
+    {
+      "step": 9,
+      "instruction": "Carefully transfer the pizza to the preheated oven or pizza stone."
+    },
+    {
+      "step": 10,
+      "instruction": "Bake for 12-15 minutes, or until the crust is golden brown and the cheese is bubbly and slightly browned."
+    },
+    {
+      "step": 11,
+      "instruction": "Remove from the oven, let it cool for a few minutes before slicing, and serve hot."
+    }
+  ],
+  "nutrition": {
+    "calories": 450
+  },
+  "author": "Chowboy AI",
+  "datePublished": "2025-10-02"
+}

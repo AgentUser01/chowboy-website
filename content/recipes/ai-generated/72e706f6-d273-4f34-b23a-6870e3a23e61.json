@@ -1,0 +1,150 @@
+{
+  "title": "Vegetarian Lasagna",
+  "description": "A comforting and hearty vegetarian lasagna layered with savory mushrooms, rich tomato sauce, creamy ricotta, and melted cheese, all nestled between tender pasta sheets.",
+  "image": "https://dzhtlpehzn9wm.cloudfront.net/recipes/ae004017-2d68-4ddc-90e9-2aff633eb953.png",
+  "prepTime": 30,
+  "cookTime": 60,
+  "totalTime": 90,
+  "servings": 8,
+  "difficulty": "Medium",
+  "cuisine": "General",
+  "category": "AI Generated",
+  "tags": [],
+  "ingredients": [
+    {
+      "amount": "1.0 tablespoon",
+      "item": "olive oil"
+    },
+    {
+      "amount": "1.0",
+      "item": "large onion, chopped"
+    },
+    {
+      "amount": "3.0 cloves",
+      "item": "garlic, minced"
+    },
+    {
+      "amount": "8.0 ounces",
+      "item": "cremini mushrooms, sliced"
+    },
+    {
+      "amount": "1.0 teaspoon",
+      "item": "dried oregano"
+    },
+    {
+      "amount": "0.5 teaspoon",
+      "item": "dried basil"
+    },
+    {
+      "amount": "28.0 ounces",
+      "item": "crushed tomatoes"
+    },
+    {
+      "amount": "6.0 ounces",
+      "item": "tomato paste"
+    },
+    {
+      "amount": "0.5 cup",
+      "item": "water or vegetable broth"
+    },
+    {
+      "amount": "1.0 teaspoon",
+      "item": "sugar (optional, to reduce acidity)"
+    },
+    {
+      "amount": "15.0 ounces",
+      "item": "ricotta cheese"
+    },
+    {
+      "amount": "1.0",
+      "item": "large egg"
+    },
+    {
+      "amount": "0.2 cup",
+      "item": "fresh parsley, chopped"
+    },
+    {
+      "amount": "0.5 teaspoon",
+      "item": "salt"
+    },
+    {
+      "amount": "0.2 teaspoon",
+      "item": "black pepper"
+    },
+    {
+      "amount": "12.0",
+      "item": "lasagna noodles, no-boil or oven-ready"
+    },
+    {
+      "amount": "4.0 cups",
+      "item": "shredded mozzarella cheese"
+    },
+    {
+      "amount": "0.5 cup",
+      "item": "grated Parmesan cheese"
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "instruction": "Preheat oven to 375°F (190°C)."
+    },
+    {
+      "step": 2,
+      "instruction": "Heat olive oil in a large pot or Dutch oven over medium heat. Add onion and cook until softened, about 5-7 minutes. Add minced garlic and sliced mushrooms, cook until mushrooms are tender and lightly browned, about 8-10 minutes."
+    },
+    {
+      "step": 3,
+      "instruction": "Stir in dried oregano and basil. Add crushed tomatoes, tomato paste, water (or broth), and sugar (if using). Bring to a simmer, then reduce heat, cover, and let it cook for at least 20 minutes to allow flavors to meld, stirring occasionally."
+    },
+    {
+      "step": 4,
+      "instruction": "In a medium bowl, combine ricotta cheese, egg, chopped parsley, salt, and pepper. Mix well."
+    },
+    {
+      "step": 5,
+      "instruction": "Spread a thin layer of tomato sauce on the bottom of a 9x13 inch baking dish."
+    },
+    {
+      "step": 6,
+      "instruction": "Place a single layer of lasagna noodles over the sauce (break noodles as needed to fit)."
+    },
+    {
+      "step": 7,
+      "instruction": "Spread half of the ricotta mixture over the noodles. Top with about 1.5 cups of shredded mozzarella cheese."
+    },
+    {
+      "step": 8,
+      "instruction": "Spoon about 1.5 cups of tomato sauce over the mozzarella."
+    },
+    {
+      "step": 9,
+      "instruction": "Repeat the noodle, ricotta, mozzarella, and sauce layers."
+    },
+    {
+      "step": 10,
+      "instruction": "Place a final layer of noodles, then cover with the remaining tomato sauce."
+    },
+    {
+      "step": 11,
+      "instruction": "Sprinkle the remaining mozzarella cheese and grated Parmesan cheese over the top."
+    },
+    {
+      "step": 12,
+      "instruction": "Cover the baking dish loosely with aluminum foil (you may lightly spray the underside of the foil with cooking spray to prevent cheese from sticking)."
+    },
+    {
+      "step": 13,
+      "instruction": "Bake for 40 minutes. Remove the foil and bake for an additional 15-20 minutes, or until the cheese is bubbly and lightly browned."
+    },
+    {
+      "step": 14,
+      "instruction": "Let the lasagna rest for 10-15 minutes before slicing and serving. This helps it set and makes for cleaner slices."
+    }
+  ],
+  "nutrition": {
+    "calories": 450
+  },
+  "author": "Chowboy AI",
+  "datePublished": "2025-10-01"
+}

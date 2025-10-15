@@ -1,0 +1,73 @@
+{
+  "title": "BLT Breakfast Sandwich",
+  "description": "A hearty breakfast sandwich featuring crispy bacon, a fried egg, fresh tomato, and crisp lettuce on toasted bread.",
+  "prepTime": 5,
+  "cookTime": 10,
+  "totalTime": 15,
+  "servings": 1,
+  "difficulty": "Medium",
+  "cuisine": "General",
+  "category": "AI Generated",
+  "tags": [],
+  "ingredients": [
+    {
+      "amount": "2.0 slices",
+      "item": "bread"
+    },
+    {
+      "amount": "2.0 slices",
+      "item": "bacon"
+    },
+    {
+      "amount": "1.0 large",
+      "item": "egg"
+    },
+    {
+      "amount": "2.0 slices",
+      "item": "tomato"
+    },
+    {
+      "amount": "2.0 leaves",
+      "item": "lettuce"
+    },
+    {
+      "amount": "1.0 tablespoon",
+      "item": "butter or bacon fat"
+    },
+    {
+      "amount": "0.0 to taste",
+      "item": "salt"
+    },
+    {
+      "amount": "0.0 to taste",
+      "item": "black pepper"
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "instruction": "Cook bacon in a skillet over medium heat until crispy, about 3-4 minutes per side. Remove and drain on paper towels. Pour off excess fat, leaving about 1 tablespoon in the skillet."
+    },
+    {
+      "step": 2,
+      "instruction": "Toast the bread slices in a toaster or the skillet until golden brown."
+    },
+    {
+      "step": 3,
+      "instruction": "In the same skillet with the bacon fat, melt butter if using. Crack the egg into the skillet. Fry to your desired doneness, seasoning with salt and pepper. For a runny yolk, cook about 2-3 minutes."
+    },
+    {
+      "step": 4,
+      "instruction": "Assemble the sandwich: Place one slice of toast on a plate. Layer with lettuce, tomato slices, the fried egg, and crispy bacon. Top with the second slice of toast."
+    },
+    {
+      "step": 5,
+      "instruction": "Serve immediately."
+    }
+  ],
+  "nutrition": {
+    "calories": 550
+  },
+  "author": "Chowboy AI",
+  "datePublished": "2025-08-31"
+}

@@ -1,0 +1,114 @@
+{
+  "title": "Chicken Gyros",
+  "description": "Flavorful marinated chicken, fresh vegetables, and creamy tzatziki all wrapped in warm pita bread for a delicious and satisfying meal.",
+  "image": "https://dzhtlpehzn9wm.cloudfront.net/recipes/a51d93af-36c0-484c-976b-94e4a25f4602.png",
+  "prepTime": 25,
+  "cookTime": 15,
+  "totalTime": 40,
+  "servings": 4,
+  "difficulty": "Medium",
+  "cuisine": "General",
+  "category": "AI Generated",
+  "tags": [],
+  "ingredients": [
+    {
+      "amount": "1.5 lb",
+      "item": "Chicken breast"
+    },
+    {
+      "amount": "0.5 cup",
+      "item": "Greek yogurt"
+    },
+    {
+      "amount": "2.0 tbsp",
+      "item": "Olive oil"
+    },
+    {
+      "amount": "2.0 cloves",
+      "item": "Garlic, minced"
+    },
+    {
+      "amount": "1.0 tbsp",
+      "item": "Lemon juice"
+    },
+    {
+      "amount": "1.0 tsp",
+      "item": "Dried oregano"
+    },
+    {
+      "amount": "0.5 tsp",
+      "item": "Cumin"
+    },
+    {
+      "amount": "0.2 tsp",
+      "item": "Smoked paprika"
+    },
+    {
+      "amount": "0.5 tsp",
+      "item": "Salt"
+    },
+    {
+      "amount": "0.2 tsp",
+      "item": "Black pepper"
+    },
+    {
+      "amount": "4.0 pieces",
+      "item": "Pita bread"
+    },
+    {
+      "amount": "1.0 cup",
+      "item": "Tzatziki sauce"
+    },
+    {
+      "amount": "0.5 cup",
+      "item": "Cucumber, diced"
+    },
+    {
+      "amount": "0.5 cup",
+      "item": "Tomato, diced"
+    },
+    {
+      "amount": "0.2 cup",
+      "item": "Red onion, thinly sliced"
+    },
+    {
+      "amount": "0.2 cup",
+      "item": "Fresh parsley, chopped (optional)"
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "instruction": "Slice chicken breast into 1/2-inch strips."
+    },
+    {
+      "step": 2,
+      "instruction": "In a bowl, combine Greek yogurt, 1 tablespoon olive oil, minced garlic, lemon juice, oregano, cumin, smoked paprika, salt, and pepper. Add chicken strips and toss to coat. Marinate for at least 20 minutes at room temperature, or up to 4 hours in the refrigerator."
+    },
+    {
+      "step": 3,
+      "instruction": "Heat the remaining 1 tablespoon of olive oil in a large skillet or grill pan over medium-high heat."
+    },
+    {
+      "step": 4,
+      "instruction": "Add the marinated chicken to the skillet, without overcrowding, and cook for 5-7 minutes, flipping occasionally, until golden brown and cooked through."
+    },
+    {
+      "step": 5,
+      "instruction": "While the chicken cooks, warm the pita bread according to package instructions ( skillet, microwave, or oven)."
+    },
+    {
+      "step": 6,
+      "instruction": "Assemble the gyros: spread a generous amount of tzatziki on each warm pita. Top with cooked chicken, diced cucumber, diced tomato, and sliced red onion. Sprinkle with fresh parsley if desired."
+    },
+    {
+      "step": 7,
+      "instruction": "Fold or roll the pita to enclose the fillings and serve immediately."
+    }
+  ],
+  "nutrition": {
+    "calories": 550
+  },
+  "author": "Chowboy AI",
+  "datePublished": "2025-09-30"
+}

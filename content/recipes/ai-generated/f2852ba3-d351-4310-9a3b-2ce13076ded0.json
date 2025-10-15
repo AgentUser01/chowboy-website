@@ -1,0 +1,78 @@
+{
+  "title": "Quick Asian Cucumber Salad",
+  "description": "A refreshing, tangy, and slightly spicy Asian-inspired cucumber salad that makes a perfect side dish for any meal. It's incredibly quick to prepare.",
+  "image": "https://dzhtlpehzn9wm.cloudfront.net/recipes/ae5753dc-7619-4f74-9b32-e7097673cdce.png",
+  "prepTime": 10,
+  "cookTime": 0,
+  "totalTime": 10,
+  "servings": 4,
+  "difficulty": "Medium",
+  "cuisine": "General",
+  "category": "AI Generated",
+  "tags": [],
+  "ingredients": [
+    {
+      "amount": "3.0 medium",
+      "item": "cucumbers (e.g., English or Persian)"
+    },
+    {
+      "amount": "0.2 cup",
+      "item": "rice vinegar"
+    },
+    {
+      "amount": "2.0 tbsp",
+      "item": "soy sauce"
+    },
+    {
+      "amount": "1.0 tbsp",
+      "item": "sesame oil"
+    },
+    {
+      "amount": "1.0 tbsp",
+      "item": "granulated sugar"
+    },
+    {
+      "amount": "1.0 clove",
+      "item": "garlic, minced"
+    },
+    {
+      "amount": "0.5 tsp",
+      "item": "ginger, grated (optional)"
+    },
+    {
+      "amount": "0.5 tsp",
+      "item": "red pepper flakes (optional)"
+    },
+    {
+      "amount": "1.0 tbsp",
+      "item": "sesame seeds, toasted (for garnish)"
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "instruction": "Wash and slice the cucumbers. You can slice them into thin rounds, half-moons, or use a vegetable peeler to create ribbons. For extra crispiness, you can lightly salt the slices and let them sit for 10-15 minutes, then pat dry to remove excess water."
+    },
+    {
+      "step": 2,
+      "instruction": "In a medium bowl, whisk together the rice vinegar, soy sauce, sesame oil, sugar, minced garlic, grated ginger (if using), and red pepper flakes (if using) until the sugar is dissolved."
+    },
+    {
+      "step": 3,
+      "instruction": "Add the sliced cucumbers to the dressing and toss gently to coat evenly."
+    },
+    {
+      "step": 4,
+      "instruction": "For best results, let the salad chill in the refrigerator for at least 15-20 minutes to allow the flavors to meld."
+    },
+    {
+      "step": 5,
+      "instruction": "Before serving, give the salad another quick toss. Garnish with toasted sesame seeds."
+    }
+  ],
+  "nutrition": {
+    "calories": 90
+  },
+  "author": "Chowboy AI",
+  "datePublished": "2025-09-30"
+}

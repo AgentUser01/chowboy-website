@@ -1,0 +1,114 @@
+{
+  "title": "Baked Macaroni and Cheese with Tomato and Panko Topping",
+  "description": "A classic comfort food elevated with fresh tomatoes and a crispy, golden panko topping. Perfect for a family meal or potluck.",
+  "image": "https://dzhtlpehzn9wm.cloudfront.net/recipes/5e9f4164-8e36-4d69-a09e-7b058e819907.png",
+  "prepTime": 20,
+  "cookTime": 35,
+  "totalTime": 55,
+  "servings": 6,
+  "difficulty": "Medium",
+  "cuisine": "General",
+  "category": "AI Generated",
+  "tags": [],
+  "ingredients": [
+    {
+      "amount": "450.0 g",
+      "item": "Elbow macaroni"
+    },
+    {
+      "amount": "0.5 cup",
+      "item": "Unsalted butter"
+    },
+    {
+      "amount": "0.5 cup",
+      "item": "All-purpose flour"
+    },
+    {
+      "amount": "4.0 cups",
+      "item": "Milk"
+    },
+    {
+      "amount": "450.0 g",
+      "item": "Cheddar cheese, shredded"
+    },
+    {
+      "amount": "115.0 g",
+      "item": "Gruyere cheese, shredded"
+    },
+    {
+      "amount": "1.0 tsp",
+      "item": "Salt"
+    },
+    {
+      "amount": "0.5 tsp",
+      "item": "Black pepper"
+    },
+    {
+      "amount": "0.2 tsp",
+      "item": "Nutmeg"
+    },
+    {
+      "amount": "1.0 tsp",
+      "item": "Dijon mustard"
+    },
+    {
+      "amount": "2.0",
+      "item": "Roma tomatoes, diced"
+    },
+    {
+      "amount": "1.5 cups",
+      "item": "Panko breadcrumbs"
+    },
+    {
+      "amount": "2.0 tbsp",
+      "item": "Olive oil"
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "instruction": "Preheat oven to 375F (190C). Grease a 9x13 inch baking dish."
+    },
+    {
+      "step": 2,
+      "instruction": "Cook macaroni according to package directions until al dente. Drain and set aside."
+    },
+    {
+      "step": 3,
+      "instruction": "In a large saucepan or Dutch oven, melt butter over medium heat. Whisk in flour and cook for 1-2 minutes, stirring constantly, to create a roux."
+    },
+    {
+      "step": 4,
+      "instruction": "Gradually whisk in milk until smooth. Bring to a simmer, stirring, until the sauce thickens, about 5-7 minutes."
+    },
+    {
+      "step": 5,
+      "instruction": "Remove from heat. Stir in shredded cheddar and Gruyere cheese until melted and smooth. Season with salt, pepper, nutmeg, and Dijon mustard."
+    },
+    {
+      "step": 6,
+      "instruction": "Add the cooked macaroni and diced tomatoes to the cheese sauce and stir to combine."
+    },
+    {
+      "step": 7,
+      "instruction": "Pour the macaroni mixture into the prepared baking dish."
+    },
+    {
+      "step": 8,
+      "instruction": "In a small bowl, toss panko breadcrumbs with olive oil. Sprinkle evenly over the macaroni and cheese."
+    },
+    {
+      "step": 9,
+      "instruction": "Bake for 25-30 minutes, or until bubbling and the panko topping is golden brown and crispy. If the topping browns too quickly, cover loosely with foil."
+    },
+    {
+      "step": 10,
+      "instruction": "Let stand for 5-10 minutes before serving."
+    }
+  ],
+  "nutrition": {
+    "calories": 550
+  },
+  "author": "Chowboy AI",
+  "datePublished": "2025-09-30"
+}

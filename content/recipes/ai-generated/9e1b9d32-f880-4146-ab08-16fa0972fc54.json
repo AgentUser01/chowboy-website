@@ -1,0 +1,86 @@
+{
+  "title": "Savory Breakfast Flatbread Pizza",
+  "description": "A quick and delicious breakfast or brunch pizza featuring crispy bacon, fluffy eggs, and melted cheese on a convenient flatbread base.",
+  "image": "https://dzhtlpehzn9wm.cloudfront.net/recipes/6cc9cace-f90c-4e7d-9ce1-4b6063ef4f9c.png",
+  "prepTime": 10,
+  "cookTime": 15,
+  "totalTime": 25,
+  "servings": 2,
+  "difficulty": "Medium",
+  "cuisine": "General",
+  "category": "AI Generated",
+  "tags": [],
+  "ingredients": [
+    {
+      "amount": "2.0 pieces",
+      "item": "Flatbreads (naan, pita, or similar)"
+    },
+    {
+      "amount": "4.0 slices",
+      "item": "Bacon"
+    },
+    {
+      "amount": "3.0 large",
+      "item": "Eggs"
+    },
+    {
+      "amount": "0.2 cup",
+      "item": "Milk or cream"
+    },
+    {
+      "amount": "0.5 cup",
+      "item": "Shredded cheese (cheddar, mozzarella, or a blend)"
+    },
+    {
+      "amount": "0.5 tbsp",
+      "item": "Olive oil"
+    },
+    {
+      "amount": "1.0 pinch",
+      "item": "Salt"
+    },
+    {
+      "amount": "1.0 pinch",
+      "item": "Black pepper"
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "instruction": "Preheat your oven to 375F (190C)."
+    },
+    {
+      "step": 2,
+      "instruction": "Cook the bacon in a skillet over medium heat until crispy. Remove bacon, drain on paper towels, and crumble once cooled. Reserve a small amount of bacon fat if desired for cooking eggs."
+    },
+    {
+      "step": 3,
+      "instruction": "In a bowl, whisk eggs with milk or cream, salt, and pepper until well combined. In the same skillet (or a separate non-stick pan), add a little olive oil or reserved bacon fat. Pour in egg mixture and scramble until cooked through but still soft."
+    },
+    {
+      "step": 4,
+      "instruction": "Place the flatbreads on a baking sheet. Lightly brush the edges with a bit of olive oil if desired."
+    },
+    {
+      "step": 5,
+      "instruction": "Divide the scrambled eggs evenly between the two flatbreads. Sprinkle the crumbled bacon over the eggs."
+    },
+    {
+      "step": 6,
+      "instruction": "Top each flatbread with shredded cheese."
+    },
+    {
+      "step": 7,
+      "instruction": "Bake for 8-12 minutes, or until the cheese is melted and bubbly and the flatbread edges are slightly golden."
+    },
+    {
+      "step": 8,
+      "instruction": "Remove from oven, slice, and serve immediately."
+    }
+  ],
+  "nutrition": {
+    "calories": 450
+  },
+  "author": "Chowboy AI",
+  "datePublished": "2025-09-30"
+}

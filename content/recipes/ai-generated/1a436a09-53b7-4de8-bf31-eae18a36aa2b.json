@@ -1,0 +1,96 @@
+{
+  "title": "Classic Homemade Potato Gnocchi",
+  "description": "A traditional Italian recipe for light and tender potato gnocchi, perfect for serving with your favorite sauce. This recipe details how to make the gnocchi from scratch, including the technique for creating their classic ridged shape.",
+  "prepTime": 60,
+  "cookTime": 40,
+  "totalTime": 100,
+  "servings": 4,
+  "difficulty": "Medium",
+  "category": "",
+  "tags": [],
+  "ingredients": [
+    {
+      "amount": "2.0 lbs",
+      "item": "Russet potatoes"
+    },
+    {
+      "amount": "1.5 cups",
+      "item": "All-purpose flour"
+    },
+    {
+      "amount": "1.0 large",
+      "item": "Egg (optional, for binding)"
+    },
+    {
+      "amount": "1.0 teaspoon",
+      "item": "Salt"
+    },
+    {
+      "amount": "0.2 teaspoon",
+      "item": "Nutmeg (freshly grated)"
+    },
+    {
+      "amount": "0.5 cup",
+      "item": "Semolina flour (for dusting, optional)"
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "instruction": "Wash the potatoes and boil them in their skins until very tender, about 20-30 minutes depending on size. Alternatively, bake them at 400°F (200°C) until tender, about 1 hour. Baking yields drier potatoes, which is ideal for gnocchi."
+    },
+    {
+      "step": 2,
+      "instruction": "Once cooked, peel the potatoes while they are still hot. Using a potato ricer or masher, press or mash the potatoes onto a clean work surface or a large bowl. Ensure there are no lumps."
+    },
+    {
+      "step": 3,
+      "instruction": "Spread the riced potatoes out to allow some of the steam to escape and cool slightly for about 5-10 minutes."
+    },
+    {
+      "step": 4,
+      "instruction": "Create a well in the center of the potatoes. Sprinkle about 1 cup of the all-purpose flour over the potatoes, along with the salt and nutmeg. If using, lightly beat the egg and pour it into the well."
+    },
+    {
+      "step": 5,
+      "instruction": "Gently work the ingredients together with your hands, bringing the flour from the outside into the center. Knead minimally until the mixture just comes together into a soft, pliable dough. Avoid overworking the dough, as this will make the gnocchi tough. It should be slightly tacky but not sticky."
+    },
+    {
+      "step": 6,
+      "instruction": "If the dough is too sticky, add more flour, a tablespoon at a time, until it's manageable. If it's too dry, add a few drops of water."
+    },
+    {
+      "step": 7,
+      "instruction": "Divide the dough into 4-6 equal portions. Roll each portion on a lightly floured surface into a long rope, about 3/4 inch (2 cm) thick."
+    },
+    {
+      "step": 8,
+      "instruction": "Using a knife or bench scraper, cut the ropes into 3/4 to 1-inch (2-2.5 cm) pieces."
+    },
+    {
+      "step": 9,
+      "instruction": "To shape the gnocchi, gently roll each piece over the tines of a fork or a gnocchi board, applying slight pressure with your thumb to create the traditional ridges. This helps them hold sauce. Dust with a little semolina flour as you go to prevent sticking."
+    },
+    {
+      "step": 10,
+      "instruction": "Place the shaped gnocchi on a lightly floured baking sheet or parchment paper, ensuring they don't touch, until ready to cook. You can freeze them at this stage on the baking sheet, then transfer to a bag once frozen solid."
+    },
+    {
+      "step": 11,
+      "instruction": "Bring a large pot of salted water to a rolling boil. Gently drop the gnocchi into the boiling water in batches, being careful not to overcrowd the pot."
+    },
+    {
+      "step": 12,
+      "instruction": "The gnocchi are cooked when they float to the surface, which usually takes 2-4 minutes. Cook for an additional 30 seconds after they float to ensure they are cooked through."
+    },
+    {
+      "step": 13,
+      "instruction": "Remove the cooked gnocchi with a slotted spoon and transfer them directly into your prepared sauce or serve immediately with butter and cheese."
+    }
+  ],
+  "nutrition": {
+    "calories": 400
+  },
+  "author": "Chowboy AI",
+  "datePublished": "2025-09-20"
+}

@@ -1,0 +1,78 @@
+{
+  "title": "Crispy Baked Chicken Thighs",
+  "description": "Simple and delicious bone-in, skin-on chicken thighs baked to crispy perfection with a savory spice blend.",
+  "image": "https://dzhtlpehzn9wm.cloudfront.net/recipes/2b3f9feb-bd22-4387-a4b2-2cb6ccf52b4a.png",
+  "prepTime": 10,
+  "cookTime": 40,
+  "totalTime": 50,
+  "servings": 4,
+  "difficulty": "Medium",
+  "cuisine": "General",
+  "category": "AI Generated",
+  "tags": [],
+  "ingredients": [
+    {
+      "amount": "4.0 pieces",
+      "item": "bone-in, skin-on chicken thighs"
+    },
+    {
+      "amount": "1.0 tablespoon",
+      "item": "olive oil"
+    },
+    {
+      "amount": "1.0 teaspoon",
+      "item": "salt"
+    },
+    {
+      "amount": "0.5 teaspoon",
+      "item": "black pepper"
+    },
+    {
+      "amount": "0.5 teaspoon",
+      "item": "garlic powder"
+    },
+    {
+      "amount": "0.5 teaspoon",
+      "item": "onion powder"
+    },
+    {
+      "amount": "0.5 teaspoon",
+      "item": "paprika"
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "instruction": "Preheat your oven to 400°F (200°C)."
+    },
+    {
+      "step": 2,
+      "instruction": "Pat the chicken thighs thoroughly dry with paper towels. This is crucial for crispy skin."
+    },
+    {
+      "step": 3,
+      "instruction": "In a small bowl, combine salt, black pepper, garlic powder, onion powder, and paprika."
+    },
+    {
+      "step": 4,
+      "instruction": "Place the chicken thighs on a clean surface. Drizzle them with olive oil, then rub the spice mixture evenly over all sides of the chicken, making sure to get some under the skin if desired."
+    },
+    {
+      "step": 5,
+      "instruction": "Arrange the chicken thighs skin-side up on a baking sheet or in a shallow roasting pan. Ensure there is some space between each piece for even cooking and browning."
+    },
+    {
+      "step": 6,
+      "instruction": "Bake for 35-45 minutes, or until the internal temperature of the thickest part of the thigh reaches 175°F (80°C) and the skin is golden brown and crispy. If the skin isn't crispy enough, you can broil for the last 2-3 minutes, watching carefully to prevent burning."
+    },
+    {
+      "step": 7,
+      "instruction": "Remove from the oven and let the chicken rest for 5-10 minutes before serving. This allows the juices to redistribute, keeping the chicken moist."
+    }
+  ],
+  "nutrition": {
+    "calories": 350
+  },
+  "author": "Chowboy AI",
+  "datePublished": "2025-09-30"
+}

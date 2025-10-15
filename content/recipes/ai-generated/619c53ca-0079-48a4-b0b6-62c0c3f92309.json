@@ -1,0 +1,92 @@
+{
+  "title": "Classic Homemade Potato Gnocchi",
+  "description": "Pillowy soft homemade potato gnocchi, perfect for pairing with your favorite sauce. This recipe guides you through making these delightful Italian dumplings from scratch.",
+  "prepTime": 60,
+  "cookTime": 30,
+  "totalTime": 90,
+  "servings": 4,
+  "difficulty": "Medium",
+  "category": "",
+  "tags": [],
+  "ingredients": [
+    {
+      "amount": "2.0 pounds",
+      "item": "Russet potatoes"
+    },
+    {
+      "amount": "1.5 cups",
+      "item": "All-purpose flour"
+    },
+    {
+      "amount": "1.0 large",
+      "item": "egg"
+    },
+    {
+      "amount": "0.5 teaspoon",
+      "item": "Salt"
+    },
+    {
+      "amount": "2.0 tablespoons",
+      "item": "Parmesan cheese (optional)"
+    },
+    {
+      "amount": "0.0 as needed",
+      "item": "Extra flour for dusting"
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "instruction": "Wash potatoes and boil them in their skins until very tender, about 20-30 minutes, depending on size. Alternatively, bake them until tender."
+    },
+    {
+      "step": 2,
+      "instruction": "Once cooked, peel the potatoes while they are still warm (but cool enough to handle)."
+    },
+    {
+      "step": 3,
+      "instruction": "Pass the warm potatoes through a potato ricer or mash them very finely with a fork or potato masher. Spread them out on a clean surface or a large baking sheet to allow some steam to escape and cool slightly for about 10 minutes."
+    },
+    {
+      "step": 4,
+      "instruction": "On a clean, floured work surface, pile the riced potatoes into a mound. Make a well in the center."
+    },
+    {
+      "step": 5,
+      "instruction": "Crack the egg into the well, add salt, and optional Parmesan cheese. Gradually add about 1 cup of the flour around the edges of the well."
+    },
+    {
+      "step": 6,
+      "instruction": "Using a fork, gently incorporate the egg and flour into the potatoes, then knead lightly until a soft, uniform dough forms. Add more flour, a little at a time, if the dough is too sticky, but avoid overworking it as this will result in tough gnocchi."
+    },
+    {
+      "step": 7,
+      "instruction": "Divide the dough into 4-6 equal pieces. Roll each piece into a log about 3/4 inch in diameter."
+    },
+    {
+      "step": 8,
+      "instruction": "Cut each log into 1-inch pieces to form the gnocchi. You can leave them as is, or for classic ridges, gently roll each piece over the tines of a fork or a gnocchi board."
+    },
+    {
+      "step": 9,
+      "instruction": "Dust the formed gnocchi lightly with flour and place them on a floured baking sheet, ensuring they don't touch each other to prevent sticking."
+    },
+    {
+      "step": 10,
+      "instruction": "Bring a large pot of salted water to a rolling boil. Drop the gnocchi in batches (do not overcrowd the pot)."
+    },
+    {
+      "step": 11,
+      "instruction": "The gnocchi are cooked when they float to the surface. Let them cook for another 30 seconds to 1 minute after floating, then remove them with a slotted spoon."
+    },
+    {
+      "step": 12,
+      "instruction": "Serve immediately with your favorite sauce, such as pesto, marinara, or a butter and sage sauce."
+    }
+  ],
+  "nutrition": {
+    "calories": 350
+  },
+  "author": "Chowboy AI",
+  "datePublished": "2025-09-20"
+}

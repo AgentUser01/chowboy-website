@@ -1,0 +1,85 @@
+{
+  "title": "Thanksgiving Leftover Casserole",
+  "description": "\"Turkey, mashed potatoes, cheese, a special sauce, and some little extras combine to make a tasty casserole for any day of the week. Absolutely delicious way to use those tasty Thanksgiving leftovers.\" Original recipe yields 8 servings.",
+  "image": "https://dzhtlpehzn9wm.cloudfront.net/recipe-imports/2d846853-3848-48f8-81e5-b86d7fb6c791.jpg",
+  "prepTime": 30,
+  "cookTime": 45,
+  "totalTime": 75,
+  "servings": 8,
+  "difficulty": "Medium",
+  "category": "AI Generated",
+  "tags": [],
+  "ingredients": [
+    {
+      "amount": "3.0 tablespoons",
+      "item": "butter"
+    },
+    {
+      "amount": "2.0 tablespoons",
+      "item": "all-purpose flour"
+    },
+    {
+      "amount": "0.5 cup",
+      "item": "evaporated milk"
+    },
+    {
+      "amount": "1.0 cup",
+      "item": "water"
+    },
+    {
+      "amount": "0.2 teaspoon",
+      "item": "salt"
+    },
+    {
+      "amount": "0.2 teaspoon",
+      "item": "freshly ground black pepper"
+    },
+    {
+      "amount": "0.8 teaspoon",
+      "item": "onion powder"
+    },
+    {
+      "amount": "2.0 tablespoons",
+      "item": "butter"
+    },
+    {
+      "amount": "1.0 cup",
+      "item": "fine dry herb-seasoned bread stuffing mix"
+    },
+    {
+      "amount": "1.0 cup",
+      "item": "cooked, diced turkey meat"
+    },
+    {
+      "amount": "1.0 cup",
+      "item": "shredded Cheddar cheese"
+    },
+    {
+      "amount": "2.0 cups",
+      "item": "leftover mashed potatoes"
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "instruction": "Preheat oven to 350 degrees F (175 degrees C). Lightly grease a 9x13 inch baking dish."
+    },
+    {
+      "step": 2,
+      "instruction": "Melt 3 tablespoons butter in a saucepan over low heat. Blend in the flour; cook for 5 minutes, or until bubbling. Slowly stir in evaporated milk and water, then season with salt, pepper, and onion powder. Stir sauce over low heat for 5 minutes."
+    },
+    {
+      "step": 3,
+      "instruction": "In a separate saucepan over low heat, melt 2 tablespoons butter. Stir in the dry stuffing mix. Place the turkey in the prepared baking dish. Pour the sauce over turkey, then sprinkle with Cheddar cheese. Spread mashed potatoes over cheese. Top mashed potatoes with the stuffing mixture."
+    },
+    {
+      "step": 4,
+      "instruction": "Bake 45 minutes in the preheated oven."
+    }
+  ],
+  "nutrition": {
+    "calories": 366
+  },
+  "author": "Chowboy AI",
+  "datePublished": "2025-10-02"
+}

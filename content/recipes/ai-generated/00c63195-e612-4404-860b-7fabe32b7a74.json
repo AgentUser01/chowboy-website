@@ -1,0 +1,24 @@
+{
+  "title": "Rate Me",
+  "description": "rate flow",
+  "prepTime": 0,
+  "cookTime": 0,
+  "totalTime": 0,
+  "servings": 0,
+  "difficulty": "Medium",
+  "category": "",
+  "tags": [],
+  "ingredients": [],
+  "instructions": [
+    {
+      "step": 1,
+      "instruction": "a"
+    },
+    {
+      "step": 2,
+      "instruction": "b"
+    }
+  ],
+  "author": "Chowboy AI",
+  "datePublished": "2025-08-25"
+}

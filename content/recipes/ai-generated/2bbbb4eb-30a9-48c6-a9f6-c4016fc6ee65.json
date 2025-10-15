@@ -1,0 +1,74 @@
+{
+  "title": "Parsley Walnut Pesto",
+  "description": "A vibrant and nutty pesto made with fresh parsley and crunchy walnuts, perfect for tossing with pasta, spreading on sandwiches, or topping grilled chicken and fish.",
+  "image": "https://dzhtlpehzn9wm.cloudfront.net/recipes/8e8642ea-20e4-451b-a97c-b40ea13fa8fe.jpg",
+  "prepTime": 10,
+  "cookTime": 0,
+  "totalTime": 10,
+  "servings": 4,
+  "difficulty": "Medium",
+  "cuisine": "General",
+  "category": "AI Generated",
+  "tags": [],
+  "ingredients": [
+    {
+      "amount": "2.0 cups",
+      "item": "fresh parsley, packed"
+    },
+    {
+      "amount": "0.5 cup",
+      "item": "walnuts"
+    },
+    {
+      "amount": "2.0 cloves",
+      "item": "garlic"
+    },
+    {
+      "amount": "0.5 cup",
+      "item": "grated Parmesan cheese"
+    },
+    {
+      "amount": "0.5 cup",
+      "item": "extra virgin olive oil"
+    },
+    {
+      "amount": "0.5 tsp",
+      "item": "salt"
+    },
+    {
+      "amount": "0.2 tsp",
+      "item": "black pepper"
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "instruction": "Wash and thoroughly dry the fresh parsley. Remove any thick stems."
+    },
+    {
+      "step": 2,
+      "instruction": "Place the walnuts and peeled garlic cloves into a food processor. Pulse a few times until roughly chopped."
+    },
+    {
+      "step": 3,
+      "instruction": "Add the fresh parsley to the food processor. Pulse until finely chopped, scraping down the sides as needed."
+    },
+    {
+      "step": 4,
+      "instruction": "Add the grated Parmesan cheese, salt, and black pepper to the mixture. Pulse again to combine."
+    },
+    {
+      "step": 5,
+      "instruction": "With the food processor running, slowly drizzle in the extra virgin olive oil until the pesto reaches your desired consistency. It should be thick but pourable."
+    },
+    {
+      "step": 6,
+      "instruction": "Taste and adjust seasoning if necessary. You may add more salt, pepper, or cheese to your liking."
+    }
+  ],
+  "nutrition": {
+    "calories": 300
+  },
+  "author": "Chowboy AI",
+  "datePublished": "2025-10-11"
+}

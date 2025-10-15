@@ -1,0 +1,121 @@
+{
+  "title": "Cheesecake Tart with Crumble Topping",
+  "description": "A delicious cheesecake tart featuring a buttery crust, creamy filling, cinnamon-spiced apples, and a crisp crumble topping, finished with warm caramel sauce.",
+  "image": "https://dzhtlpehzn9wm.cloudfront.net/recipe-imports/b4efd6ad-7d5d-4c5d-b5d6-4db16d235cd3.jpg",
+  "prepTime": 30,
+  "cookTime": 45,
+  "totalTime": 315,
+  "servings": 8,
+  "difficulty": "Medium",
+  "category": "",
+  "tags": [],
+  "ingredients": [
+    {
+      "amount": "2.0 cup",
+      "item": "All Purpose Flour"
+    },
+    {
+      "amount": "1.0 tsp",
+      "item": "Salt"
+    },
+    {
+      "amount": "1.0 cup",
+      "item": "Unsalted Butter, softened"
+    },
+    {
+      "amount": "0.2 cup",
+      "item": "Brown Sugar"
+    },
+    {
+      "amount": "1.0 cup",
+      "item": "Granulated Sugar"
+    },
+    {
+      "amount": "16.0 oz",
+      "item": "Cream Cheese, softened"
+    },
+    {
+      "amount": "2.0",
+      "item": "Eggs"
+    },
+    {
+      "amount": "2.0 tsp",
+      "item": "Vanilla Extract"
+    },
+    {
+      "amount": "3.0",
+      "item": "Tart Apples, peeled, cored and diced"
+    },
+    {
+      "amount": "2.0 tbsp",
+      "item": "Sugar"
+    },
+    {
+      "amount": "1.2 tsp",
+      "item": "Cinnamon"
+    },
+    {
+      "amount": "1.0 cup",
+      "item": "Old Fashioned Oats"
+    },
+    {
+      "amount": "0.5 cup",
+      "item": "All Purpose Flour (for topping)"
+    },
+    {
+      "amount": "0.5 cup",
+      "item": "Brown Sugar (for topping)"
+    },
+    {
+      "amount": "0.5 tsp",
+      "item": "Baking Powder"
+    },
+    {
+      "amount": "6.0 tbsp",
+      "item": "Cold Unsalted Butter, cut into small pieces"
+    },
+    {
+      "amount": "0.3 cup",
+      "item": "Caramel Sauce"
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "instruction": "Preheat your oven to 350 degrees F (175 C), grease a 9x13 inch pan with some non-stick spray and set aside."
+    },
+    {
+      "step": 2,
+      "instruction": "In the bowl of a standing mixer fitted with a paddle attachment, cream together the butter and both kinds of sugar for the crust, once well combined, add the flour and salt and mix until a dough forms. Press the dough into the bottom of your prepared pan, pop it in the oven for about 15 minutes or until the crust is lightly golden brown around the edges."
+    },
+    {
+      "step": 3,
+      "instruction": "In the same bowl of your standing mixer with the paddle attachment, add the cream cheese and cream for about 30 seconds, then add the sugar, vanilla and eggs and mix until smooth, set aside."
+    },
+    {
+      "step": 4,
+      "instruction": "Toss the apples with the sugar and cinnamon and set those aside as well while you make the topping."
+    },
+    {
+      "step": 5,
+      "instruction": "In a large bowl, add all the ingredients for the topping and using a pastry cutter or a fork, cut the butter into the dry ingredients until it's well incorporated."
+    },
+    {
+      "step": 6,
+      "instruction": "When the crust is ready, pour the cheesecake filling in, then scatter the apples all over the filling and top with the crumble topping."
+    },
+    {
+      "step": 7,
+      "instruction": "Bake for 30 to 40 minutes or until the edges are a lovely golden brown color, allow to cool to room temperature then pop them in the fridge for a minimum of 4 hours."
+    },
+    {
+      "step": 8,
+      "instruction": "When ready to serve, drizzle over some warm caramel sauce."
+    }
+  ],
+  "nutrition": {
+    "calories": 400
+  },
+  "author": "Chowboy AI",
+  "datePublished": "2025-09-27"
+}

@@ -1,0 +1,93 @@
+{
+  "title": "Marmasetti",
+  "description": "A classic Marmasetti recipe featuring ground beef, noodles, and a rich tomato sauce, baked to perfection.",
+  "image": "https://dzhtlpehzn9wm.cloudfront.net/recipe-imports/7906262a-26e0-4917-af21-445b3012c5a5.jpg",
+  "prepTime": 15,
+  "cookTime": 60,
+  "totalTime": 75,
+  "servings": 6,
+  "difficulty": "Medium",
+  "category": "AI Generated",
+  "tags": [],
+  "ingredients": [
+    {
+      "amount": "4.0",
+      "item": "onions, chopped"
+    },
+    {
+      "amount": "1.0 tbsp",
+      "item": "fat"
+    },
+    {
+      "amount": "2.0 lb",
+      "item": "ground beef"
+    },
+    {
+      "amount": "1.0 tin",
+      "item": "tomato soup, condensed"
+    },
+    {
+      "amount": "1.0 medium tin",
+      "item": "tomato juice"
+    },
+    {
+      "amount": "3.0 tbsp",
+      "item": "sugar"
+    },
+    {
+      "amount": "1.0 tsp",
+      "item": "paprika"
+    },
+    {
+      "amount": "1.0 to taste",
+      "item": "salt"
+    },
+    {
+      "amount": "1.0 to taste",
+      "item": "pepper"
+    },
+    {
+      "amount": "12.0 oz",
+      "item": "medium noodles, cooked"
+    },
+    {
+      "amount": "8.0 oz",
+      "item": "grated cheese"
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "instruction": "Preheat oven to 350°F (175°C)."
+    },
+    {
+      "step": 2,
+      "instruction": "In a large bowl, combine the chopped onions, fat, ground beef, condensed tomato soup, medium tin of tomato juice, sugar, paprika, salt, and pepper."
+    },
+    {
+      "step": 3,
+      "instruction": "Mix well, ensuring the ground beef is thoroughly combined but do not brown it."
+    },
+    {
+      "step": 4,
+      "instruction": "Add the cooked medium noodles to the mixture and stir until everything is evenly distributed."
+    },
+    {
+      "step": 5,
+      "instruction": "Fold in the grated cheese."
+    },
+    {
+      "step": 6,
+      "instruction": "Transfer the mixture to a baking dish."
+    },
+    {
+      "step": 7,
+      "instruction": "Bake uncovered for 1 hour or 45 minutes at 350°F (175°C), or until bubbly and heated through."
+    }
+  ],
+  "nutrition": {
+    "calories": 650
+  },
+  "author": "Chowboy AI",
+  "datePublished": "2025-10-02"
+}

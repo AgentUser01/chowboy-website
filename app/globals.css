@@ -1,5 +1,45 @@
 @import "tailwindcss";
 
+@theme {
+  /* Chowboy Brand Colors */
+  --color-sage-50: #F5F8F5;
+  --color-sage-100: #E6EFE7;
+  --color-sage-200: #C8DCC9;
+  --color-sage-300: #AAC9AC;
+  --color-sage-400: #8AA88B;
+  --color-sage-500: #6F906F;
+  --color-sage-600: #577357;
+  --color-sage-700: #425642;
+  --color-sage: #8AA88B;
+  
+  --color-icy-50: #F0F6FE;
+  --color-icy-100: #E1EDFD;
+  --color-icy-200: #C3DBFB;
+  --color-icy-300: #A5C9F9;
+  --color-icy-400: #8AB4F8;
+  --color-icy-500: #5A9BF6;
+  --color-icy-600: #2A7FF4;
+  --color-icy-700: #0B62DB;
+  --color-icy: #8AB4F8;
+  
+  --color-mustard-50: #FFFDF5;
+  --color-mustard-100: #FEF9E6;
+  --color-mustard-200: #FDF2C8;
+  --color-mustard-300: #FCEBAA;
+  --color-mustard-400: #F2C94C;
+  --color-mustard-500: #F0B71F;
+  --color-mustard-600: #D19A08;
+  --color-mustard-700: #A37806;
+  --color-mustard: #F2C94C;
+  
+  --color-sand-50: #FFFFFE;
+  --color-sand-100: #FBF7F0;
+  --color-sand-200: #F4E9D8;
+  --color-sand-300: #EDDBC0;
+  --color-sand-400: #E6CDA8;
+  --color-sand: #F4E9D8;
+}
+
 :root {
   --background: #FFFFFE;
   --foreground: #2E3138;

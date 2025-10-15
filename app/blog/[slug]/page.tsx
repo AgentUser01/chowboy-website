@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { getBlogPost, getBlogPosts } from '@/lib/mdx';
 import { ArticleSchema, BreadcrumbSchema } from '@/components/seo/StructuredData';
+import MDXContent from '@/components/blog/MDXContent';
 
 interface BlogPostPageProps {
   params: {
@@ -91,9 +92,24 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           )}
         </header>
 
-        <div className="prose prose-lg max-w-none text-slate-600">
-          {/* MDX content will be rendered here when we set up the MDX processor */}
-          <div dangerouslySetInnerHTML={{ __html: post.content.replace(/\n/g, '<br />') }} />
+        <div className="max-w-none">
+          <MDXContent content={post.content} />
+        </div>
+        
+        {/* CTA at end of post */}
+        <div className="mt-16 p-8 bg-sage-50 rounded-2xl border-2 border-sage-200 text-center">
+          <h3 className="text-2xl font-bold text-slate mb-4">Love cooking smarter?</h3>
+          <p className="text-slate-600 mb-6">
+            Download Chowboy for AI-powered recipe recommendations, smart grocery lists, and more.
+          </p>
+          <a
+            href="https://apps.apple.com/ca/app/chowboy/id6741332753"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-sage text-white px-8 py-3 rounded-full font-semibold hover:bg-sage-600 transition-colors shadow-lg"
+          >
+            Download Chowboy
+          </a>
         </div>
       </article>
     </div>

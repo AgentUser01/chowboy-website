@@ -1,8 +1,10 @@
 import { MetadataRoute } from 'next';
 import { getBlogPosts } from '@/lib/mdx';
 import { getRecipes } from '@/lib/recipes';
+import { getChowboyGeneratedRecipes } from '@/lib/api-recipes';
 
 export const dynamic = 'force-static';
+export const revalidate = 300; // Revalidate every 5 minutes
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = 'https://chowboy.io';
@@ -68,15 +70,24 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.7,
   }));
 
-  // Dynamic recipes
-  const recipes = await getRecipes();
-  const recipePages = recipes.map((recipe) => ({
+  // Dynamic recipes (static + API)
+  const staticRecipes = await getRecipes();
+  const apiRecipes = await getChowboyGeneratedRecipes(100);
+  
+  const staticRecipePages = staticRecipes.map((recipe) => ({
     url: `${baseUrl}/recipes/${recipe.slug}/`,
     lastModified: new Date(recipe.datePublished),
     changeFrequency: 'monthly' as const,
     priority: 0.8,
   }));
+  
+  const apiRecipePages = apiRecipes.map((recipe) => ({
+    url: `${baseUrl}/recipes/${recipe.id}/`,
+    lastModified: new Date(),
+    changeFrequency: 'weekly' as const,
+    priority: 0.9, // Higher priority for fresh AI recipes
+  }));
 
-  return [...staticPages, ...blogPages, ...recipePages];
+  return [...staticPages, ...blogPages, ...staticRecipePages, ...apiRecipePages];
 }
 

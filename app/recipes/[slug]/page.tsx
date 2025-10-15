@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { getRecipe, getRecipes } from '@/lib/recipes';
+import { getChowboyRecipeById, convertAPIRecipeToWebFormat, getChowboyGeneratedRecipes } from '@/lib/api-recipes';
 import { RecipeSchema, BreadcrumbSchema } from '@/components/seo/StructuredData';
 
 interface RecipePageProps {
@@ -10,14 +11,29 @@ interface RecipePageProps {
 }
 
 export async function generateStaticParams() {
-  const recipes = await getRecipes();
-  return recipes.map((recipe) => ({
-    slug: recipe.slug,
-  }));
+  const staticRecipes = await getRecipes();
+  const apiRecipes = await getChowboyGeneratedRecipes(100);
+  
+  return [
+    ...staticRecipes.map((recipe) => ({ slug: recipe.slug })),
+    ...apiRecipes.map((recipe) => ({ slug: recipe.id })),
+  ];
 }
 
+// Revalidate every 5 minutes for new AI recipes
+export const revalidate = 300;
+
 export async function generateMetadata({ params }: RecipePageProps): Promise<Metadata> {
-  const recipe = await getRecipe(params.slug);
+  // Try static recipe first
+  let recipe = await getRecipe(params.slug);
+  
+  // If not found, try API (AI-generated)
+  if (!recipe) {
+    const apiRecipe = await getChowboyRecipeById(params.slug);
+    if (apiRecipe) {
+      recipe = convertAPIRecipeToWebFormat(apiRecipe);
+    }
+  }
 
   if (!recipe) {
     return {
@@ -41,7 +57,18 @@ export async function generateMetadata({ params }: RecipePageProps): Promise<Met
 }
 
 export default async function RecipePage({ params }: RecipePageProps) {
-  const recipe = await getRecipe(params.slug);
+  // Try static recipe first
+  let recipe = await getRecipe(params.slug);
+  let isAIGenerated = false;
+  
+  // If not found, try API (AI-generated)
+  if (!recipe) {
+    const apiRecipe = await getChowboyRecipeById(params.slug);
+    if (apiRecipe) {
+      recipe = convertAPIRecipeToWebFormat(apiRecipe);
+      isAIGenerated = true;
+    }
+  }
 
   if (!recipe) {
     notFound();
@@ -61,7 +88,14 @@ export default async function RecipePage({ params }: RecipePageProps) {
       <article className="container mx-auto px-6 py-20 max-w-5xl">
         {/* Header */}
         <header className="mb-12">
-          <h1 className="text-5xl font-bold text-slate-700 mb-4">{recipe.title}</h1>
+          <div className="flex items-start gap-4 mb-4">
+            <h1 className="text-5xl font-bold text-slate-700 flex-1">{recipe.title}</h1>
+            {isAIGenerated && (
+              <span className="bg-icy-100 text-icy-700 px-4 py-2 rounded-full text-sm font-bold flex items-center gap-2">
+                ✨ AI-Generated
+              </span>
+            )}
+          </div>
           <p className="text-xl text-slate-600 mb-6">{recipe.description}</p>
           
           <div className="flex flex-wrap gap-4 mb-6">

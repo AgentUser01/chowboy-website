@@ -8,8 +8,8 @@ import GoogleAnalytics from "@/components/analytics/GoogleAnalytics";
 
 const inter = Inter({ subsets: ["latin"] });
 
-// Google Analytics Measurement ID - replace with your actual ID
-const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || 'G-XXXXXXXXXX';
+// Google Analytics Measurement ID
+const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || 'G-0V8VZ6XXYJ';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://chowboy.io'),

@@ -1,0 +1,40 @@
+{
+  "title": "Quick Garlic Butter Pasta",
+  "description": "A simple, delicious pasta dish that comes together in just 15 minutes. Perfect for busy weeknights when you want something comforting and flavorful.",
+  "image": "/images/ai-recipe-discovery 3.png",
+  "prepTime": 5,
+  "cookTime": 10,
+  "totalTime": 15,
+  "servings": 4,
+  "difficulty": "Easy",
+  "cuisine": "Italian",
+  "category": "Dinner",
+  "tags": ["quick meals", "pasta", "vegetarian", "weeknight dinner"],
+  "ingredients": [
+    { "amount": "1 lb", "item": "spaghetti or linguine" },
+    { "amount": "6 tbsp", "item": "butter" },
+    { "amount": "6 cloves", "item": "garlic, minced" },
+    { "amount": "1/2 tsp", "item": "red pepper flakes" },
+    { "amount": "1/4 cup", "item": "fresh parsley, chopped" },
+    { "amount": "1/2 cup", "item": "Parmesan cheese, grated" },
+    { "amount": "to taste", "item": "salt and black pepper" },
+    { "amount": "2 tbsp", "item": "pasta water (reserved)" }
+  ],
+  "instructions": [
+    { "step": 1, "instruction": "Bring a large pot of salted water to boil. Cook pasta according to package directions until al dente. Reserve 1/2 cup pasta water before draining." },
+    { "step": 2, "instruction": "While pasta cooks, melt butter in a large skillet over medium heat. Add minced garlic and red pepper flakes. Cook for 1-2 minutes until fragrant, being careful not to burn the garlic." },
+    { "step": 3, "instruction": "Add the drained pasta to the skillet with the garlic butter. Toss to coat, adding reserved pasta water a little at a time to create a silky sauce." },
+    { "step": 4, "instruction": "Remove from heat and stir in fresh parsley and half the Parmesan cheese. Season with salt and pepper to taste." },
+    { "step": 5, "instruction": "Serve immediately, topped with remaining Parmesan cheese and extra parsley if desired." }
+  ],
+  "nutrition": {
+    "calories": 485,
+    "protein": "15g",
+    "carbohydrates": "68g",
+    "fat": "17g",
+    "fiber": "3g"
+  },
+  "author": "Chowboy Team",
+  "datePublished": "2025-01-15"
+}
+

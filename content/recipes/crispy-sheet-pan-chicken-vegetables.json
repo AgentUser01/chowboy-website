@@ -1,0 +1,46 @@
+{
+  "title": "Crispy Sheet Pan Chicken with Roasted Vegetables",
+  "description": "A complete one-pan meal featuring crispy chicken thighs and perfectly roasted vegetables. Minimal cleanup, maximum flavor – ideal for healthy weeknight dinners.",
+  "image": "/images/ai-powered-features 3.png",
+  "prepTime": 15,
+  "cookTime": 35,
+  "totalTime": 50,
+  "servings": 4,
+  "difficulty": "Easy",
+  "cuisine": "American",
+  "category": "Dinner",
+  "tags": ["sheet pan", "chicken", "healthy", "one-pan meals", "gluten-free"],
+  "ingredients": [
+    { "amount": "8", "item": "bone-in, skin-on chicken thighs" },
+    { "amount": "1 lb", "item": "baby potatoes, halved" },
+    { "amount": "3", "item": "carrots, cut into 2-inch pieces" },
+    { "amount": "2", "item": "bell peppers, cut into strips" },
+    { "amount": "1", "item": "red onion, cut into wedges" },
+    { "amount": "4 cloves", "item": "garlic, minced" },
+    { "amount": "3 tbsp", "item": "olive oil" },
+    { "amount": "2 tsp", "item": "Italian seasoning" },
+    { "amount": "1 tsp", "item": "paprika" },
+    { "amount": "1 tsp", "item": "garlic powder" },
+    { "amount": "to taste", "item": "salt and black pepper" },
+    { "amount": "2 tbsp", "item": "fresh lemon juice" },
+    { "amount": "for garnish", "item": "fresh parsley, chopped" }
+  ],
+  "instructions": [
+    { "step": 1, "instruction": "Preheat oven to 425°F (220°C). Line a large sheet pan with parchment paper." },
+    { "step": 2, "instruction": "In a large bowl, combine potatoes, carrots, bell peppers, and red onion. Drizzle with 2 tablespoons olive oil, add half the garlic, Italian seasoning, salt, and pepper. Toss to coat evenly." },
+    { "step": 3, "instruction": "Arrange vegetables on the sheet pan in a single layer, leaving space for the chicken." },
+    { "step": 4, "instruction": "Pat chicken thighs dry with paper towels. Rub with remaining olive oil, garlic, paprika, garlic powder, salt, and pepper. Place chicken skin-side up on the sheet pan among the vegetables." },
+    { "step": 5, "instruction": "Roast for 35-40 minutes until chicken reaches an internal temperature of 165°F and skin is crispy. Vegetables should be tender and golden." },
+    { "step": 6, "instruction": "Remove from oven, drizzle with fresh lemon juice, and garnish with parsley. Let rest for 5 minutes before serving." }
+  ],
+  "nutrition": {
+    "calories": 425,
+    "protein": "32g",
+    "carbohydrates": "28g",
+    "fat": "21g",
+    "fiber": "5g"
+  },
+  "author": "Chowboy Team",
+  "datePublished": "2025-01-12"
+}
+

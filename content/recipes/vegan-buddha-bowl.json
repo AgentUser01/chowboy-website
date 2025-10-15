@@ -1,0 +1,49 @@
+{
+  "title": "Colorful Vegan Buddha Bowl",
+  "description": "A vibrant, nutrient-packed bowl filled with quinoa, roasted vegetables, chickpeas, and a creamy tahini dressing. Customize with your favorite toppings for a satisfying plant-based meal.",
+  "image": "/images/chowboy_grocery-list-management.png",
+  "prepTime": 20,
+  "cookTime": 25,
+  "totalTime": 45,
+  "servings": 4,
+  "difficulty": "Medium",
+  "cuisine": "Middle Eastern",
+  "category": "Lunch",
+  "tags": ["vegan", "healthy", "meal prep", "buddha bowl", "plant-based"],
+  "ingredients": [
+    { "amount": "1 cup", "item": "quinoa, uncooked" },
+    { "amount": "2 cups", "item": "vegetable broth" },
+    { "amount": "1 can (15 oz)", "item": "chickpeas, drained and rinsed" },
+    { "amount": "2 cups", "item": "sweet potato, cubed" },
+    { "amount": "2 cups", "item": "broccoli florets" },
+    { "amount": "2 tbsp", "item": "olive oil" },
+    { "amount": "1 tsp", "item": "cumin" },
+    { "amount": "1 tsp", "item": "smoked paprika" },
+    { "amount": "4 cups", "item": "mixed greens" },
+    { "amount": "1", "item": "avocado, sliced" },
+    { "amount": "1/4 cup", "item": "tahini" },
+    { "amount": "2 tbsp", "item": "lemon juice" },
+    { "amount": "2 tbsp", "item": "water (or more for desired consistency)" },
+    { "amount": "1 clove", "item": "garlic, minced" },
+    { "amount": "to taste", "item": "salt and black pepper" },
+    { "amount": "for garnish", "item": "sesame seeds and fresh cilantro" }
+  ],
+  "instructions": [
+    { "step": 1, "instruction": "Preheat oven to 400°F (200°C). Line a baking sheet with parchment paper." },
+    { "step": 2, "instruction": "Cook quinoa in vegetable broth according to package directions. Set aside and keep warm." },
+    { "step": 3, "instruction": "Toss sweet potato cubes, chickpeas, and broccoli with olive oil, cumin, smoked paprika, salt, and pepper. Spread on baking sheet and roast for 20-25 minutes until tender and lightly crispy." },
+    { "step": 4, "instruction": "While vegetables roast, make tahini dressing: whisk together tahini, lemon juice, water, minced garlic, salt, and pepper until smooth. Add more water if needed for desired consistency." },
+    { "step": 5, "instruction": "To assemble bowls: divide quinoa among 4 bowls. Top with mixed greens, roasted vegetables, chickpeas, and sliced avocado." },
+    { "step": 6, "instruction": "Drizzle with tahini dressing and garnish with sesame seeds and fresh cilantro. Serve immediately." }
+  ],
+  "nutrition": {
+    "calories": 485,
+    "protein": "16g",
+    "carbohydrates": "62g",
+    "fat": "20g",
+    "fiber": "14g"
+  },
+  "author": "Chowboy Team",
+  "datePublished": "2025-01-08"
+}
+

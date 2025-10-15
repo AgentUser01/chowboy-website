@@ -5,9 +5,9 @@ import { getChowboyRecipeById, convertAPIRecipeToWebFormat, getChowboyGeneratedR
 import { RecipeSchema, BreadcrumbSchema } from '@/components/seo/StructuredData';
 
 interface RecipePageProps {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 }
 
 export async function generateStaticParams() {
@@ -24,12 +24,14 @@ export async function generateStaticParams() {
 export const revalidate = 300;
 
 export async function generateMetadata({ params }: RecipePageProps): Promise<Metadata> {
+  const { slug } = await params;
+  
   // Try static recipe first
-  let recipe = await getRecipe(params.slug);
+  let recipe = await getRecipe(slug);
   
   // If not found, try API (AI-generated)
   if (!recipe) {
-    const apiRecipe = await getChowboyRecipeById(params.slug);
+    const apiRecipe = await getChowboyRecipeById(slug);
     if (apiRecipe) {
       recipe = convertAPIRecipeToWebFormat(apiRecipe);
     }
@@ -45,7 +47,7 @@ export async function generateMetadata({ params }: RecipePageProps): Promise<Met
     title: recipe.title,
     description: recipe.description,
     alternates: {
-      canonical: `https://chowboy.io/recipes/${params.slug}/`,
+      canonical: `https://chowboy.io/recipes/${slug}/`,
     },
     openGraph: {
       title: recipe.title,
@@ -57,13 +59,15 @@ export async function generateMetadata({ params }: RecipePageProps): Promise<Met
 }
 
 export default async function RecipePage({ params }: RecipePageProps) {
+  const { slug } = await params;
+  
   // Try static recipe first
-  let recipe = await getRecipe(params.slug);
+  let recipe = await getRecipe(slug);
   let isAIGenerated = false;
   
   // If not found, try API (AI-generated)
   if (!recipe) {
-    const apiRecipe = await getChowboyRecipeById(params.slug);
+    const apiRecipe = await getChowboyRecipeById(slug);
     if (apiRecipe) {
       recipe = convertAPIRecipeToWebFormat(apiRecipe);
       isAIGenerated = true;
@@ -77,7 +81,7 @@ export default async function RecipePage({ params }: RecipePageProps) {
   const breadcrumbs = [
     { name: 'Home', url: '/' },
     { name: 'Recipes', url: '/recipes' },
-    { name: recipe.title, url: `/recipes/${params.slug}` },
+    { name: recipe.title, url: `/recipes/${slug}` },
   ];
 
   return (

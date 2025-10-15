@@ -35,24 +35,32 @@ function updateHtmlFiles(dir) {
 // Update all HTML files
 updateHtmlFiles(outDir);
 
-// Update CSS files to fix any internal references
-function updateCssFiles(dir) {
+// Update CSS and JS files to fix any internal references
+function updateStaticFiles(dir) {
   if (!fs.existsSync(dir)) return;
   
-  const files = fs.readdirSync(dir, { recursive: true });
+  const entries = fs.readdirSync(dir, { withFileTypes: true });
   
-  files.forEach(file => {
-    const filePath = path.join(dir, file);
-    if (fs.existsSync(filePath) && fs.statSync(filePath).isFile() && file.endsWith('.css')) {
-      let content = fs.readFileSync(filePath, 'utf8');
-      content = content.replace(/\/_next\//g, '/next/');
-      fs.writeFileSync(filePath, content);
-      console.log(`✓ Updated CSS ${file}`);
+  entries.forEach(entry => {
+    const fullPath = path.join(dir, entry.name);
+    
+    if (entry.isDirectory()) {
+      // Recursively process subdirectories
+      updateStaticFiles(fullPath);
+    } else if (entry.isFile() && (entry.name.endsWith('.css') || entry.name.endsWith('.js'))) {
+      // Update CSS and JS files
+      let content = fs.readFileSync(fullPath, 'utf8');
+      const updated = content.replace(/\/_next\//g, '/next/');
+      
+      if (content !== updated) {
+        fs.writeFileSync(fullPath, updated);
+        console.log(`✓ Updated ${entry.name.endsWith('.css') ? 'CSS' : 'JS'} file: ${entry.name}`);
+      }
     }
   });
 }
 
-updateCssFiles(renamedNextDir);
+updateStaticFiles(renamedNextDir);
 
 console.log('\n✅ GitHub Pages build fixed! The _next directory issue is resolved.\n');
 

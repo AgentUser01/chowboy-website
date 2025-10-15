@@ -9,6 +9,7 @@ import GoogleAnalytics from "@/components/analytics/GoogleAnalytics";
 const inter = Inter({ subsets: ["latin"] });
 
 // Google Analytics Measurement ID
+// TODO: Replace with your actual GA4 Measurement ID from https://analytics.google.com
 const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || 'G-0V8VZ6XXYJ';
 
 export const metadata: Metadata = {
@@ -73,6 +74,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        {/* Resource hints for performance */}
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        
         <OrganizationSchema />
         <WebSiteSchema />
         <SoftwareApplicationSchema />

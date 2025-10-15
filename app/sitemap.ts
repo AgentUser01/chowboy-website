@@ -8,54 +8,55 @@ export const revalidate = 300; // Revalidate every 5 minutes
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = 'https://chowboy.io';
+  const currentDate = new Date();
 
-  // Static pages
+  // Static pages with realistic lastModified dates
   const staticPages = [
     {
       url: baseUrl,
-      lastModified: new Date(),
+      lastModified: currentDate, // Homepage updated frequently
       changeFrequency: 'weekly' as const,
       priority: 1,
     },
     {
       url: `${baseUrl}/features/`,
-      lastModified: new Date(),
+      lastModified: new Date('2025-10-01'), // Updated when features change
       changeFrequency: 'monthly' as const,
       priority: 0.8,
     },
     {
       url: `${baseUrl}/blog/`,
-      lastModified: new Date(),
+      lastModified: currentDate, // Blog index updated with new posts
       changeFrequency: 'daily' as const,
       priority: 0.9,
     },
     {
       url: `${baseUrl}/recipes/`,
-      lastModified: new Date(),
+      lastModified: currentDate, // Recipe index updated with new recipes
       changeFrequency: 'daily' as const,
       priority: 0.9,
     },
     {
       url: `${baseUrl}/support/`,
-      lastModified: new Date(),
+      lastModified: new Date('2025-09-15'),
       changeFrequency: 'monthly' as const,
       priority: 0.5,
     },
     {
       url: `${baseUrl}/privacy/`,
-      lastModified: new Date(),
+      lastModified: new Date('2025-09-01'),
       changeFrequency: 'monthly' as const,
       priority: 0.3,
     },
     {
       url: `${baseUrl}/terms/`,
-      lastModified: new Date(),
+      lastModified: new Date('2025-09-01'),
       changeFrequency: 'monthly' as const,
       priority: 0.3,
     },
     {
       url: `${baseUrl}/cookies/`,
-      lastModified: new Date(),
+      lastModified: new Date('2025-09-01'),
       changeFrequency: 'monthly' as const,
       priority: 0.3,
     },
@@ -83,9 +84,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   
   const apiRecipePages = apiRecipes.map((recipe) => ({
     url: `${baseUrl}/recipes/${recipe.id}/`,
-    lastModified: new Date(),
+    lastModified: currentDate, // AI recipes are dynamic, use current date
     changeFrequency: 'weekly' as const,
-    priority: 0.9, // Higher priority for fresh AI recipes
+    priority: 0.85, // High priority for AI recipes
   }));
 
   return [...staticPages, ...blogPages, ...staticRecipePages, ...apiRecipePages];

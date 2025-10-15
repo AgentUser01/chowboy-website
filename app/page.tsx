@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import AppStoreBadge from '@/components/ui/AppStoreBadge';
+import { FAQSchema } from '@/components/seo/StructuredData';
 
 export const metadata: Metadata = {
   title: 'Chowboy | AI-Powered Recipe Manager & Cooking Companion',
@@ -10,9 +11,29 @@ export const metadata: Metadata = {
   },
 };
 
+const faqs = [
+  {
+    question: 'How do I import recipes into Chowboy?',
+    answer: 'Simply copy the link to any recipe from a website, Instagram, or TikTok, then paste it into Chowboy. Our AI automatically extracts and formats the recipe for you. No typing needed!',
+  },
+  {
+    question: 'Can Chowboy help me use ingredients I already have?',
+    answer: "Yes! Chowboy's AI suggests recipes based on your preferences and helps you cook with what you have. It learns your taste over time and recommends meals you'll actually want to make, reducing food waste.",
+  },
+  {
+    question: 'What makes Chowboy different from other recipe apps?',
+    answer: "Chowboy imports recipes from social media (Instagram, TikTok), provides AI-powered cooking tips, wine pairings, and nutrition analysis. It's not just a recipe app—it's your complete cooking companion.",
+  },
+  {
+    question: 'Can I use Chowboy for free?',
+    answer: 'Yes! Chowboy is free to download with core features included. Premium features like unlimited AI tips and advanced nutrition analysis are available with a subscription.',
+  },
+];
+
 export default function Home() {
   return (
     <div className="pt-20">
+      <FAQSchema faqs={faqs} />
       {/* Hero Section */}
       <section className="container mx-auto px-6 py-20 md:py-32">
         <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -55,6 +76,7 @@ export default function Home() {
                 src="/images/ai-recipe-discovery 3.png"
                 alt="Chowboy App Preview showing AI-powered recipe discovery"
                 fill
+                sizes="(max-width: 768px) 100vw, 384px"
                 className="object-contain rounded-3xl"
                 priority
               />

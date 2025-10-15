@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build --turbopack",
-    "build:gh": "next build --turbopack && node scripts/fix-github-pages.js",
+    "build": "next build",
+    "build:gh": "next build && node scripts/fix-github-pages.js",
     "start": "next start",
     "deploy": "npm run build:gh && touch out/.nojekyll && cp public/CNAME out/CNAME && npx gh-pages -d out --dotfiles"
   },

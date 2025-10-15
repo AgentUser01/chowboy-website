@@ -5,9 +5,9 @@ import { ArticleSchema, BreadcrumbSchema } from '@/components/seo/StructuredData
 import MDXContent from '@/components/blog/MDXContent';
 
 interface BlogPostPageProps {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 }
 
 export async function generateStaticParams() {
@@ -18,7 +18,8 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: BlogPostPageProps): Promise<Metadata> {
-  const post = await getBlogPost(params.slug);
+  const { slug } = await params;
+  const post = await getBlogPost(slug);
 
   if (!post) {
     return {
@@ -30,7 +31,7 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
     title: post.title,
     description: post.description,
     alternates: {
-      canonical: `https://chowboy.io/blog/${params.slug}/`,
+      canonical: `https://chowboy.io/blog/${slug}/`,
     },
     openGraph: {
       title: post.title,
@@ -44,7 +45,8 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
 }
 
 export default async function BlogPostPage({ params }: BlogPostPageProps) {
-  const post = await getBlogPost(params.slug);
+  const { slug } = await params;
+  const post = await getBlogPost(slug);
 
   if (!post) {
     notFound();
@@ -53,12 +55,12 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
   const breadcrumbs = [
     { name: 'Home', url: '/' },
     { name: 'Blog', url: '/blog' },
-    { name: post.title, url: `/blog/${params.slug}` },
+    { name: post.title, url: `/blog/${slug}` },
   ];
 
   return (
     <div className="pt-20">
-      <ArticleSchema article={post} url={`/blog/${params.slug}`} />
+      <ArticleSchema article={post} url={`/blog/${slug}`} />
       <BreadcrumbSchema items={breadcrumbs} />
 
       <article className="container mx-auto px-6 py-20 max-w-4xl">

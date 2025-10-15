@@ -187,3 +187,78 @@ export function BreadcrumbSchema({ items }: BreadcrumbSchemaProps) {
   return <StructuredData data={schema} />;
 }
 
+// FAQ Schema for FAQ sections
+interface FAQSchemaProps {
+  faqs: Array<{
+    question: string;
+    answer: string;
+  }>;
+}
+
+export function FAQSchema({ faqs }: FAQSchemaProps) {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map(faq => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: faq.answer,
+      },
+    })),
+  };
+
+  return <StructuredData data={schema} />;
+}
+
+// HowTo Schema for instructional content
+interface HowToSchemaProps {
+  name: string;
+  description: string;
+  image?: string;
+  totalTime?: string;
+  estimatedCost?: {
+    currency: string;
+    value: string;
+  };
+  supply?: string[];
+  tool?: string[];
+  steps: Array<{
+    name: string;
+    text: string;
+    image?: string;
+    url?: string;
+  }>;
+}
+
+export function HowToSchema({ name, description, image, totalTime, estimatedCost, supply, tool, steps }: HowToSchemaProps) {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name,
+    description,
+    image: image ? `https://chowboy.io${image}` : undefined,
+    totalTime,
+    estimatedCost,
+    supply: supply?.map(item => ({
+      '@type': 'HowToSupply',
+      name: item,
+    })),
+    tool: tool?.map(item => ({
+      '@type': 'HowToTool',
+      name: item,
+    })),
+    step: steps.map((step, index) => ({
+      '@type': 'HowToStep',
+      position: index + 1,
+      name: step.name,
+      text: step.text,
+      image: step.image ? `https://chowboy.io${step.image}` : undefined,
+      url: step.url ? `https://chowboy.io${step.url}` : undefined,
+    })),
+  };
+
+  return <StructuredData data={schema} />;
+}
+

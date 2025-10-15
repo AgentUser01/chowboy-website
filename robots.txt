@@ -1,3 +1,6 @@
-# https://www.robotstxt.org/robotstxt.html
-User-agent: *
-Disallow:
+User-Agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+
+Sitemap: https://chowboy.io/sitemap.xml

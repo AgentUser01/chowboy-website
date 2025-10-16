@@ -73,7 +73,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   // Dynamic recipes (static + API)
   const staticRecipes = await getRecipes();
-  const apiRecipes = await getChowboyGeneratedRecipes(100);
+  const apiRecipes = await getChowboyGeneratedRecipes(20); // Match generateStaticParams limit
   
   const staticRecipePages = staticRecipes.map((recipe) => ({
     url: `${baseUrl}/recipes/${recipe.slug}/`,

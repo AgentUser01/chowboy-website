@@ -3,6 +3,8 @@ import { notFound } from 'next/navigation';
 import { getRecipe, getRecipes } from '@/lib/recipes';
 import { getChowboyRecipeById, convertAPIRecipeToWebFormat, getChowboyGeneratedRecipes } from '@/lib/api-recipes';
 import { RecipeSchema, BreadcrumbSchema } from '@/components/seo/StructuredData';
+import IngredientsList from '@/components/recipe/IngredientsList';
+import RecipeActionButtons from '@/components/recipe/RecipeActionButtons';
 
 interface RecipePageProps {
   params: Promise<{
@@ -12,7 +14,7 @@ interface RecipePageProps {
 
 export async function generateStaticParams() {
   const staticRecipes = await getRecipes();
-  const apiRecipes = await getChowboyGeneratedRecipes(100);
+  const apiRecipes = await getChowboyGeneratedRecipes(20); // Reduced for faster builds
   
   return [
     ...staticRecipes.map((recipe) => ({ slug: recipe.slug })),
@@ -89,39 +91,61 @@ export default async function RecipePage({ params }: RecipePageProps) {
       <RecipeSchema recipe={recipe} />
       <BreadcrumbSchema items={breadcrumbs} />
 
-      <article className="container mx-auto px-6 py-20 max-w-5xl">
+      {/* Breadcrumbs */}
+      <div className="container mx-auto px-6 pt-8">
+        <nav className="flex items-center gap-2 text-sm text-slate-500">
+          <a href="/" className="hover:text-sage transition-colors">Home</a>
+          <span>›</span>
+          <a href="/recipes" className="hover:text-sage transition-colors">Recipes</a>
+          <span>›</span>
+          <span className="text-slate-700 font-medium">{recipe.title}</span>
+        </nav>
+      </div>
+
+      <article className="container mx-auto px-6 py-12 max-w-5xl">
         {/* Header */}
-        <header className="mb-12">
-          <div className="flex items-start gap-4 mb-4">
-            <h1 className="text-5xl font-bold text-slate-700 flex-1">{recipe.title}</h1>
+        <header className="mb-12 animate-slideUp">
+          <div className="flex items-start gap-4 mb-6">
+            <h1 className="text-5xl md:text-6xl font-bold text-slate-700 flex-1 leading-tight">
+              {recipe.title}
+            </h1>
             {isAIGenerated && (
-              <span className="bg-icy-100 text-icy-700 px-4 py-2 rounded-full text-sm font-bold flex items-center gap-2">
+              <span className="glass-card bg-icy-100 text-icy-700 px-4 py-2 rounded-full text-sm font-bold flex items-center gap-2 border-2 border-icy-200">
                 ✨ AI-Generated
               </span>
             )}
           </div>
-          <p className="text-xl text-slate-600 mb-6">{recipe.description}</p>
           
-          <div className="flex flex-wrap gap-4 mb-6">
-            <div className="bg-sand-100 px-4 py-2 rounded-lg border border-sage-200">
-              <span className="text-sm text-slate-300">Prep Time</span>
-              <p className="font-semibold text-slate-700">{recipe.prepTime} min</p>
+          {/* Action Buttons */}
+          <RecipeActionButtons title={recipe.title} slug={slug} />
+
+          <p className="text-xl text-slate-600 mb-6 leading-relaxed">{recipe.description}</p>
+          
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-4 mb-6">
+            <div className="glass-card px-4 py-3 rounded-xl border-2 border-sage-200 text-center hover:border-sage-400 transition-all">
+              <div className="text-2xl mb-1">⏱️</div>
+              <span className="text-xs text-slate-500 block">Prep Time</span>
+              <p className="font-bold text-slate-700 text-lg">{recipe.prepTime} min</p>
             </div>
-            <div className="bg-sand-100 px-4 py-2 rounded-lg border border-icy-200">
-              <span className="text-sm text-slate-300">Cook Time</span>
-              <p className="font-semibold text-slate-700">{recipe.cookTime} min</p>
+            <div className="glass-card px-4 py-3 rounded-xl border-2 border-icy-200 text-center hover:border-icy-400 transition-all">
+              <div className="text-2xl mb-1">🔥</div>
+              <span className="text-xs text-slate-500 block">Cook Time</span>
+              <p className="font-bold text-slate-700 text-lg">{recipe.cookTime} min</p>
             </div>
-            <div className="bg-sand-100 px-4 py-2 rounded-lg border border-mustard-200">
-              <span className="text-sm text-slate-300">Total Time</span>
-              <p className="font-semibold text-slate-700">{recipe.totalTime} min</p>
+            <div className="glass-card px-4 py-3 rounded-xl border-2 border-mustard-200 text-center hover:border-mustard-400 transition-all">
+              <div className="text-2xl mb-1">⏰</div>
+              <span className="text-xs text-slate-500 block">Total Time</span>
+              <p className="font-bold text-slate-700 text-lg">{recipe.totalTime} min</p>
             </div>
-            <div className="bg-sand-100 px-4 py-2 rounded-lg border border-sage-200">
-              <span className="text-sm text-slate-300">Servings</span>
-              <p className="font-semibold text-slate-700">{recipe.servings}</p>
+            <div className="glass-card px-4 py-3 rounded-xl border-2 border-sage-200 text-center hover:border-sage-400 transition-all">
+              <div className="text-2xl mb-1">🍽️</div>
+              <span className="text-xs text-slate-500 block">Servings</span>
+              <p className="font-bold text-slate-700 text-lg">{recipe.servings}</p>
             </div>
-            <div className="bg-sand-100 px-4 py-2 rounded-lg border border-icy-200">
-              <span className="text-sm text-slate-300">Difficulty</span>
-              <p className="font-semibold text-slate-700">{recipe.difficulty}</p>
+            <div className="glass-card px-4 py-3 rounded-xl border-2 border-icy-200 text-center hover:border-icy-400 transition-all">
+              <div className="text-2xl mb-1">📊</div>
+              <span className="text-xs text-slate-500 block">Difficulty</span>
+              <p className="font-bold text-slate-700 text-lg">{recipe.difficulty}</p>
             </div>
           </div>
 
@@ -138,11 +162,12 @@ export default async function RecipePage({ params }: RecipePageProps) {
         </header>
 
         {recipe.image && (
-          <div className="mb-12 rounded-2xl overflow-hidden">
+          <div className="mb-12 rounded-3xl overflow-hidden relative group">
+            <div className="absolute -inset-1 bg-gradient-to-r from-sage via-icy to-mustard rounded-3xl opacity-30 group-hover:opacity-50 blur-lg transition-opacity duration-500" />
             <img
               src={recipe.image}
               alt={recipe.title}
-              className="w-full h-auto object-cover"
+              className="relative w-full h-auto object-cover rounded-3xl shadow-2xl"
             />
           </div>
         )}
@@ -150,61 +175,23 @@ export default async function RecipePage({ params }: RecipePageProps) {
         <div className="grid md:grid-cols-3 gap-12">
           {/* Ingredients */}
           <div className="md:col-span-1">
-            <h2 className="text-2xl font-bold text-slate-700 mb-6">Ingredients</h2>
-            <ul className="space-y-3">
-              {recipe.ingredients.map((ingredient, index) => (
-                <li key={index} className="flex items-start gap-3">
-                  <span className="text-sage mt-1">•</span>
-                  <span className="text-slate-600">
-                    <span className="font-semibold">{ingredient.amount}</span> {ingredient.item}
-                  </span>
-                </li>
-              ))}
-            </ul>
-
-            {recipe.nutrition && (
-              <div className="mt-8 p-6 bg-sand-50 rounded-xl border-2 border-sage-200">
-                <h3 className="text-lg font-bold text-slate-700 mb-4">Nutrition (per serving)</h3>
-                <div className="space-y-2 text-sm">
-                  {recipe.nutrition.calories && (
-                    <div className="flex justify-between">
-                      <span className="text-slate-300">Calories</span>
-                      <span className="font-semibold text-slate-700">{recipe.nutrition.calories}</span>
-                    </div>
-                  )}
-                  {recipe.nutrition.protein && (
-                    <div className="flex justify-between">
-                      <span className="text-slate-300">Protein</span>
-                      <span className="font-semibold text-slate-700">{recipe.nutrition.protein}</span>
-                    </div>
-                  )}
-                  {recipe.nutrition.carbohydrates && (
-                    <div className="flex justify-between">
-                      <span className="text-slate-300">Carbs</span>
-                      <span className="font-semibold text-slate-700">{recipe.nutrition.carbohydrates}</span>
-                    </div>
-                  )}
-                  {recipe.nutrition.fat && (
-                    <div className="flex justify-between">
-                      <span className="text-slate-300">Fat</span>
-                      <span className="font-semibold text-slate-700">{recipe.nutrition.fat}</span>
-                    </div>
-                  )}
-                </div>
-              </div>
-            )}
+            <IngredientsList ingredients={recipe.ingredients} nutrition={recipe.nutrition} />
           </div>
 
           {/* Instructions */}
           <div className="md:col-span-2">
-            <h2 className="text-2xl font-bold text-slate-700 mb-6">Instructions</h2>
+            <h2 className="text-3xl font-bold text-slate-700 mb-8 flex items-center gap-2">
+              <span className="text-3xl">👨‍🍳</span> Instructions
+            </h2>
             <ol className="space-y-6">
               {recipe.instructions.map((instruction) => (
-                <li key={instruction.step} className="flex gap-4">
-                  <span className="flex-shrink-0 w-8 h-8 bg-sage text-white rounded-full flex items-center justify-center font-semibold">
+                <li key={instruction.step} className="glass-card p-6 rounded-2xl flex gap-4 hover:shadow-lg transition-all">
+                  <span className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-sage to-icy text-white rounded-full flex items-center justify-center font-bold text-lg shadow-lg">
                     {instruction.step}
                   </span>
-                  <p className="text-slate-600 pt-1">{instruction.instruction}</p>
+                  <div className="flex-1 pt-2">
+                    <p className="text-slate-700 text-lg leading-relaxed">{instruction.instruction}</p>
+                  </div>
                 </li>
               ))}
             </ol>
@@ -212,19 +199,23 @@ export default async function RecipePage({ params }: RecipePageProps) {
         </div>
 
         {/* CTA */}
-        <div className="mt-16 p-8 bg-sand-100 rounded-2xl text-center border-2 border-sage-200">
-          <h3 className="text-2xl font-bold text-slate-700 mb-4">Want more recipes like this?</h3>
-          <p className="text-slate-600 mb-6">
-            Download Chowboy to discover personalized recipe recommendations and AI-powered cooking tips.
-          </p>
-          <a
-            href="https://apps.apple.com/ca/app/chowboy/id6741332753"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-sage text-white px-8 py-3 rounded-full font-semibold hover:bg-sage-600 transition-colors shadow-lg"
-          >
-            Download Chowboy
-          </a>
+        <div className="mt-20 hero-gradient-bg p-12 rounded-3xl text-center">
+          <div className="max-w-2xl mx-auto glass-card p-8 rounded-3xl">
+            <div className="text-5xl mb-4">🎉</div>
+            <h3 className="text-3xl font-bold text-slate-700 mb-4">Love this recipe?</h3>
+            <p className="text-lg text-slate-600 mb-6">
+              Download Chowboy to discover <span className="font-bold text-sage">thousands more</span> personalized recipes and get AI-powered cooking tips
+            </p>
+            <a
+              href="https://apps.apple.com/ca/app/chowboy/id6741332753"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-sage text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-sage-600 transition-all shadow-xl hover:shadow-2xl hover:scale-105"
+            >
+              Download Free 🚀
+            </a>
+            <p className="text-sm text-slate-500 mt-4">Join 15,000+ home cooks • Free to start</p>
+          </div>
         </div>
       </article>
     </div>

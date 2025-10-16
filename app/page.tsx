@@ -2,6 +2,10 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import AppStoreBadge from '@/components/ui/AppStoreBadge';
 import { FAQSchema } from '@/components/seo/StructuredData';
+import UserAvatars from '@/components/ui/UserAvatars';
+import Testimonials from '@/components/ui/Testimonials';
+import StatsBar from '@/components/ui/StatsBar';
+import TrackedDownloadButton from '@/components/ui/TrackedDownloadButton';
 
 export const metadata: Metadata = {
   title: 'Chowboy | AI-Powered Recipe Manager & Cooking Companion',
@@ -35,19 +39,27 @@ export default function Home() {
     <div className="pt-20">
       <FAQSchema faqs={faqs} />
       {/* Hero Section */}
-      <section className="container mx-auto px-6 py-20 md:py-32">
+      <section className="hero-gradient-bg container mx-auto px-6 py-20 md:py-32">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
-            <h1 className="text-5xl md:text-6xl font-bold text-slate leading-tight">
-              Smarter cooking, zero fuss
+            <h1 className="text-5xl md:text-6xl font-bold leading-tight">
+              Your recipes,
+              <br />
+              <span className="gradient-text">organized & upgraded</span>
+              <br />
+              <span className="text-slate">by AI</span>
             </h1>
+            
+            {/* Add social proof immediately */}
+            <UserAvatars />
+            
             <p className="text-xl text-slate-700">
               Find, plan, and cook recipes you&apos;ll love — personalized by AI.
             </p>
             
-            <div className="bg-sand-100 p-6 rounded-2xl border-2 border-sage-300">
+            <div className="glass-card p-6 rounded-2xl border-2 border-sage-300">
               <span className="inline-block bg-sage text-white px-3 py-1 rounded-full text-sm font-semibold mb-3">
-                Effortless
+                ✨ Effortless
               </span>
               <h3 className="text-2xl font-bold text-slate mb-2">
                 Import recipes from anywhere
@@ -57,16 +69,24 @@ export default function Home() {
               </p>
             </div>
             
-            <div className="pt-4">
-              <a 
-                href="https://apps.apple.com/ca/app/chowboy/id6741332753" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                aria-label="Download on the App Store"
-                className="inline-block"
+            {/* CTA */}
+            <div>
+              <TrackedDownloadButton 
+                location="hero"
+                className="inline-flex items-center justify-center bg-sage text-white px-8 py-4 rounded-full font-semibold hover:bg-sage-600 transition-all shadow-lg hover:shadow-xl hover:scale-105"
               >
-                <AppStoreBadge />
-              </a>
+                Download Free 🚀
+              </TrackedDownloadButton>
+            </div>
+            
+            {/* Trust badges */}
+            <div className="flex flex-wrap gap-4 text-sm text-slate-600">
+              <span className="flex items-center gap-2">
+                <span className="text-sage">✓</span> Free to start
+              </span>
+              <span className="flex items-center gap-2">
+                <span className="text-sage">✓</span> No credit card
+              </span>
             </div>
           </div>
           
@@ -77,7 +97,7 @@ export default function Home() {
                 alt="Chowboy App Preview showing AI-powered recipe discovery"
                 fill
                 sizes="(max-width: 768px) 100vw, 384px"
-                className="object-contain rounded-3xl"
+                className="object-contain rounded-3xl shadow-2xl"
                 priority
               />
             </div>
@@ -98,7 +118,7 @@ export default function Home() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white p-8 rounded-2xl border-2 border-sage-100 hover:border-sage-300 transition-all">
+            <div className="glass-card feature-card p-8 rounded-2xl border-2 border-sage-100 hover:border-sage-300 transition-all">
               <div className="text-4xl mb-4">🔍</div>
               <h3 className="text-xl font-bold text-slate-700 mb-2">Smart Discovery</h3>
               <p className="text-slate-600">
@@ -106,7 +126,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="bg-white p-8 rounded-2xl border-2 border-icy-100 hover:border-icy-300 transition-all">
+            <div className="glass-card feature-card p-8 rounded-2xl border-2 border-icy-100 hover:border-icy-300 transition-all">
               <div className="text-4xl mb-4">🛒</div>
               <h3 className="text-xl font-bold text-slate-700 mb-2">Grocery Lists</h3>
               <p className="text-slate-600">
@@ -114,7 +134,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="bg-white p-8 rounded-2xl border-2 border-mustard-100 hover:border-mustard-300 transition-all">
+            <div className="glass-card feature-card p-8 rounded-2xl border-2 border-mustard-100 hover:border-mustard-300 transition-all">
               <div className="text-4xl mb-4">🍷</div>
               <h3 className="text-xl font-bold text-slate-700 mb-2">Wine Pairing</h3>
               <p className="text-slate-600">
@@ -124,25 +144,18 @@ export default function Home() {
           </div>
 
           <div className="text-center mt-12">
-            <a href="/features" className="inline-block bg-sage text-white px-8 py-3 rounded-full font-semibold hover:bg-sage-600 transition-colors shadow-lg hover:shadow-xl">
+            <a href="/features" className="inline-block bg-sage text-white px-8 py-3 rounded-full font-semibold hover:bg-sage-600 transition-colors shadow-lg hover:shadow-xl hover:scale-105">
               Explore All Features
             </a>
           </div>
         </div>
       </section>
 
-      {/* Social Proof */}
-      <section className="container mx-auto px-6 py-16">
-        <div className="text-center">
-          <p className="text-slate-600 text-lg mb-4">
-            Join <span className="font-bold text-sage">thousands of home cooks</span> who cook smarter with Chowboy
-          </p>
-          <div className="flex justify-center items-center gap-1 text-mustard">
-            <span className="text-2xl">⭐⭐⭐⭐⭐</span>
-            <span className="ml-2 text-slate-700 font-semibold">4.8/5 on App Store</span>
-          </div>
-        </div>
-      </section>
+      {/* Stats Bar */}
+      <StatsBar />
+
+      {/* Testimonials Section */}
+      <Testimonials />
 
       {/* FAQ Section */}
       <section className="container mx-auto px-6 py-20 bg-sand-50 rounded-3xl">
@@ -226,14 +239,12 @@ export default function Home() {
           <p className="text-xl mb-8 opacity-95">
             Download Chowboy and discover why thousands of home cooks can't cook without it.
           </p>
-          <a
-            href="https://apps.apple.com/ca/app/chowboy/id6741332753"
-            target="_blank"
-            rel="noopener noreferrer"
+          <TrackedDownloadButton
+            location="footer_cta"
             className="inline-block bg-white text-sage px-10 py-4 rounded-full font-bold text-lg hover:bg-sand-50 transition-colors shadow-xl"
           >
             Download Free on App Store
-          </a>
+          </TrackedDownloadButton>
         </div>
       </section>
     </div>

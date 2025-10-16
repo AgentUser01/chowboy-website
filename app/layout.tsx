@@ -5,6 +5,9 @@ import Navbar from "@/components/ui/Navbar";
 import Footer from "@/components/ui/Footer";
 import { OrganizationSchema, WebSiteSchema, SoftwareApplicationSchema } from "@/components/seo/StructuredData";
 import GoogleAnalytics from "@/components/analytics/GoogleAnalytics";
+import SocialProof from "@/components/ui/SocialProof";
+import ExitIntentModal from "@/components/ui/ExitIntentModal";
+import FloatingCTA from "@/components/ui/FloatingCTA";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -80,6 +83,12 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         
+        {/* iOS App Banner */}
+        <meta name="apple-itunes-app" content="app-id=6741332753" />
+        
+        {/* Theme Color for mobile browsers */}
+        <meta name="theme-color" content="#8AA88B" />
+        
         <OrganizationSchema />
         <WebSiteSchema />
         <SoftwareApplicationSchema />
@@ -91,6 +100,9 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+        <SocialProof />
+        <ExitIntentModal />
+        <FloatingCTA />
       </body>
     </html>
   );

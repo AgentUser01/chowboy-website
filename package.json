@@ -7,7 +7,9 @@
     "build": "next build",
     "build:gh": "next build && node scripts/fix-github-pages.js",
     "start": "next start",
-    "deploy": "npm run build:gh && touch out/.nojekyll && cp public/CNAME out/CNAME && npx gh-pages -d out --dotfiles"
+    "deploy": "npm run build:gh && touch out/.nojekyll && cp public/CNAME out/CNAME && npx gh-pages -d out --dotfiles",
+    "blog:generate": "node scripts/generate-blog-post.js",
+    "blog:test": "node scripts/test-blog-generator.js"
   },
   "dependencies": {
     "@mdx-js/loader": "^3.1.1",

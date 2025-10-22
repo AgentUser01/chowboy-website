@@ -98,7 +98,37 @@ npx serve@latest out
 
 ## 📝 Content Management
 
-### Adding Blog Posts
+### 🤖 Automated Blog Posts (NEW!)
+
+**Generate blog posts automatically every 2-3 days using AI!**
+
+- ✅ 8 posts per month (96 per year)
+- ✅ 1200-1800 words each
+- ✅ SEO-optimized content
+- ✅ Costs ~$1/month (OpenAI GPT-4)
+- ✅ Zero manual work
+
+**Quick Setup** (5 minutes):
+1. Get OpenAI API key: [platform.openai.com](https://platform.openai.com)
+2. Add as GitHub Secret: `OPENAI_API_KEY`
+3. Enable GitHub Actions workflow
+4. Done! Posts generate automatically
+
+**Commands**:
+```bash
+npm run blog:generate  # Generate one blog post
+npm run blog:test      # Test the system
+```
+
+**Documentation**:
+- 📘 **Quick Start**: See `BLOG_QUICKSTART.md` (5-min setup)
+- 🔑 **OpenAI Setup**: See `OPENAI_SETUP_GUIDE.md` (API key setup)
+- 📚 **Full Guide**: See `AUTO_BLOG_SETUP.md` (detailed docs)
+- 📊 **Summary**: See `AUTO_BLOG_IMPLEMENTATION_SUMMARY.md`
+
+---
+
+### Adding Blog Posts Manually
 
 Create a new MDX file in `content/blog/`:
 
@@ -204,7 +234,8 @@ npm run deploy
    - Verify domain ownership
 
 2. **Create More Content**
-   - Target: 50+ blog posts in first 6 months
+   - ✅ **Automated blog system** generates 8 posts/month (see `BLOG_QUICKSTART.md`)
+   - Target: 50+ blog posts in first 6 months (auto-generates 48!)
    - Focus on long-tail keywords (e.g., "how to save instagram recipes", "best recipe organizer app")
    - Target: 30+ recipe pages with full Schema.org markup
 

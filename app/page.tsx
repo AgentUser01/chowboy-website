@@ -1,6 +1,10 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import AppStoreBadge from '@/components/ui/AppStoreBadge';
+import GooglePlayBadge from '@/components/ui/GooglePlayBadge';
+import AndroidWaitlist from '@/components/ui/AndroidWaitlist';
+import HowItWorks from '@/components/ui/HowItWorks';
+import TrustBadges from '@/components/ui/TrustBadges';
 import { FAQSchema } from '@/components/seo/StructuredData';
 import UserAvatars from '@/components/ui/UserAvatars';
 import Testimonials from '@/components/ui/Testimonials';
@@ -38,71 +42,81 @@ export default function Home() {
   return (
     <div className="pt-20">
       <FAQSchema faqs={faqs} />
-      {/* Hero Section */}
-      <section className="hero-gradient-bg container mx-auto px-6 py-20 md:py-32">
+      {/* Hero Section - ABOVE THE FOLD OPTIMIZED */}
+      <section className="hero-gradient-bg container mx-auto px-6 py-16 md:py-24">
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="space-y-8">
-            <h1 className="text-5xl md:text-6xl font-bold leading-tight">
-              Your recipes,
+          <div className="space-y-6">
+            {/* Benefit-focused headline */}
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+              Cook smarter with
               <br />
-              <span className="gradient-text">organized & upgraded</span>
+              <span className="gradient-text">AI-powered recipes</span>
               <br />
-              <span className="text-slate">by AI</span>
+              <span className="text-slate">at your fingertips</span>
             </h1>
             
-            {/* Add social proof immediately */}
+            {/* Social proof immediately visible */}
             <UserAvatars />
             
-            <p className="text-xl text-slate-700">
-              Find, plan, and cook recipes you&apos;ll love — personalized by AI.
+            {/* Clear value proposition */}
+            <p className="text-lg md:text-xl text-slate-700 leading-relaxed">
+              Import recipes from Instagram, TikTok, or any website. Get instant nutrition analysis, cooking tips, and personalized meal plans. Join 15,000+ home cooks transforming their kitchen.
             </p>
             
-            <div className="glass-card p-6 rounded-2xl border-2 border-sage-300">
-              <span className="inline-block bg-sage text-white px-3 py-1 rounded-full text-sm font-semibold mb-3">
-                ✨ Effortless
-              </span>
-              <h3 className="text-2xl font-bold text-slate mb-2">
-                Import recipes from anywhere
-              </h3>
-              <p className="text-slate-600">
-                Paste a link. Get a clean recipe card — from websites, Instagram, or TikTok.
-              </p>
+            {/* PROMINENT CTAs - App Store + Android Waitlist ABOVE THE FOLD */}
+            <div className="space-y-4">
+              <div className="flex flex-col sm:flex-row gap-3">
+                <a 
+                  href="https://apps.apple.com/ca/app/chowboy/id6741332753" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-block hover:scale-105 transition-transform"
+                >
+                  <AppStoreBadge />
+                </a>
+                {/* Placeholder for Google Play - currently showing waitlist */}
+              </div>
+              
+              <div className="md:max-w-md">
+                <AndroidWaitlist />
+              </div>
             </div>
             
-            {/* CTA */}
-            <div>
-              <TrackedDownloadButton 
-                location="hero"
-                className="inline-flex items-center justify-center bg-sage text-white px-8 py-4 rounded-full font-semibold hover:bg-sage-600 transition-all shadow-lg hover:shadow-xl hover:scale-105"
-              >
-                Download Free 🚀
-              </TrackedDownloadButton>
-            </div>
-            
-            {/* Trust badges */}
-            <div className="flex flex-wrap gap-4 text-sm text-slate-600">
+            {/* Trust signals */}
+            <div className="flex flex-wrap gap-4 text-sm text-slate-600 pt-2">
               <span className="flex items-center gap-2">
-                <span className="text-sage">✓</span> Free to start
+                <span className="text-sage font-bold">✓</span> Free to download
               </span>
               <span className="flex items-center gap-2">
-                <span className="text-sage">✓</span> No credit card
+                <span className="text-sage font-bold">✓</span> No credit card needed
+              </span>
+              <span className="flex items-center gap-2">
+                <span className="text-sage font-bold">✓</span> No spam, ever
               </span>
             </div>
           </div>
           
-          <div className="relative">
+          {/* App Preview Image */}
+          <div className="relative order-first md:order-last">
             <div className="relative w-full aspect-[9/16] max-w-sm mx-auto">
+              {/* Glow effect */}
+              <div className="absolute -inset-4 bg-gradient-to-br from-sage/30 via-icy/30 to-mustard/30 rounded-3xl blur-3xl"></div>
               <Image
                 src="/images/ai-recipe-discovery 3.png"
-                alt="Chowboy App Preview showing AI-powered recipe discovery"
+                alt="Chowboy App showing AI-powered recipe discovery and cooking tips"
                 fill
                 sizes="(max-width: 768px) 100vw, 384px"
-                className="object-contain rounded-3xl shadow-2xl"
+                className="object-contain rounded-3xl shadow-2xl relative z-10"
                 priority
               />
             </div>
           </div>
         </div>
+      </section>
+
+      {/* Trust Badges - Immediately after hero */}
+      <section className="container mx-auto px-6 py-12">
+        <TrustBadges />
       </section>
 
       {/* Features Preview Section */}
@@ -143,16 +157,40 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="text-center mt-12">
-            <a href="/features" className="inline-block bg-sage text-white px-8 py-3 rounded-full font-semibold hover:bg-sage-600 transition-colors shadow-lg hover:shadow-xl hover:scale-105">
-              Explore All Features
-            </a>
+          {/* CTA repeated after features */}
+          <div className="text-center mt-12 space-y-4">
+            <TrackedDownloadButton
+              location="features_section"
+              className="inline-block bg-sage text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-sage-600 transition-all shadow-lg hover:shadow-xl hover:scale-105"
+            >
+              Start Cooking Smarter – Download Free
+            </TrackedDownloadButton>
+            <div>
+              <a href="/features" className="inline-block text-sage hover:text-sage-600 transition-colors font-medium">
+                Explore All Features →
+              </a>
+            </div>
           </div>
         </div>
       </section>
 
+      {/* How It Works Section */}
+      <HowItWorks />
+
       {/* Stats Bar */}
       <StatsBar />
+
+      {/* CTA after stats */}
+      <section className="container mx-auto px-6 py-12">
+        <div className="text-center">
+          <TrackedDownloadButton
+            location="after_stats"
+            className="inline-block bg-icy text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-icy-600 transition-all shadow-lg hover:shadow-xl hover:scale-105"
+          >
+            Join 15,000+ Home Cooks Today 🚀
+          </TrackedDownloadButton>
+        </div>
+      </section>
 
       {/* Testimonials Section */}
       <Testimonials />
@@ -232,19 +270,38 @@ export default function Home() {
 
       {/* Final CTA */}
       <section className="container mx-auto px-6 py-16 mb-20">
-        <div className="bg-sage text-white p-12 rounded-3xl text-center max-w-3xl mx-auto shadow-2xl">
+        <div className="bg-gradient-to-br from-sage to-sage-600 text-white p-12 rounded-3xl text-center max-w-4xl mx-auto shadow-2xl">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Ready to Transform Your Cooking?
           </h2>
           <p className="text-xl mb-8 opacity-95">
-            Download Chowboy and discover why thousands of home cooks can't cook without it.
+            Join 15,000+ home cooks who save time, reduce food waste, and cook better meals with AI-powered recipe management.
           </p>
-          <TrackedDownloadButton
-            location="footer_cta"
-            className="inline-block bg-white text-sage px-10 py-4 rounded-full font-bold text-lg hover:bg-sand-50 transition-colors shadow-xl"
-          >
-            Download Free on App Store
-          </TrackedDownloadButton>
+          
+          {/* App Store + Android options */}
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
+            <TrackedDownloadButton
+              location="footer_cta"
+              className="inline-block bg-white text-sage px-10 py-4 rounded-full font-bold text-lg hover:bg-sand-50 transition-all shadow-xl hover:scale-105"
+            >
+              Download Free on iOS
+            </TrackedDownloadButton>
+            <button className="bg-white/20 backdrop-blur-sm text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-white/30 transition-all border-2 border-white/40">
+              Android Coming Soon
+            </button>
+          </div>
+          
+          <div className="flex flex-wrap justify-center gap-6 text-sm opacity-90">
+            <span className="flex items-center gap-2">
+              ⭐ 4.8/5 App Store Rating
+            </span>
+            <span className="flex items-center gap-2">
+              🔒 Privacy Protected
+            </span>
+            <span className="flex items-center gap-2">
+              ✓ Free Forever Plan
+            </span>
+          </div>
         </div>
       </section>
     </div>

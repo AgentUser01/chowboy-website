@@ -37,7 +37,7 @@ export default function Navbar() {
   };
   
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-white/95 backdrop-blur-md shadow-md border-b border-sand-200' : 'bg-transparent'} ${menuOpen ? 'menu-open' : ''}`}>
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-white/95 backdrop-blur-md shadow-md border-b border-sand-200' : 'bg-white/80 backdrop-blur-sm'} ${menuOpen ? 'menu-open' : ''}`}>
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center space-x-2 text-2xl font-bold text-slate-700 hover:text-sage transition-colors" aria-label="Chowboy home">
@@ -45,22 +45,27 @@ export default function Navbar() {
             <span>chowboy</span>
           </Link>
           
-          {/* Desktop Navigation Menu */}
-          <ul className="hidden md:flex items-center space-x-8">
+          {/* Desktop Navigation Menu - Minimalist */}
+          <ul className="hidden md:flex items-center space-x-6">
             <li>
-              <Link href="/features" className="text-slate-600 hover:text-sage transition-colors font-medium" aria-label="View features">
-                features
+              <Link href="/features" className="text-slate-600 hover:text-sage transition-colors text-sm font-medium" aria-label="View features">
+                Features
               </Link>
             </li>
             <li>
-              <Link href="/blog" className="text-slate-600 hover:text-sage transition-colors font-medium" aria-label="Read blog">
-                blog
+              <Link href="/blog" className="text-slate-600 hover:text-sage transition-colors text-sm font-medium" aria-label="Read blog">
+                Blog
               </Link>
             </li>
             <li>
-              <Link href="/recipes" className="text-slate-600 hover:text-sage transition-colors font-medium" aria-label="View recipes">
-                recipes
-              </Link>
+              <a 
+                href="https://apps.apple.com/ca/app/chowboy/id6741332753" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="bg-sage text-white px-6 py-2 rounded-full text-sm font-semibold hover:bg-sage-600 transition-all shadow-md hover:shadow-lg hover:scale-105"
+              >
+                Download
+              </a>
             </li>
           </ul>
           
@@ -104,18 +109,24 @@ export default function Navbar() {
             <ul className="flex flex-col p-6 space-y-4 bg-sand-50">
               <li>
                 <Link href="/features" className="block py-2 text-lg text-slate-600 hover:text-sage transition-colors" onClick={() => setMenuOpen(false)} aria-label="View features">
-                  features
+                  Features
                 </Link>
               </li>
               <li>
                 <Link href="/blog" className="block py-2 text-lg text-slate-600 hover:text-sage transition-colors" onClick={() => setMenuOpen(false)} aria-label="Read blog">
-                  blog
+                  Blog
                 </Link>
               </li>
               <li>
-                <Link href="/recipes" className="block py-2 text-lg text-slate-600 hover:text-sage transition-colors" onClick={() => setMenuOpen(false)} aria-label="View recipes">
-                  recipes
-                </Link>
+                <a 
+                  href="https://apps.apple.com/ca/app/chowboy/id6741332753" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="block bg-sage text-white px-6 py-3 rounded-full font-semibold hover:bg-sage-600 transition-colors text-center"
+                  onClick={() => setMenuOpen(false)}
+                >
+                  Download App
+                </a>
               </li>
             </ul>
           </div>

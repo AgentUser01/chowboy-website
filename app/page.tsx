@@ -102,7 +102,7 @@ export default function Home() {
               {/* Glow effect */}
               <div className="absolute -inset-4 bg-gradient-to-br from-sage/30 via-icy/30 to-mustard/30 rounded-3xl blur-3xl"></div>
               <Image
-                src="/images/ai-recipe-discovery 3.png"
+                src="/images/ai-recipe-discovery.png"
                 alt="Chowboy App showing AI-powered recipe discovery and cooking tips"
                 fill
                 sizes="(max-width: 768px) 100vw, 384px"

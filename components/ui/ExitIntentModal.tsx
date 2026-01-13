@@ -35,7 +35,6 @@ export default function ExitIntentModal() {
     trackExitIntent('submitted');
     
     // TODO: Integrate with your email service (Mailchimp, ConvertKit, etc.)
-    console.log('Email submitted:', email);
     
     setSubmitted(true);
     

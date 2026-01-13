@@ -14,7 +14,6 @@ export default function NewsletterSignup() {
     trackNewsletterSignup('blog_page');
     
     // TODO: Integrate with your email service
-    console.log('Newsletter signup:', email);
     
     // Simulate API call
     setTimeout(() => {

@@ -28,14 +28,11 @@ export default function ClientRecipesPage({ staticRecipes }: { staticRecipes: Re
       try {
         const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://api.chowboy.io';
         const url = `${API_URL}/api/v1/public/recipes/chowboy-generated?limit=50`;
-        console.log('🔍 Fetching AI recipes from:', url);
         
         const response = await fetch(url);
-        console.log('📡 API Response status:', response.status);
         
         if (response.ok) {
           const data = await response.json();
-          console.log('✅ Fetched AI recipes:', data.total, 'recipes');
           
           const converted = data.recipes.map((r: any) => ({
             slug: r.id,
@@ -51,13 +48,11 @@ export default function ClientRecipesPage({ staticRecipes }: { staticRecipes: Re
             rating: r.rating,
             ratingCount: r.ratingCount,
           }));
-          console.log('🎯 Converted recipes:', converted.length);
           setApiRecipes(converted);
-        } else {
-          console.warn('❌ API returned error:', response.status, response.statusText);
         }
-      } catch (error) {
-        console.error('❌ Error fetching AI recipes:', error);
+        // Silent fail for API errors - user still sees static recipes
+      } catch {
+        // Silent fail - static recipes still available as fallback
       } finally {
         setLoading(false);
       }

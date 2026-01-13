@@ -9,21 +9,21 @@ export default function HowItWorks() {
       title: 'Import Any Recipe',
       description: 'Copy a link from Instagram, TikTok, or any website. Paste it in Chowboy. Done.',
       icon: '🔗',
-      image: '/images/ai-recipe-discovery 3.png',
+      image: '/images/import-from-anywhere.png',
     },
     {
       number: '2',
       title: 'Get AI-Powered Help',
       description: 'Nutrition analysis, cooking tips, wine pairings, and ingredient substitutions—all powered by AI.',
       icon: '✨',
-      image: '/images/ai-recipe-discovery 3.png',
+      image: '/images/ai-recipe-discovery.png',
     },
     {
       number: '3',
       title: 'Cook Smarter',
       description: 'Step-by-step guidance, auto-generated grocery lists, and personalized recipe recommendations.',
       icon: '👨‍🍳',
-      image: '/images/ai-recipe-discovery 3.png',
+      image: '/images/chowboy_grocery-list-management.png',
     },
   ];
 
@@ -98,5 +98,9 @@ export default function HowItWorks() {
     </section>
   );
 }
+
+
+
+
 
 

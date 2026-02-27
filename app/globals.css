@@ -263,3 +263,102 @@ html {
 .animate-slideUp {
   animation: slideUp 0.5s ease-out;
 }
+
+/* ========================================
+   DARK FEATURE SECTIONS
+   ======================================== */
+
+/* Dark section for showcasing dark-mode screenshots */
+.dark-feature-section {
+  background: linear-gradient(
+    135deg,
+    #1a1d24 0%,
+    #0d1117 50%,
+    #1a1d24 100%
+  );
+  position: relative;
+  overflow: hidden;
+}
+
+.dark-feature-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:
+    radial-gradient(at 20% 30%, rgba(138, 180, 248, 0.08) 0px, transparent 50%),
+    radial-gradient(at 80% 70%, rgba(138, 168, 139, 0.08) 0px, transparent 50%);
+  z-index: 0;
+}
+
+.dark-feature-section > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Phone mockup glow for dark screenshots */
+.phone-glow-blue {
+  filter: drop-shadow(0 0 30px rgba(138, 180, 248, 0.25)) drop-shadow(0 0 60px rgba(138, 180, 248, 0.1));
+}
+
+.phone-glow-green {
+  filter: drop-shadow(0 0 30px rgba(138, 168, 139, 0.25)) drop-shadow(0 0 60px rgba(138, 168, 139, 0.1));
+}
+
+.phone-glow-yellow {
+  filter: drop-shadow(0 0 30px rgba(242, 201, 76, 0.2)) drop-shadow(0 0 60px rgba(242, 201, 76, 0.08));
+}
+
+/* Feature card with screenshot thumbnail */
+.screenshot-card {
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow:
+    0 4px 16px rgba(0, 0, 0, 0.08),
+    0 1px 4px rgba(0, 0, 0, 0.04);
+}
+
+.screenshot-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.12),
+    0 8px 16px rgba(138, 168, 139, 0.15);
+}
+
+/* Scroll-reveal fade-in for sections */
+@keyframes revealUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.reveal-up {
+  animation: revealUp 0.6s ease-out forwards;
+}
+
+/* Gradient border on feature cards */
+.gradient-border {
+  position: relative;
+  background: white;
+  border-radius: 1.5rem;
+}
+
+.gradient-border::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 1.5rem;
+  padding: 2px;
+  background: linear-gradient(135deg, #8AA88B, #8AB4F8, #F2C94C);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
